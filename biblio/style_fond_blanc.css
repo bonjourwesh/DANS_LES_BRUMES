@@ -1,0 +1,407 @@
+@font-face {
+      font-family: 'Titre';
+      src: url("../typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("../typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Serif_Bold';
+      src: url("../typo/Baskerville_Bold.otf") format('truetype');
+      font-style: bold;
+}
+
+
+@font-face {
+      font-family: 'Typo_fleche';
+      src: url("../typo/fleche_typo.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("../typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("../typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+
+html, body {
+ margin:0;
+ padding:0;
+ background-color: white;
+ color: black;
+ }
+/*
+a{
+  text-decoration: none;
+  color: black;
+}bobine
+*/
+
+
+
+
+#boite_audio{
+  color: black;
+  font-size: 2.5em;
+width: 150px;
+height: 100px;
+background-color: white;
+border-radius:75px / 50px ;
+border: 1px solid black;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+#lettre_play{
+font-family: Titre;
+font-style: italic;
+    vertical-align: middle;
+
+}
+
+
+#boite_audio:hover{
+box-shadow:black 1px 0 10px ;
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+.fleche{
+  font-family: Typo_fleche ;
+font-size: 1.3em;}
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background: white ;
+border-bottom: 1px solid black;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+  color: black;
+}
+
+
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+
+}
+
+a.menu{
+  margin-left: 10px;
+    color: black;
+text-decoration: none;
+}
+
+a.menu:hover{
+    color: black;
+text-decoration: none;
+}
+
+.brume{
+    color: black;
+text-decoration: none;
+}
+
+
+#archive{
+  display: inline;
+  margin-left: 20px;
+}
+
+#archive_bouton:hover{
+  text-decoration: underline;
+  text-shadow: black 1px 0 10px;
+}
+
+#bouton_print{
+  color: black;
+text-decoration: none;}
+
+/*---------------------------------PRINT -----------------------------*/ 
+
+
+#bouton_print{
+font-family: Emojix;
+padding-top: 5px;
+font-size: 1.5em;
+line-height: 0.5em;
+cursor: pointer;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+
+.btn_print{
+  padding-top: 10px; 
+  margin-left: 10px;
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: white;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+    transition: border-radius 0.5s;
+}
+
+ .btn_print:hover {
+background-color: black;
+border-radius: 0px;
+}
+
+/*---------------------------------BOUTONS COULEURS -----------------------------*/ 
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: white;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+}
+
+ #bouton_nuit:hover {
+background-color: black;
+}
+
+ #bouton_jour:hover {
+background-color: black;
+}
+
+#bouton_jour{
+background-color: black;  
+}
+
+#bouton_nuit{
+background-color: white;  
+}
+
+
+#bouton_color{
+  background-color: white;
+}
+
+ #bouton_color:hover {
+background-color: black;
+}
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+.drag-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+[class^=panel] {
+}
+
+.panel-one {
+  width: 50%;
+  padding-top: 6em;
+  padding-left: 30px;
+
+}
+
+.panel-two {
+  flex: 1;
+  width: 50%;
+
+border-left:1px solid black ;
+
+}
+
+#contenu_droite{
+      padding-top: 6em;
+  padding-right: 30px;
+    padding-left: 30px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+overflow-x: hidden;
+}
+
+#dragbar {
+  cursor: col-resize;
+  background-color: white;
+}
+
+#boule_noire{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 52vh;
+  position: fixed;
+  margin-left: -20px;
+
+}
+/*---------------------------------TEXTE GAUCHE-----------------------------*/ 
+.titre_partie{
+  font-family: Titre;
+  font-size: 2.1em;
+  text-decoration: underline;
+  padding-top: 20px;
+}
+
+
+.boite_boite{
+width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+}
+
+.boite_boite_droite{
+width: 100%;
+        display: flex;
+        flex-wrap: wrap;  
+
+}
+
+
+.boite_ref{
+  margin-top: 20px;
+  min-width: 500px;
+  width: 580px;
+  display: flex;
+  align-items: start;
+   white-space: normal;
+
+}
+
+
+.boite_ref_droite{
+  margin-top: 20px;
+  max-width: 580px;
+  min-width: 250px;
+  display: flex;
+text-align: right;
+}
+
+.pix{
+  max-width: 150px;
+  width: 150px;
+  height: 150px;
+  margin-right:30px ;
+  margin-left: 10px;
+    background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 0px;
+}
+
+
+.boite_txt{
+  vertical-align: middle;
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 50px;
+color: black;
+font-size: 1em;
+width: 420px;
+  font-family: Titre;
+  font-size: 1.3em;
+}
+
+p{
+  margin-top: 5px;
+}
+
+
+.titre_ressource{
+  font-family: Titre;
+  text-decoration: underline;
+  font-size: 1.4em;
+}
+
+
+
+
+      /*---------------------------------DRAG-----------------------------*/ 
+#lien {
+  font-family: Titre;
+  z-index: 8;
+  color: black;
+  cursor: move;
+  background-color: white;
+  padding-left: 60px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  border: 1px solid black;
+  width: 800px;
+  position: fixed;
+  left: 5%;
+  top: 15%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  animation: move 120s linear infinite;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.soulignax{
+font-family: Titre;
+text-decoration: underline;}
+
+.fermer{
+  width: 30px;
+  height: 30px;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.fermer:hover{
+  background-color: black;
+  cursor: pointer;
+}
