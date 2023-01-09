@@ -1,0 +1,512 @@
+@font-face {
+      font-family: 'Titre';
+      src: url("typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+html, body {
+ margin:0;
+ padding:0;
+ overflow: hidden;
+ }
+
+
+
+
+
+
+
+
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  color: white;
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background: black ;
+border-bottom: 1px solid white;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+}
+
+
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+}
+
+a.menu{
+    color: white;
+text-decoration: none;
+}
+
+a.menu:hover{
+    color: white;
+text-decoration: underline;
+}
+
+
+#brume{
+  color: white;
+  text-decoration: none;
+}
+
+#brume:hover{
+  text-decoration: underline;
+}
+
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+#corps{
+  color: white;
+}
+
+
+
+
+
+/*---------------------------------BOUTON COULEUR-----------------------------*/ 
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: black;
+border: 1px solid white;
+cursor: pointer;
+z-index: 3;
+}
+
+ #bouton_nuit:hover {
+background-color: white;
+}
+
+ #bouton_jour:hover {
+background-color: white;
+}
+
+#bouton_jour{
+background-color: black;  
+}
+
+#bouton_nuit{
+background-color: white;  
+}
+
+
+#bouton_color{
+  background-color: black;
+}
+
+#bouton_color:hover {
+  background-color: white;
+}
+
+
+/*---------------------------------RESIZEABLE-----------------------------*/ 
+.resizable {
+  background: black;
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  border: 1px solid white;
+}
+
+.resizable .resizers{
+  width: 100%;
+  height: 100%;
+}
+
+.resizable .resizers .resizer{
+  z-index: 12;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /*magic to turn square into circle*/
+  background: white;
+  position: absolute;
+
+}
+
+.resizable .resizers .resizer.bottom-right {
+  right: -20px;
+  bottom: -20px;
+  cursor: grabbing;
+}
+
+.resizable .resizers .resizer.bottom-right:{
+  right: -20px;
+  bottom: -20px;
+  cursor: grabbing;
+}
+
+#droite_haut{
+  background-color: black;
+  width: 50%;
+  position: absolute;
+  right: 0px;  
+top: 4em;
+  border: 1px solid white;
+}
+
+#gauche_bas{
+  background-color: black;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px; 
+    border: 1px solid white; 
+
+}
+
+#droite_bas{
+  background-color:  black;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;  
+    border: 1px solid white;
+
+}
+
+/*---------------------------------TEXTE DES BOITES-----------------------------*/ 
+
+#text_position{
+  position: absolute;
+  bottom: -10px ;
+  text-align: center;
+  width: 100%;
+}
+
+a.sous_titre{
+  color: white;
+}
+
+a.boite:visited {
+  color: white;
+}
+
+
+.sous_titre{
+  font-family: Titre;
+  font-size: 2.2em;
+  color: white
+
+}
+
+.txt_pres{
+  width: 50%;
+  font-family: Titre;
+  font-size: 1.2em;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+  color: white;
+}
+
+
+/*---------------------------------BOITE LIEN-----------------------------*/ 
+
+
+#boite_lien {
+text-align: center;
+  z-index: 20;
+  color: white;
+  font-family: Titre;
+  font-size: 1.5em;
+  cursor: move;
+  background-color: black;
+  padding-left: 15px;
+  padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  border: 1px solid white;
+  width: 280px;
+  position: fixed;
+  left: 20px;
+  top: 10%;
+}
+
+#boite_lien a{
+  color: white;
+  text-decoration: none;
+}
+
+#boite_lien a:hover{
+  color: white;
+    text-decoration: underline;  
+}
+
+.lien_pdf{
+    border: 1px solid white;
+width: 280px;
+display: block;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#fermer_lien{
+  position: absolute;
+width: 30px;
+height: 30px;
+background-color: black;
+    border: 1px solid white;
+right: 15px;
+bottom: 15px;
+
+}
+
+#fermer_lien:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.boite_droite{
+ text-align: center;
+  z-index: 4;
+  color: white;
+  font-family: Titre;
+  cursor: e-resize ;
+  background-color: black;
+  border: 1px solid white;
+  height: 230px;
+  position: fixed;
+  width: 50px;
+    transition: width 0.7s;
+
+}
+
+.boite_droite:hover{
+ width: 400px; 
+}
+
+#boite_credit{
+  right: 0px;
+  margin-top: -100px;
+}
+
+.titre_boite_droite{
+  position: absolute;
+    font-size: 1.2em;
+      writing-mode: vertical-rl;
+text-orientation: mixed;
+height: 100%;
+margin-left:20px;
+}
+
+.txt_boite_droite{
+  font-size: 1em;
+  width: 300px;
+margin-left: 60px;
+
+text-align: left;
+}
+
+#dessin{
+  height: 180px;
+  width: 100%;
+  background-image: url("ressources/blason_noir.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+
+
+/* ////////////////////////LIGHTBOX//////////////*/
+
+.lightbox{
+  display: none;
+  background-color: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  position: fixed;
+  cursor: auto;
+
+}
+
+
+#charte_contribution_css{
+  background-color: black;
+  opacity: 100%;
+  position: absolute;
+  border: 1px solid white;
+padding: 30px;
+  display: block;
+  width: 40%;
+  height: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: Titre;
+  font-size: 0.8em;
+  text-align: left;
+    overflow-y: scroll;
+
+}
+
+
+
+#histoire_village_css{
+  background-color: black;
+  opacity: 100%;
+  position: absolute;
+  border: 1px solid white;
+padding: 30px;
+  display: block;
+  width: 40%;
+  height: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: Titre;
+  font-size: 0.8em;
+  text-align: left;
+    overflow-y: scroll;
+
+}
+
+#credit_css{
+  background-color: black;
+  opacity: 100%;
+  position: absolute;
+  border: 1px solid white;
+padding: 30px;
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 70px;
+  font-family: Titre;
+  font-size: 0.8em;
+  text-align: left;
+      width: 60%;
+
+}
+
+
+.italic{
+  font-style: italic;
+}
+
+.soulignax{
+  text-decoration: underline;
+}
+
+.fermer{
+  width: 30px;
+  height: 30px;
+    border: 1px solid white;
+    background-color: black;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.fermer:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+
+
+#portable{
+  display: none;
+}
+
+
+@media only screen and (max-device-width: 600px) {
+  #entete{
+    display: none;
+  }
+
+#corps{
+  display:  none;
+}
+
+
+#portable{
+  display: block;
+}
+
+}
+
+#bouton_print{
+  position: absolute;
+  right: 80px;
+  top:20px;
+font-size: 2em;
+  font-family: Emojix;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: white 1px 0 10px;
+}
+
+#separateur{
+  width: 100%;
+  height: 20px;
+border-bottom: 2px dotted white;
+
+}
