@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Les émissions et reportages ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <script type="text/javasript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script src="../../jquery-2.js"></script>
+</head>
+<body >
+
+
+
+  <!----------------------------MENU DU HAUT-------------------------------->    
+  <div id="entete"> 
+    <div id= "titre"><a id= "lienTitre" href="../../index.html">Dans les brumes</a> / <a id= "lienTitre" href="../menu_archives.html"> Archives</a> / Les émissions et reportages</div> 
+
+
+    <div id="droite">
+        <a id="bouton_print" onclick="printPdf('pdf_reportage.pdf')"></a>
+
+
+
+      <div id="couleur_boutons"> 
+
+        <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+        <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+        <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+      </div>
+
+
+
+    </div>
+  </div>
+  <!----------------------------LE CORPS DE PAGE--------------------------------> 
+  <div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+    <div id="boite_image_1" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/1.jpg');" onclick="fonctionAgrandir1()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/2.jpg');" onclick="fonctionAgrandir2()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/3.jpg');" onclick="fonctionAgrandir3()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/4.jpg');" onclick="fonctionAgrandir4()"></div>
+
+</div>
+
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/5.jpg');" onclick="fonctionAgrandir5()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/6.jpg');" onclick="fonctionAgrandir6()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/7.jpg');" onclick="fonctionAgrandir7()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/8.jpg');" onclick="fonctionAgrandir8()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/9.jpg');" onclick="fonctionAgrandir9()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/10.jpg');" onclick="fonctionAgrandir10()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/reportage/11.jpg');" onclick="fonctionAgrandir11()"></div>
+
+      <div class="pix" id="play_pix"style="  background-image: url('../ressource/img/reportage/12.png');" onclick="fonctionAgrandir12()"></div>
+
+</div>
+
+
+      <a href="#" class="lightbox" id="img1">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer1()">
+ <video controls id="video_1"> 
+          <source src="../ressource/img/reportage/1.mp4" type="video/mp4">
+</video>
+          <div id="legende">Le démontage de la salle des métiers de l'usine Perrier par un ferrailleur. </div>
+</a>
+
+      <a href="#" class="lightbox" id="img2">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer2()">
+ <video controls id="video_2"> 
+          <source src="../ressource/img/reportage/2.mp4" type="video/mp4">
+</video>
+  <div id="legende">Le DVD de l'office du Tourisme de Bourg-Argental.</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img3">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer3()">
+ <video controls id="video_3"> 
+          <source src="../ressource/img/reportage/3.mp4" type="video/mp4">
+</video>
+  <div id="legende">Visite de l'usine Perrier-Schmelzle.</div>
+</a>
+
+      <a href="#" class="lightbox" id="img4">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer4()">
+ <video controls id="video_4"> 
+          <source src="../ressource/img/reportage/4.mp4" type="video/mp4">
+</video>
+  <div id="legende">Reportage France 3 à l'usine de Tissage Schmelzle.</div>
+</a>
+
+      <a href="#" class="lightbox" id="img5">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer5()">
+ <video controls id="video_5"> 
+          <source src="../ressource/img/reportage/5.mp4" type="video/mp4">
+</video>
+  <div id="legende">Film par drône de Saint-Julien-Molin-Molette et ses alentours.</div>
+</a>
+
+      <a href="#" class="lightbox" id="img6">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer6()">
+ <video controls id="video_6"> 
+          <source src="../ressource/img/reportage/6.mp4" type="video/mp4">
+</video>
+  <div id="legende">Captation des tissages Schmelzle.</div>
+</a>
+
+      <a href="#" class="lightbox" id="img7">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer7()">
+ <video controls id="video_7"> 
+          <source src="../ressource/img/reportage/7.mp4" type="video/mp4">
+</video>
+  <div id="legende">Reportage TV, entretien de Josette Schmelzle et visite de l'usine Perrier-Schmelzle.</div>
+</a>
+
+      <a href="#" class="lightbox" id="img8">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer8()">
+ <video controls id="video_8"> 
+          <source src="../ressource/img/reportage/8.mp4" type="video/mp4">
+</video>
+  <div id="legende">Reportage au Moulinage Barou, Vinzieux.</div>
+</a>
+
+      <a href="#" class="lightbox" id="img9">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer9()">
+ <video controls id="video_9"> 
+          <source src="../ressource/img/reportage/9.mp4" type="video/mp4">
+</video>
+  <div id="legende">Reportage autour du travail de la soie, du moulinage au tissage.</div>
+</a>
+
+      <a href="#" class="lightbox" id="img10">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer10()">
+ <video controls id="video_10"> 
+          <source src="../ressource/img/reportage/10.mp4" type="video/mp4">
+</video>
+  <div id="legende">Visite filmée de l'usine Perrier-Schmelzle.</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img11">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer11()">
+ <video controls id="video_11"> 
+          <source src="../ressource/img/reportage/11.mp4" type="video/mp4">
+</video>
+  <div id="legende">Visite filmée de l'usine Perrier-Schmelzle.</div>
+</a>
+
+
+
+      <a href="#" class="lightbox" id="img12">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer12()">
+
+    <audio id="audio" src="../ressource/img/reportage/1.mp3">
+      <source src="" type="audio/mpeg">
+  </audio>
+<div id="big_boite_son"> 
+  <div id="boite_son">
+    <div id="mediabutton" src="../ressource/img/reportage/12.png"><p id="play">Play</p></div>
+    <div id="back" class="fleche" ><</div>
+    <div id="next" class="fleche" >></div>
+  </div>
+    <div id="mediamarquee"> </div>
+     <div id="legende">Les reportages et émissions radiophoniques : à l'aide des flêches, sélectionner l'audio souhaité. 
+      <br> Démarrer l'écoute en appuyant sur le bouton "Play".</div>
+  </div>
+
+
+
+</div>
+<script  src="../ressource/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Les cartes postales ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body >
+
+
+
+  <!----------------------------MENU DU HAUT-------------------------------->    
+  <div id="entete"> 
+    <div id= "titre"><a id= "lienTitre" href="../../index.html">Dans les brumes</a> / <a id= "lienTitre" href="../menu_archives.html"> Archives</a> / Les cartes postales</div> 
+
+
+    <div id="droite">
+        <a id="bouton_print" onclick="printPdf('pdf_carte_postale.pdf')"></a>
+
+
+
+      <div id="couleur_boutons"> 
+
+        <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+        <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+        <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+      </div>
+
+
+
+    </div>
+  </div>
+  <!----------------------------LE CORPS DE PAGE--------------------------------> 
+  <div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+    <div id="boite_image_1" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/1.jpg');" onclick="fonctionAgrandir1()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/2.jpg');" onclick="fonctionAgrandir2()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/3.jpg');" onclick="fonctionAgrandir3()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/4.jpg');" onclick="fonctionAgrandir4()"></div>
+
+</div>
+
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/5.jpg');" onclick="fonctionAgrandir5()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/6.jpg');" onclick="fonctionAgrandir6()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/7.jpg');" onclick="fonctionAgrandir7()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/8.jpg');" onclick="fonctionAgrandir8()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/9.jpg');" onclick="fonctionAgrandir9()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/10.jpg');" onclick="fonctionAgrandir10()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/11.jpg');" onclick="fonctionAgrandir11()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/12.jpg');" onclick="fonctionAgrandir12()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/13.jpg');" onclick="fonctionAgrandir13()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/14.jpg');" onclick="fonctionAgrandir14()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/15.jpg');" onclick="fonctionAgrandir15()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/16.jpg');" onclick="fonctionAgrandir16()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/17.jpg');" onclick="fonctionAgrandir17()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/18.jpg');" onclick="fonctionAgrandir18()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/19.jpg');" onclick="fonctionAgrandir19()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/20.jpg');" onclick="fonctionAgrandir20()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/21.jpg');" onclick="fonctionAgrandir21()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/22.jpg');" onclick="fonctionAgrandir22()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/23.jpg');" onclick="fonctionAgrandir23()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/24.jpg');" onclick="fonctionAgrandir24()"></div>
+
+</div>
+
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/25.jpg');"  onclick="fonctionAgrandir25()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/26.jpg');" onclick="fonctionAgrandir26()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/27.jpg');" onclick="fonctionAgrandir27()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/28.jpg');" onclick="fonctionAgrandir28()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/29.jpg');" onclick="fonctionAgrandir29()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/30.jpg');" onclick="fonctionAgrandir30()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/31.jpg');" onclick="fonctionAgrandir31()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/32.jpg');" onclick="fonctionAgrandir32()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/33.jpg');" onclick="fonctionAgrandir33()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/34.jpg');" onclick="fonctionAgrandir34()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/35.jpg');" onclick="fonctionAgrandir35()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/36.jpg');" onclick="fonctionAgrandir36()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/37.jpg');" onclick="fonctionAgrandir37()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/38.jpg');" onclick="fonctionAgrandir38()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/39.jpg');" onclick="fonctionAgrandir39()"></div>
+      
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/40.jpg');" onclick="fonctionAgrandir40()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/41.jpg');" onclick="fonctionAgrandir41()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/42.jpg');" onclick="fonctionAgrandir42()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/43.jpg');" onclick="fonctionAgrandir43()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/44.jpg');" onclick="fonctionAgrandir44()"></div>
+
+</div>
+
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/45.jpg');"  onclick="fonctionAgrandir45()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/46.jpg');" onclick="fonctionAgrandir46()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/47.jpg');" onclick="fonctionAgrandir47()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/48.jpg');" onclick="fonctionAgrandir48()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/49.jpg');" onclick="fonctionAgrandir49()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/50.jpg');" onclick="fonctionAgrandir50()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/51.jpg');" onclick="fonctionAgrandir51()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/52.jpg');" onclick="fonctionAgrandir52()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/53.jpg');" onclick="fonctionAgrandir53()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/54.jpg');" onclick="fonctionAgrandir54()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/55.jpg');" onclick="fonctionAgrandir55()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/56.jpg');" onclick="fonctionAgrandir56()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/57.jpg');" onclick="fonctionAgrandir57()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/58.jpg');" onclick="fonctionAgrandir58()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/59.jpg');" onclick="fonctionAgrandir59()"></div>
+      
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/60.jpg');" onclick="fonctionAgrandir60()"></div>
+
+</div>
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/61.jpg');" onclick="fonctionAgrandir61()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/62.jpg');" onclick="fonctionAgrandir62()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/63.jpg');" onclick="fonctionAgrandir63()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/64.jpg');" onclick="fonctionAgrandir64()"></div>
+
+</div>
+
+
+    <div id="boite_image_2" class="boite_image">
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/65.jpg');"  onclick="fonctionAgrandir65()"></div>
+
+      <div class="pix" style="  background-image: url('../ressource/img/carte_postale/66.jpg');" onclick="fonctionAgrandir66()"></div>
+
+      <div class="pix" style=""></div>
+
+      <div class="pix" style=""></div>
+
+</div>
+
+
+
+      <a href="#" class="lightbox" id="img1">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer1()">
+  <span style="background-image: url('../ressource/img/carte_postale/1.jpg')"></span>
+  <div id="legende">maison Perrier </div>
+</a>
+
+      <a href="#" class="lightbox" id="img2">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer2()">
+  <span style="background-image: url('../ressource/img/carte_postale/2.jpg')"></span>
+  <div id="legende">quartier du Pré-Martin, avenue Colombier</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img3">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer3()">
+  <span style="background-image: url('../ressource/img/carte_postale/3.jpg')"></span>
+  <div id="legende">usine du Pavillon de la Planche</div>
+</a>
+
+      <a href="#" class="lightbox" id="img4">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer4()">
+  <span style="background-image: url('../ressource/img/carte_postale/4.jpg')"></span>
+  <div id="legende">Grande Place, avenue Colombier, épicerie</div>
+</a>
+
+      <a href="#" class="lightbox" id="img5">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer5()">
+  <span style="background-image: url('../ressource/img/carte_postale/5.jpg')"></span>
+  <div id="legende">rue Neuve, café Jamet</div>
+</a>
+
+      <a href="#" class="lightbox" id="img6">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer6()">
+  <span style="background-image: url('../ressource/img/carte_postale/6.jpg')"></span>
+  <div id="legende">rue Neuve</div>
+</a>
+
+      <a href="#" class="lightbox" id="img7">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer7()">
+  <span style="background-image: url('../ressource/img/carte_postale/7.jpg')"></span>
+  <div id="legende">rue Neuve</div>
+</a>
+
+      <a href="#" class="lightbox" id="img8">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer8()">
+  <span style="background-image: url('../ressource/img/carte_postale/8.jpg')"></span>
+  <div id="legende">boucherie, rue Peyronnet</div>
+</a>
+
+      <a href="#" class="lightbox" id="img9">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer9()">
+  <span style="background-image: url('../ressource/img/carte_postale/9.jpg')"></span>
+  <div id="legende">usine Perrier, rue Peyronnet</div>
+</a>
+
+      <a href="#" class="lightbox" id="img10">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer10()">
+  <span style="background-image: url('../ressource/img/carte_postale/10.jpg')"></span>
+  <div id="legende">rue Peyronnet</div>
+</a>
+
+      <a href="#" class="lightbox" id="img11">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer11()">
+  <span style="background-image: url('../ressource/img/carte_postale/11.jpg')"></span>
+  <div id="legende">usine Perrier, rue Peyronnet</div>
+</a>
+
+      <a href="#" class="lightbox" id="img12">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer12()">
+  <span style="background-image: url('../ressource/img/carte_postale/12.jpg')"></span>
+  <div id="legende">Saint-Victor, Sainte-Marthe, Chirol, chemin Anne Sylvestre</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img13">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer13()">
+  <span style="background-image: url('../ressource/img/carte_postale/13.jpg')"></span>
+  <div id="legende">marché sur la Grande Place</div>
+</a>
+
+      <a href="#" class="lightbox" id="img14">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer14()">
+  <span style="background-image: url('../ressource/img/carte_postale/14.jpg')"></span>
+  <div id="legende">usine du Pré-Battoir</div>
+</a>
+
+      <a href="#" class="lightbox" id="img15">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer15()">
+  <span style="background-image: url('../ressource/img/carte_postale/15.jpg')"></span>
+  <div id="legende">usine Taillis-Vert</div>
+</a>
+
+      <a href="#" class="lightbox" id="img16">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer16()">
+  <span style="background-image: url('../ressource/img/carte_postale/16.jpg')"></span>
+  <div id="legende">enfants à l'usine de tissage</div>
+</a>
+
+      <a href="#" class="lightbox" id="img17">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer17()">
+  <span style="background-image: url('../ressource/img/carte_postale/17.jpg')"></span>
+  <div id="legende">avenue de Colombier</div>
+</a>
+
+      <a href="#" class="lightbox" id="img18">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer18()">
+  <span style="background-image: url('../ressource/img/carte_postale/18.jpg')"></span>
+  <div id="legende">château Gillier, avenue Colombier</div>
+</a>
+
+      <a href="#" class="lightbox" id="img19">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer19()">
+  <span style="background-image: url('../ressource/img/carte_postale/19.jpg')"></span>
+  <div id="legende">fête, congrès</div>
+</a>
+
+      <a href="#" class="lightbox" id="img20">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer20()">
+  <span style="background-image: url('../ressource/img/carte_postale/20.jpg')"></span>
+  <div id="legende">cercle Jeanne d'Arc</div>
+</a>
+
+      <a href="#" class="lightbox" id="img21">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer21()">
+  <span style="background-image: url('../ressource/img/carte_postale/21.jpg')"></span>
+  <div id="legende">château Payen-Gillier et Sainte-Marthe, hameau Devrard</div>
+</a>
+
+      <a href="#" class="lightbox" id="img22">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer22()">
+  <span style="background-image: url('../ressource/img/carte_postale/22.jpg')"></span>
+  <div id="legende">hospice</div>
+</a>
+
+      <a href="#" class="lightbox" id="img23">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer23()">
+  <span style="background-image: url('../ressource/img/carte_postale/23.jpg')"></span>
+  <div id="legende">église et presbytère</div>
+</a>
+
+      <a href="#" class="lightbox" id="img24">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer24()">
+  <span style="background-image: url('../ressource/img/carte_postale/24.jpg')"></span>
+  <div id="legende">centre ville</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img25">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer25()">
+  <span style="background-image: url('../ressource/img/carte_postale/25.jpg')"></span>
+  <div id="legende">château Gillier</div>
+</a>
+
+      <a href="#" class="lightbox" id="img26">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer26()">
+  <span style="background-image: url('../ressource/img/carte_postale/26.jpg')"></span>
+  <div id="legende">château Condamine</div>
+</a>
+
+      <a href="#" class="lightbox" id="img27">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer27()">
+  <span style="background-image: url('../ressource/img/carte_postale/27.jpg')"></span>
+  <div id="legende">congrès</div>
+</a>
+
+      <a href="#" class="lightbox" id="img28">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer28()">
+  <span style="background-image: url('../ressource/img/carte_postale/28.jpg')"></span>
+  <div id="legende">congrès</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img29">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer29()">
+  <span style="background-image: url('../ressource/img/carte_postale/29.jpg')"></span>
+  <div id="legende">congrès</div>
+</a>
+
+      <a href="#" class="lightbox" id="img30">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer30()">
+  <span style="background-image: url('../ressource/img/carte_postale/30.jpg')"></span>
+  <div id="legende">église</div>
+</a>
+
+      <a href="#" class="lightbox" id="img31">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer31()">
+  <span style="background-image: url('../ressource/img/carte_postale/31.jpg')"></span>
+  <div id="legende">la Grande Place</div>
+</a>
+
+      <a href="#" class="lightbox" id="img32">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer32()">
+  <span style="background-image: url('../ressource/img/carte_postale/32.jpg')"></span>
+  <div id="legende">la Grande Place</div>
+</a>
+
+      <a href="#" class="lightbox" id="img33">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer33()">
+  <span style="background-image: url('../ressource/img/carte_postale/33.jpg')"></span>
+  <div id="legende">la Grande Place</div>
+</a>
+
+      <a href="#" class="lightbox" id="img34">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer34()">
+  <span style="background-image: url('../ressource/img/carte_postale/34.jpg')"></span>
+  <div id="legende">la Grande Place</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img35">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer35()">
+  <span style="background-image: url('../ressource/img/carte_postale/35.jpg')"></span>
+  <div id="legende">la Grande Place</div>
+</a>
+
+      <a href="#" class="lightbox" id="img36">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer36()">
+  <span style="background-image: url('../ressource/img/carte_postale/36.jpg')"></span>
+  <div id="legende">la Grande Place</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img37">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer37()">
+  <span style="background-image: url('../ressource/img/carte_postale/37.jpg')"></span>
+  <div id="legende">la Grande Place</div>
+</a>
+
+      <a href="#" class="lightbox" id="img38">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer38()">
+  <span style="background-image: url('../ressource/img/carte_postale/38.jpg')"></span>
+  <div id="legende">ouvrières</div>
+</a>
+
+      <a href="#" class="lightbox" id="img39">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer39()">
+  <span style="background-image: url('../ressource/img/carte_postale/39.jpg')"></span>
+  <div id="legende">ouvrières</div>
+</a>
+
+      <a href="#" class="lightbox" id="img40">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer40()">
+  <span style="background-image: url('../ressource/img/carte_postale/40.jpg')"></span>
+  <div id="legende">place de la Bascule</div>
+</a>
+
+      <a href="#" class="lightbox" id="img41">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer41()">
+  <span style="background-image: url('../ressource/img/carte_postale/41.jpg')"></span>
+  <div id="legende">place de la Bascule</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img42">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer42()">
+  <span style="background-image: url('../ressource/img/carte_postale/42.jpg')"></span>
+  <div id="legende">place de la Bascule</div>
+</a>
+
+      <a href="#" class="lightbox" id="img43">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer43()">
+  <span style="background-image: url('../ressource/img/carte_postale/43.jpg')"></span>
+  <div id="legende">place de la Bascule</div>
+</a>
+
+      <a href="#" class="lightbox" id="img44">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer44()">
+  <span style="background-image: url('../ressource/img/carte_postale/44.jpg')"></span>
+  <div id="legende">place de la Bascule</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img45">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer45()">
+  <span style="background-image: url('../ressource/img/carte_postale/45.jpg')"></span>
+  <div id="legende">place du marché</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img46">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer46()">
+  <span style="background-image: url('../ressource/img/carte_postale/46.jpg')"></span>
+  <div id="legende">place du marché</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img47">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer47()">
+  <span style="background-image: url('../ressource/img/carte_postale/47.jpg')"></span>
+  <div id="legende">place du marché</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img48">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer48()">
+  <span style="background-image: url('../ressource/img/carte_postale/48.jpg')"></span>
+  <div id="legende">place du marché</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img49">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer49()">
+  <span style="background-image: url('../ressource/img/carte_postale/49.jpg')"></span>
+  <div id="legende">le Pré-Battoir</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img50">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer50()">
+  <span style="background-image: url('../ressource/img/carte_postale/50.jpg')"></span>
+  <div id="legende">route d'Annonay</div>
+</a>
+
+      <a href="#" class="lightbox" id="img51">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer51()">
+  <span style="background-image: url('../ressource/img/carte_postale/51.jpg')"></span>
+  <div id="legende">route Colombier</div>
+</a>
+
+      <a href="#" class="lightbox" id="img52">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer52()">
+  <span style="background-image: url('../ressource/img/carte_postale/52.jpg')"></span>
+  <div id="legende">route Colombier</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img53">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer53()">
+  <span style="background-image: url('../ressource/img/carte_postale/53.jpg')"></span>
+  <div id="legende">route Colombier</div>
+</a>
+
+      <a href="#" class="lightbox" id="img54">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer54()">
+  <span style="background-image: url('../ressource/img/carte_postale/54.jpg')"></span>
+  <div id="legende">route d'Annonay</div>
+</a>
+
+      <a href="#" class="lightbox" id="img55">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer55()">
+  <span style="background-image: url('../ressource/img/carte_postale/55.jpg')"></span>
+  <div id="legende">route Colombier</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img56">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer56()">
+  <span style="background-image: url('../ressource/img/carte_postale/56.jpg')"></span>
+  <div id="legende">vue générale de Saint-Julien-Molin-Molette</div>
+</a>
+
+      <a href="#" class="lightbox" id="img57">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer57()">
+  <span style="background-image: url('../ressource/img/carte_postale/57.jpg')"></span>
+  <div id="legende">vue générale de Saint-Julien-Molin-Molette</div>
+</a>
+
+      <a href="#" class="lightbox" id="img58">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer58()">
+  <span style="background-image: url('../ressource/img/carte_postale/58.jpg')"></span>
+  <div id="legende">vue générale de Saint-Julien-Molin-Molette</div>
+</a>
+
+      <a href="#" class="lightbox" id="img59">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer59()">
+  <span style="background-image: url('../ressource/img/carte_postale/59.jpg')"></span>
+  <div id="legende">place du marché</div>
+</a>
+
+      <a href="#" class="lightbox" id="img60">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer60()">
+  <span style="background-image: url('../ressource/img/carte_postale/60.jpg')"></span>
+  <div id="legende">parc Dussuc</div>
+</a>
+
+      <a href="#" class="lightbox" id="img61">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer61()">
+  <span style="background-image: url('../ressource/img/carte_postale/61.jpg')"></span>
+  <div id="legende">rivière Ternay</div>
+</a>
+
+      <a href="#" class="lightbox" id="img62">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer62()">
+  <span style="background-image: url('../ressource/img/carte_postale/62.jpg')"></span>
+  <div id="legende">café Jamet, rue Neuve</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img63">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer63()">
+  <span style="background-image: url('../ressource/img/carte_postale/63.jpg')"></span>
+  <div id="legende">vue générale de Saint-Julien-Molin-Molette</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img64">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer64()">
+  <span style="background-image: url('../ressource/img/carte_postale/64.jpg')"></span>
+  <div id="legende">usine Gillier et Sainte-Marthe</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="img65">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermer65()">
+  <span style="background-image: url('../ressource/img/carte_postale/65.jpg')"></span>
+  <div id="legende">usine du Pré-Battoir</div>
+</a>
+
+
+      <a href="#" class="lightbox" id="imgblop">
+<input id="bouton_fermer" class="bouton_fermer" type="button" onclick="fonctionFermerblop()">
+  <span style="background-image: url('../ressource/img/carte_postale/blop.jpg')"></span>
+  <div id="legende">résidence de danse contemporaine de Simon Cavalier à l'essaim de Julie</div>
+</a>
+
+
+
+
+</div>
+<script  src="../ressource/script.js"></script>
+</body>
+</html>

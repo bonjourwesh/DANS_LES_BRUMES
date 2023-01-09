@@ -1,0 +1,271 @@
+
+
+@font-face {
+      font-family: 'Titre';
+      src: url("../typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("../typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("../typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("../typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+
+html, body {
+ margin:0;
+ padding:0;
+ color: black;
+ background: white;
+ height: 380vh;
+ width: 100vw;
+ font-family: Titre;
+ overflow-x: hidden;
+ }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background:  white;
+border-bottom: 1px solid black;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+}
+
+
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+}
+
+a.menu{
+      margin-left: 10px;
+    color: black;
+text-decoration: none;
+}
+
+#lienTitre:hover{
+    color: black;
+text-decoration: underline;
+}
+
+
+/*---------------------------------PRINT -----------------------------*/ 
+
+
+#bouton_print{
+font-family: Emojix;
+padding-top: 5px;
+font-size: 1.5em;
+line-height: 0.5em;
+cursor: pointer;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+
+/*---------------------------------BOUTON COULEUR-----------------------------*/ 
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: #f97000;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+}
+
+ #bouton_nuit:hover {
+background-color: black;
+}
+
+ #bouton_jour:hover {
+background-color: black;
+}
+
+#bouton_jour{
+background-color: black;  
+}
+
+#bouton_nuit{
+background-color: white;  
+}
+
+
+#bouton_color{
+  background-color: white;
+}
+
+#bouton_color:hover {
+  background-color: black;
+}
+
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+#corps{
+display: inline-flex;
+  height: 380vh;
+width: 100%;  
+}
+
+
+/*---------------------------------PHOTOS-----------------------------*/ 
+
+#corps{
+  margin-top: 200px;
+}
+
+#souligne_etape{
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  cursor: pointer;
+}
+
+
+     .tasdepix {
+      position: absolute;
+    background-repeat: none;
+        height: 300px;
+        width: auto;
+      }
+
+
+
+#carte_postale{
+  top: 15vh;
+  left: 8vw;
+position: absolute;}
+
+
+#bulletin_municipal{
+  top:  60vh;
+  left: 52vw;
+  position: absolute;
+}
+
+
+#catalogue{
+  top:  100vh;
+  left: 20vw;
+  position: absolute;
+}
+
+#melancolie_ouvriere{
+  top: 170vh;
+  left: 50vw;
+position: absolute;}
+
+
+#photographie{
+  top:  190vh;
+  left: 6vw;
+  position: absolute;
+}
+
+#reportage{
+  top:  230vh;
+  left: 45vw;
+  position: absolute;
+}
+
+#oreille_hardie{
+  top:  330vh;
+  left: 50vw;
+  position: absolute;
+
+}
+
+#essaim_julie{
+  top:  270vh;
+  left: 5vw;
+  position: absolute;
+}
+
+
+img:hover + .box_legende {
+  display: block;
+}
+/*---------------------------------TEXTE-----------------------------*/ 
+
+
+.legende{
+  color: black;
+  white-space: nowrap;
+}
+
+.box_legende{
+  display: none;
+  position: absolute;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  top: 100px;
+  left: 60px;
+  z-index: 2;
+  font-size: 1.5em;
+}
+
+.random{
+  cursor: move;
+  border: 1px solid black;
+
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  font-size: 0.9em;
+  animation: move 120s linear infinite;
+}
