@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Tordage et nouage ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+  <!----------------------------MENU DU HAUT-------------------------------->    
+  <div id="entete"> 
+    <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Tordage et nouage</div>
+
+
+    <div id="droite">
+      <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_rapondage.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+      </div>
+
+      <div id="couleur_boutons"> 
+
+        <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+        <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+        <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <!----------------------------LE CORPS DE PAGE--------------------------------> 
+  <div id="corps">
+
+    <!----------------------------PRECEDENT------------------------------>
+    <a href="javascript:history.go(-1)" id="nav" class="closed ">
+      <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+    </a>
+
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p><span id="souligne_txt">Étape 12</span><br>savoir-faire pratiqué par les ouvrier·es  tourdeur·ses et noueur·ses.</p>
+<a href="../enroulage/savoir_enroulage.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+</div>
+
+
+    <div id="les_pix" class="panel-one">
+
+
+      <div class="wrap">
+        <div id="carousel">
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> <source src="img/1.mp4" type="video/mp4"> </video>
+            <div id="boite_legende"><p class="legende"> Métier à tisser, remis en route par un noueur et un gareur</p></div>
+          </span>
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/2.jpg">
+            <div id="boite_legende"><p class="legende"> Remisse, noueuse et chaine de montage</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <video controls class="image_h"> 
+              <source src="img/3.mp4" type="video/mp4">
+              </video>
+            <div id="boite_legende"><p class="legende">  Mise en place d'un cadre - source Delphine Gaud et Franck Besson, 2017</p></div>
+          </span>
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/4.jpg">
+            <div id="boite_legende"><p class="legende"> Cadre et remisse - source Franck Besson et Delphine Gaud, année 2017</p></div>
+          </span>  
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/5.jpg">
+            <div id="boite_legende"><p class="legende"> Égancette et remisse</p></div>
+          </span>
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/6.jpg">
+            <div id="boite_legende"><p class="legende">Yvette-Vincent, ouvrière tordeuse</p></div>
+          </span>  
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/7.jpg">
+            <div id="boite_legende"><p class="legende"> Ouvrière tordeuse - archive</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/8.jpg">
+            <div id="boite_legende"><p class="legende"> Chaise de tordeuse, repaillée - au domicile d'Hubert Sage</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/9.jpg">
+            <div id="boite_legende"><p class="legende"> Tabouret d'ouvrière tordeuse</p></div>
+          </span>
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/10.jpg">
+            <div id="boite_legende"><p class="legende"> Chaine de l'ensouple - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/11.jpg">
+            <div id="boite_legende"><p class="legende"> Tordage - source Conservatoire des Vieux Métiers du Textile</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/12.jpg">
+            <div id="boite_legende"><p class="legende"> Tordage - source Conservatoire des Vieux Métiers du Textile</p></div>
+          </span>   
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/13.jpg">
+            <div id="boite_legende"><p class="legende"> Tordage - source Conservatoire des Vieux Métiers du Textile</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">   
+            <img class="image_h" src="img/14.jpg">
+            <div id="boite_legende"><p class="legende"> Tordage - source Conservatoire des Vieux Métiers du Textile</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/15.jpg">
+            <div id="boite_legende"><p class="legende">  Tordage - source Conservatoire des Vieux Métiers du Textile</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <video controls class="image_h">
+              <source src="img/16.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Yvette-Vincent, tordage</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <video controls class="blibli"> 
+              <source src="img/17.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Yvette-Vincent, tordage</p></div>
+          </span> 
+
+          <span class="slide" id="image_v"> 
+            <video controls class="image_h"> 
+              <source src="img/18.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Yvette-Vincent, tordage - usine Perrier</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/19.jpg">
+            <div id="boite_legende"><p class="legende"> Noueuse électrique - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+                       
+          <span class="slide" id="image_v">   
+            <img class="image_h" src="img/20.jpg">
+            <div id="boite_legende"><p class="legende"> Noueuse - ssource Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>
+
+          <span class="slide" id="image_h">
+            <img class="image_h" src="img/21.jpg">
+            <div id="boite_legende"><p class="legende"> Remisse et chaine - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>
+                          
+          <span class="slide" id="image_v">    
+            <video controls class="image_h"> 
+              <source src="img/22.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Séparation de la chaine en nappes de fils et remontage</p></div>
+          </span>     
+        
+          <span class="slide" id="image_v">                
+            <video controls class="image_h"> 
+              <source src="img/23.mp4" type="video/mp4">
+            </video><div id="boite_legende"><p class="legende">Noueuse - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>             
+                          
+          <span class="slide" id="image_h">                
+            <video controls class="image_h"> 
+              <source src="img/24.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Brossage de la chaine</p></div>
+          </span> 
+         
+          <span class="slide" id="image_v">                
+            <video controls class="image_h"> 
+              <source src="img/25.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Brossage de chaine - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">                
+            <video controls class="image_h"> 
+              <source src="img/26.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Brossage de chaine - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+                       
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/27.jpg">
+            <div id="boite_legende"><p class="legende"> Remisse et chaine</p></div>
+          </span> 
+                         
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> 
+              <source src="img/28.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Noueuse - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+             
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/29.jpg">
+            <div id="boite_legende"><p class="legende"> Noueuse montée sur ses rails - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>                 
+          
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/30.jpg">
+            <div id="boite_legende"><p class="legende">Noueuse montée sur ses rails - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+          
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> 
+              <source src="img/31.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Noueuse - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/32.jpg"><div id="boite_legende"><p class="legende"> Noueuse sur rail - source Franck Besson et Delphine Gaud, 2017</p></div></span> 
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/33.jpg">
+            <div id="boite_legende"><p class="legende">Nouage - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> 
+              <source src="img/34.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Noueuse en marche - Noueuse - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>
+
+          <span class="slide" id="image_h">            
+            <video controls class="image_h"> 
+              <source src="img/35.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Noueuse en marche - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/36.jpg">
+            <div id="boite_legende"><p class="legende"> Noeud et noueuse - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">
+            <video controls class="image_h"> 
+              <source src="img/37.mp4" type="video/mp4">
+            </video>    
+            <div id="boite_legende"><p class="legende"> Vérification des noeuds - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>
+
+          <span class="slide" id="image_h">            
+            <video controls class="image_h"> 
+              <source src="img/38.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Passage de la chaine dans les lisses</p></div></span>
+
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> 
+              <source src="img/39.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span>
+
+          <span class="slide" id="image_h">                
+            <video controls class="image_h"> 
+              <source src="img/40.mp4" type="video/mp4">
+            </video><div id="boite_legende"><p class="legende"> Passage du peigne</p></div>
+          </span>
+
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/41.jpg">
+            <div id="boite_legende"><p class="legende"> Médée, intervalle entre le remisse et le tissage</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/42.jpg">
+            <div id="boite_legende"><p class="legende"> Noeud et égancette</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/43.jpg">
+            <div id="boite_legende"><p class="legende"> Noeud - source Franck Besson et Delphine Gaud, 2017</p></div>
+          </span> 
+
+</div>
+
+
+
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+
+                               </div>
+
+
+                                    <div class='resizable'>
+
+                                      <div class='resizers'>
+                                        <div class='resizer' id="boule_noire"></div>
+                                        <div id="txt_descriptif" class="txt_descriptif"></div>
+
+                                      </div> 
+
+                                    </div>
+
+                                  </div>
+                                  <!-- partial -->
+                                  <script src='./../../jquery-2.js'></script>
+                                  <script  src="../ressource/script_modif.js"></script>
+                                  <script  src="script_changer_texte.js"></script>
+                                </body>
+                                </html>

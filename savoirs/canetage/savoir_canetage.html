@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Canetage et bobinage ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Canetage et bobinage</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_canetage.pdf')"></a>
+          <a class="menu" href="archive.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                <div id="fermer_lien" onclick="fermerLien()"></div>
+    <p><span id="souligne_txt">Étape 14</span><br>savoir-faire pratiqué par les ouvrier·es caneteur·ses.</p>
+<a href="../tissage/savoir_tissage.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+  </div>
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/1.jpg">
+        <div id="boite_legende"><p class="legende"> Intérieur de navette en peau de chat</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/2.jpg">
+        <div id="boite_legende"><p class="legende"> Bobinage - moulinage Barou</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/3.jpg">
+        <div id="boite_legende"><p class="legende"> Bobinage - moulinage Barou</p></div>
+      </span>
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/4.jpg">
+        <div id="boite_legende"><p class="legende"> Bobinoir - moulinage Barou</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+        <video controls class="image_h"> 
+          <source src="img/5.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Canetage et bobinage - moulinage Barou </p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/6.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Canetage et bobinage - moulinage Barou</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/7.jpg">
+        <div id="boite_legende"><p class="legende"> Schéma bobinoir</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/8.jpg">
+        <div id="boite_legende"><p class="legende"> Canetière, passage du fil</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v"> 
+        <img class="image_v" src="img/9.jpg">   
+        <div id="boite_legende"><p class="legende"> Tavelle</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/10.jpg">
+        <div id="boite_legende"><p class="legende"> Canettes</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/11.jpg">
+        <div id="boite_legende"><p class="legende"> Canettes</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">   
+        <img class="image_h" src="img/12.jpg">
+        <div id="boite_legende"><p class="legende"> Canettes</p></div>
+     </span>   
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/13.jpg">
+        <div id="boite_legende"><p class="legende"> Schéma d'une canette</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">
+        <img class="image_h" src="img/14.jpg">
+        <div id="boite_legende"><p class="legende"> Canette dans une navette</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/15.jpg">
+        <div id="boite_legende"><p class="legende"> Canetière - usine Blanc - archives</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/16.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Canetage - archives</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/17.jpg">
+        <div id="boite_legende"><p class="legende"> Salle de canetage - usine Perrier</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/18.jpg">
+        <div id="boite_legende"><p class="legende"> Schéma canetière écossaise</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/19.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Canetage</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/20.jpg">
+        <div id="boite_legende"><p class="legende"> Salle canetière</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/21.jpg">
+        <div id="boite_legende"><p class="legende"> Canetière tresse</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/22.jpg">
+        <div id="boite_legende"><p class="legende"> canetière tresse </p></div>
+      </span>
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_v"> 
+          <source src="img/23.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Désembrayage de la canetière</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/24.jpg">
+        <div id="boite_legende"><p class="legende"> Dévidoir - moulinage Barou</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/25.jpg">
+        <div id="boite_legende"><p class="legende"> Bobine et navette</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_v"> 
+          <source src="img/26.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Canetage</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/27.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Canetage par Josette</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/28.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Canetage - usine Perrier - archives</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/29.jpg">
+        <div id="boite_legende"><p class="legende"> Canetière et bobine</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/30.jpg">
+        <div id="boite_legende"><p class="legende"> Schéma broche, fuseau et canette</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/31.jpg">
+        <div id="boite_legende"><p class="legende"> Arrêt canetière</p></div>
+      </span> 
+
+            <span class="slide" id="image_v">    
+        <img class="image_v" src="img/32.jpg">
+        <div id="boite_legende"><p class="legende"> Poids faisant l'action de frein</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/33.jpg">
+        <div id="boite_legende"><p class="legende"> Poids faisant l'action de frein</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/34.jpg">
+        <div id="boite_legende"><p class="legende"> Porte bobine</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/35.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Documentaire ouvrière tisseuse "Jeanne en Soie" - archives</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/36.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrière caneteuse - archives</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/37.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrières lors d'un congrès</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/38.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrières - usine Gillier - arcive 1888</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/39.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrières</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/40.jpg">
+        <div id="boite_legende"><p class="legende"> Planche à clous, porte canettes</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/41.jpg">
+        <div id="boite_legende"><p class="legende"> Planche à clous, porte canettes</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/42.jpg">
+        <div id="boite_legende"><p class="legende"> Planche à clous, porte canettes</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/43.jpg">
+        <div id="boite_legende"><p class="legende"> Casse-trame, cavalier</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/44.jpg">
+        <div id="boite_legende"><p class="legende"> Flyer du fournisseur Guilhot</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/45.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Changement de canette</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/46.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Préparation de la navette et de la canette pour le métier à tisser</p></div>
+      </span> 
+
+
+
+
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>

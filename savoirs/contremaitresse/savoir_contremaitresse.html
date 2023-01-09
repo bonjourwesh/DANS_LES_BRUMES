@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Contremaître·sse ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body >
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Contremaître·sse</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_contremaitresse.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                <div id="fermer_lien" onclick="fermerLien()"></div>
+    <p>savoir-faire pratiqué par les contremaître·sses.</p>
+<a href="../fabrication_outils/savoir_fabrication_outils.html">→ découvrir les savoir-faire et métiers annexes aux fabriques: tourneur sur bois, menuisier, forgeron, transporteur…</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+  </div>
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/1.jpg">
+        <div id="boite_legende"><p class="legende"> Maison de maître Gillier - usine Saint-Joseph</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/2.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrière, gareur, contremaitre et patron - usine Gillier Payen - 1950 - archive</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/3.jpg">
+         <div id="boite_legende"><p class="legende"> Ouvrière, gareur, contremaitre et patron - usine Gillier Payen</p></div>
+      </span>
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/4.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrière, gareur, main-d'oeuvre contremaitre et patron - usine Cadet - archive</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/5.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvriers mouliniers, main-d'oeuvre, contremaitre et patron - usine Dussuc Godin</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/6.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvriers mouliniers, main-d'oeuvre, contremaitre et patron - usine Dussuc Godin</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+        <img class="image_v" src="img/7.jpg">
+        <div id="boite_legende"><p class="legende"> Atelier de lae contremaitre·sse - usine Sainte-Marie</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/8.jpg">
+        <div id="boite_legende"><p class="legende"> Plateau de tissage - ouvrières, gareur et contremaitre</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v"> 
+        <img class="image_v" src="img/9.jpg">   
+        <div id="boite_legende"><p class="legende"> Bureau de lae contremaitre·sse - usine Perrier</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/10.jpg">
+        <div id="boite_legende"><p class="legende">Bureau de lae contremaitre·sse</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/11.jpg">
+        <div id="boite_legende"><p class="legende"> Atelier des gareurs et de lae contremaitre·sse - usine Sainte-Marie</p></div>
+      </span>       
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/12.jpg">
+        <div id="boite_legende"><p class="legende"> Plateau de tissage, atelier des gareurs et de lae contremaitre·sse - usine Sainte-Marie</p></div>
+      </span> 
+
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/13.jpg">
+        <div id="boite_legende"><p class="legende"> Livret de contrôle de coupes, d'épincetage et métrage - archive</p></div>
+      </span>           
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/14.jpg">
+        <div id="boite_legende"><p class="legende"> Pointeuse et feuille de poste</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/15.jpg">
+        <div id="boite_legende"><p class="legende"> Mère d'Yvette-Vincent à la visite de coupe - usine Bobichon</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/16.jpg">
+        <div id="boite_legende"><p class="legende"> Feuille de poste</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/17.jpg">
+        <div id="boite_legende"><p class="legende"> Fiche de tissage</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/18.jpg">
+        <div id="boite_legende"><p class="legende"> Entrée des ouvrièr·e·s et guichet de paye - usine Perrier</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/19.jpg">
+        <div id="boite_legende"><p class="legende"> Chemin Anne-Sylvestre</p></div>
+      </span> 
+
+
+    
+
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>

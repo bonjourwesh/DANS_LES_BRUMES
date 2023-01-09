@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Moulinage et vaporisage ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Moulinage et Vaporisage</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_devidage.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p><span id="souligne_txt">Étape 4</span><br>savoir-faire pratiqué par les moulinier·es.</p>
+<a href="../ourdissage/savoir_ourdissage.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+  </div>
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      <span class="slide" id="image_v">    <img class="image_v" src="img/1.jpg"><div id="boite_legende"><p class="legende"> Bobine emballée de papier de soie pour le vaporisage</p></div></span>
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"><div id="boite_legende"><p class="legende"> Bobine sur cantre au Moulinage Barou</p></div></span>  
+      <span class="slide" id="image_v">    <img class="image_v" src="img/3.jpg"><div id="boite_legende"><p class="legende">Couloir de moulins, Moulinage Barou</p></div></span>
+
+      <span class="slide" id="image_v">    <audio id="audioBistanclaque" src="img/4.mp3"></audio>
+  <button class="togglePlay" id="boite_audio" onClick="togglePlayBistanclaque()"><p id="lettre_play">Play</button><div id="boite_legende"><p class="legende"> Archive, interview du Moulinage Barou</p></div></span>  
+
+      <span class="slide" id="image_h">    <img class="image_h" src="img/5.jpg"><div id="boite_legende"><p class="legende"> Bernard Barou, un des deux frères Barou, dans la salle de moulinage - source Barbara Baglin</p></div></span>
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/6.jpg"><div id="boite_legende"><p class="legende"> Dépliant matériel pour moulins</p></div></span>  
+
+      <span class="slide" id="image_h">    <video controls class="image_h"> <source src="img/7.mp4" type="video/mp4"></video> <div id="boite_legende"><p class="legende">Film d'archive Moulinage Barou - site de Vinzieux</p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/8.jpg"><div id="boite_legende"><p class="legende"> Catalogue Broche et Fuseaux, entreprise Souléliac</p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/9.jpg"><div id="boite_legende"><p class="legende"> Carcagnole et broche</p></div></span>
+
+      <span class="slide" id="image_v">    <audio id="audioBistanclaque" src="img/10.mp3"></audio>
+  <button class="togglePlay" id="boite_audio" onClick="togglePlayBistanclaque()"><p id="lettre_play">Play</button> <div id="boite_legende"><p class="legende">Explicaton du moulinage</p></div></span> 
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/11.jpg"><div id="boite_legende"><p class="legende"> Moulin du moulinage Barou</p></div></span> 
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/12.jpg"><div id="boite_legende"><p class="legende"> Moulin du moulinage Barou</p></div></span>   
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/13.jpg"><div id="boite_legende"><p class="legende"> Guides-fils</p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/14.jpg"><div id="boite_legende"><p class="legende">Roquet et fuseau</p></div></span>  
+
+      <span class="slide" id="image_v">    <video controls class="image_h"> <source src="img/15.mp4" type="video/mp4"></video><div id="boite_legende"><p class="legende"> Film d'archive - Moulinage Barou</p></div></span> 
+      <span class="slide" id="image_v">    <video controls class="image_h"> <source src="img/16.mp4" type="video/mp4"></video><div id="boite_legende"><p class="legende"> Moulinage et canetage</p></div></span> 
+      <span class="slide" id="image_v">    <video controls class="image_h"> <source src="img/17.mp4" type="video/mp4"></video><div id="boite_legende"><p class="legende"> Moulinage de la soie au Moulinage Barou</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_h" src="img/18.jpg"><div id="boite_legende"><p class="legende"> Stock de bobines pour le vaporisage</p></div></span> 
+  
+      <span class="slide" id="image_v">    <img class="image_v" src="img/19.jpg"><div id="boite_legende"><p class="legende"> Schéma dynamomêtre mesurant la tension et torsion du fil - source Encyclopédie Roret</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/20.jpg"><div id="boite_legende"><p class="legende"> Salle de moulinage - usine Perrier</p></div></span>
+      <span class="slide" id="image_h">    <video controls class="image_h"> <source src="img/21.mp4" type="video/mp4"></video><div id="boite_legende"><p class="legende"> Moulinage Barou</p></div></span>
+      <span class="slide" id="image_v">    <img class="image_v" src="img/22.jpg"><div id="boite_legende"><p class="legende"> Mécanisme du moulin : poulie, axe, courroie - archive</p></div></span> 
+      <span class="slide" id="image_h">    <img class="image_h" src="img/23.jpg"><div id="boite_legende"><p class="legende">Moulins de l'usine Perrier</p></div></span>        
+      <span class="slide" id="image_v">    <img class="image_v" src="img/24.jpg"><div id="boite_legende"><p class="legende">Moulin - archive</p></div></span>             
+      <span class="slide" id="image_h">    <img class="image_h" src="img/25.jpg"><div id="boite_legende"><p class="legende">Usine chez Cadet</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_h" src="img/26.jpg"><div id="boite_legende"><p class="legende">Cône en carton pour les bobines</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/27.jpg"><div id="boite_legende"><p class="legende">Gazinière pour la teinture</p></div></span> 
+      <span class="slide" id="image_h">    <img class="image_v" src="img/28.jpg"><div id="boite_legende"><p class="legende"> Cône en plastique perforé pour le vaporisage et l'étuvage des bobines</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/29.jpg"><div id="boite_legende"><p class="legende"> Bobine emballée dans du papier de soie pour l'étuve</p></div></span>                 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/30.jpg"><div id="boite_legende"><p class="legende"> Bobine emballée dans du papier de soie pour l'étuve</p></div></span> 
+      <span class="slide" id="image_h">    <img class="image_h" src="img/31.jpg"><div id="boite_legende"><p class="legende"> Bobine emballée dans du papier de soie pour l'étuve</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/32.jpg"><div id="boite_legende"><p class="legende"> Caisse en métal perforé pour l'étuvage</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/33.jpg"><div id="boite_legende"><p class="legende"> Étuve de l'usine Perrier</p></div></span> 
+    </div>
+
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>

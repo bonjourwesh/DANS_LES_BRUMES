@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Envergure ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Envergure</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_envergure.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p><span id="souligne_txt">Étape 11</span><br>savoir-faire pratiqué par les ouvrièr·es ourdisseur·ses, tourdeur·ses, les remetteur·ses ou noueur·ses.</p>
+<a href="../rapondage/savoir_rapondage.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+</div>
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/1.jpg"><div id="boite_legende"><p class="legende">Casse-chaine et cavalier</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"><div id="boite_legende"><p class="legende">Stock de pièces de métier à tisser et baguette d'envergure - usine Perrier</p></div></span>
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/3.jpg"><div id="boite_legende"><p class="legende">Casse-chaine et baguettes à enverger</p></div></span>
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/4.jpg"><div id="boite_legende"><p class="legende">Baguette à enverger sur machine à piquage de peigne - remettage Piraillon</p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/5.jpg"><div id="boite_legende"><p class="legende">Baguettes à encroix et casse-chaine</p></div></span>
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>

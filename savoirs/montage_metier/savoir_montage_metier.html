@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Montage et Réglage du métier à tisser ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body >
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Montage et Réglage</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_montage_metier.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p><span id="souligne_txt">Étape 16</span><br>savoir-faire pratiqué par les gareur·ses.</p>
+<a href="../visite_coupe/savoir_visite_coupe.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+  </div>
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+
+      <span class="slide" id="image_v">    
+  <audio id="audioEntretien" src="img/1.mp3"></audio>
+  <button class="togglePlay" id="boite_audio" onClick="togglePlayEntretien()"><p id="lettre_play">Play</p></button>
+ <div id="boite_legende"><p class="legende"> Témoignage d'un gareur autour la fermeture des usines ouvrières - Émission radio Soie Disant</p></div>
+      </span>  
+
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/2.jpg">
+        <div id="boite_legende"><p class="legende"> Père d'Yvette-Vincent- usine Bobichon</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/3.jpg">
+        <div id="boite_legende"><p class="legende">  Anciens gareurs lors du tournage du film La Mélancolie Ouvrière - source Delphine Gaud et Franck Besson, 2018</p></div>
+      </span>
+
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/4.jpg">
+        <div id="boite_legende"><p class="legende"> Benoît Laquarel et Guy Matera, anciens gareurs - source Delphine Gaud et Franck Besson, 2018</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/5.jpg">
+        <div id="boite_legende"><p class="legende"> Bleu de travail de gareur - ayant appartenu à Paul Schmelzle</p></div>
+      </span>
+      
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/4.jpg">
+        <div id="boite_legende"><p class="legende"> L'atelier des gareurs - usine Perrier 1952 - source famille Perrier</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+                <video controls class="image_h"> 
+          <source src="img/7.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Atelier des gareurs, arbres et courroies</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/8.jpg">
+        <div id="boite_legende"><p class="legende"> Atelier des gareurs - usine Perrier</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h"> 
+        <img class="image_h" src="img/9.jpg">   
+        <div id="boite_legende"><p class="legende"> Atelier des gareurs, menuiserie - usine Perrier</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/10.jpg">
+        <div id="boite_legende"><p class="legende"> Atelier des gareurs, établi - usine Perrier</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/11.jpg">
+        <div id="boite_legende"><p class="legende"> Atelier des gareurs - usine Perrier</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">   
+        <img class="image_v" src="img/12.jpg">
+        <div id="boite_legende"><p class="legende"> Salle des casiers des ouvrièr·e·s- usine Sainte-Marie</p></div>
+     </span>   
+
+      <span class="slide" id="image_v">    
+                <video controls class="image_h"> 
+          <source src="img/13.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Fonctionnement d'un métier à tisser</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">
+        <img class="image_v" src="img/14.jpg">
+        <div id="boite_legende"><p class="legende">Schéma d'un métier à tisser</p></div>
+      </span>  
+
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/15.jpg">
+        <div id="boite_legende"><p class="legende">Schéma d'un métier à tisser</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/16.jpg">
+        <div id="boite_legende"><p class="legende"> Schéma d'un métier à tisser</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/17.jpg">
+        <div id="boite_legende"><p class="legende">Moteur et courroie</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+                <video controls class="image_h"> 
+          <source src="img/18.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Réglage et mise en route d'un métier à tisser</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/19.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Vitesse des battants</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/20.jpg">
+        <div id="boite_legende"><p class="legende">Bâti et remisse d'un métier à tisser</p></div>
+      </span> 
+
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/21.jpg">
+        <div id="boite_legende"><p class="legende">Catalogue avec annotation - usine Dussuc</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/22.jpg">
+        <div id="boite_legende"><p class="legende">Note d'un gareur</p></div>
+      </span>
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/23.jpg">
+        <div id="boite_legende"><p class="legende">Régulateur</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+            <video controls class="image_h"> 
+          <source src="img/24.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Mise en route d'un métier à tisser</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_v"> 
+          <source src="img/25.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Appareillage de la chaine</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/26.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Métier à tisser en fonctionnement</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/27.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Métier à tisser en fonctionnement</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/28.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Métier à tisser en fonctionnement</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/29.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Métier à tisser en fonctionnement</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/30.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Mécanisme de la ratière, actionnement par système poulie, engrenage et came</p></div>
+      </span>  
+
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/31.jpg">
+        <div id="boite_legende"><p class="legende">La ratière et poulie</p></div>
+      </span> 
+
+            <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/32.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Réglage de la ratière</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/33.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Métier à tisser en fonctionnement</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/34.jpg">
+        <div id="boite_legende"><p class="legende">Fiche de tissage</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/35.jpg">
+        <div id="boite_legende"><p class="legende">Burette - huilage des axes</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/36.jpg">
+        <div id="boite_legende"><p class="legende">Burette - usine Sainte-Marie</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/37.jpg">
+        <div id="boite_legende"><p class="legende">Burette</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/38.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende">Huilage du métier</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/39.jpg">
+        <div id="boite_legende"><p class="legende">Coupelle de rattrapage d'huile</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/40.jpg">
+        <div id="boite_legende"><p class="legende">Burette</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/41.jpg">
+        <div id="boite_legende"><p class="legende">Agraphe pour courroie de métiers à tresse</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/42.jpg">
+        <div id="boite_legende"><p class="legende">Mode d'emploi</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/43.jpg">
+        <div id="boite_legende"><p class="legende">Flyer Guilhot, courroie et poulie</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/44.jpg">
+        <div id="boite_legende"><p class="legende">Coupelle de rattrapage d'huile</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/45.jpg">
+        <div id="boite_legende"><p class="legende">Coupelle de rattrapage d'huile</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/46.jpg">
+        <div id="boite_legende"><p class="legende">flyer Guilhot - outils de gareur</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/47.jpg">
+        <div id="boite_legende"><p class="legende">gareur - usine Saint-Victor - archive</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/48.jpg">
+        <div id="boite_legende"><p class="legende">Lunettes de protection - menuiserie de l'usine Perrier</p></div>
+      </span> 
+
+
+
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>

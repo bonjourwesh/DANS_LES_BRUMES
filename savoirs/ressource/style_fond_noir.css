@@ -1,0 +1,521 @@
+
+
+@font-face {
+      font-family: 'Titre';
+      src: url("../../typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("../../typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("../../typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("../../typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+@font-face {
+      font-family: 'Typo_fleche';
+      src: url("../../typo/fleche_typo.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+html, body {
+ margin:0;
+ padding:0;
+ color: white;
+ background: black;
+ overflow: hidden;
+ }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.fleche{
+  font-family: Typo_fleche ;
+font-size: 8em;
+margin-top: -100px;
+color: white;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.petite_fleche{
+  font-family: Typo_fleche;
+}
+.fleche:hover{
+text-shadow: white 1px 0 10px;
+}
+
+#boite_audio{
+  color: black;
+  font-size: 2.5em;
+width: 150px;
+height: 100px;
+background-color: white;
+border-radius:75px / 50px ;
+border: 1px solid black;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+text-align: center;
+margin-bottom: 50%;
+
+}
+
+#lettre_play{
+font-family: Titre;
+
+    vertical-align: middle;
+display: inline-block;    
+margin-top: 17%;
+}
+
+
+#boite_audio:hover{
+box-shadow:black 1px 0 10px ;
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background: black;
+border-bottom: 1px solid white;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+}
+
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+}
+
+a.menu{
+      margin-left: 10px;
+    color: white;
+text-decoration: none;
+}
+
+a.menu:hover{
+    color: white;
+text-decoration: underline;
+}
+
+.brume:hover{
+  text-decoration: underline;
+}
+
+.menu_savoir:hover{
+  text-decoration: underline;  
+}
+/*---------------------------------PRINT -----------------------------*/ 
+
+
+#bouton_print{
+font-family: Emojix;
+padding-top: 5px;
+font-size: 1.5em;
+line-height: 0.5em;
+cursor: pointer;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: white 1px 0 10px;
+}
+
+
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+.drag-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+[class^=panel] {
+}
+
+
+.panel-two {
+  flex: 1;
+  width: 50%;
+  display: none;
+}
+
+#dragbar {
+  padding: 6px;
+  width: 100vw;
+  height: 1px;
+  cursor: col-resize;
+  background-color: red;
+}
+
+/*---------------------------------RETOUR-----------------------------*/
+
+#nav {
+  font-family: Titre;
+  z-index: 3;
+
+  position: fixed;
+ height: 100vh;
+  top: 0;
+  left: -30px;
+  cursor: pointer;
+  width: 30px;
+  background-color: black;
+  border-right: 1px solid white;
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+color: white;
+padding-top: 80px;
+padding-right: 10px;
+    transition: width 0.5s;
+}
+
+    #nav.closed:hover {
+      width: 60px; }
+
+/*---------------------------------BOUTON COULEUR-----------------------------*/ 
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: black;
+border: 1px solid white;
+cursor: pointer;
+z-index: 3;
+}
+
+ #bouton_nuit:hover {
+background-color: white;
+}
+
+ #bouton_jour:hover {
+background-color: white;
+}
+
+#bouton_jour{
+background-color: black;  
+}
+
+#bouton_nuit{
+background-color: white;  
+}
+
+
+#bouton_color{
+  background-color: black;
+}
+
+ #bouton_color:hover {
+background-color: white;
+}
+
+/*---------------------------------CAROUSSEL-----------------------------*/ 
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 4em;
+  margin: 0 auto;
+}
+
+
+
+#carousel {
+  width: 1000000px;
+  position: relative;
+  left: -325px;
+height: 100%;
+  justify-content: center;
+}
+
+.slide {
+  width: 700px;
+  background-size: contain;
+background-repeat: no-repeat;
+  float: left;
+  display: flex;
+  justify-content: center;
+
+}
+
+.legende{
+  font-family: Titre;
+  font-size: 1em;
+  color: white;
+}
+
+
+img.image_v{ 
+
+  justify-content: center;
+  margin-top: 2vh;
+width: auto;
+  height: 55vh;
+background-size: contain;
+background-repeat: no-repeat;}
+
+img.image_h{ 
+
+  justify-content: center;
+  margin-top: 2vh;
+width: 500px;
+  height: auto;
+margin-top: 29vh;
+transform: translateY(-50%);
+background-size: contain;
+background-repeat: no-repeat;}
+
+
+video{
+  justify-content: center;
+  margin-top: 2vh;
+width: 500px;
+  height: auto;
+margin-top: 29vh;
+transform: translateY(-50%);
+background-size: contain;
+background-repeat: no-repeat;  
+}
+
+video.blibli {
+    justify-content: center;
+  margin-top: 2vh;
+width: auto;
+  height: 55vh;
+  transform: translateY(0%);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+
+  top: 35%;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+.transition {
+  transition: 0.7s;
+}
+
+      .cls-1 {
+        fill: none;
+        stroke: white;
+        stroke-width: 4;
+        stroke-linecap: round;
+        width: 40px;
+        stroke-miterlimit: 100;
+      }
+
+      #fleche_droite{
+
+       width: 80px;
+       height: 50px;
+      }
+
+            #fleche_gauche{
+  transform: rotate(180deg); 
+       width: 80px;
+       height: 50px;
+      }
+
+
+      .cls-1:hover{
+        filter: drop-shadow(0 0 0.75rem white);
+      }
+
+
+      /*---------------------------------DESCRIPTIF-----------------------------*/ 
+
+.resizable {
+    z-index: 6;
+  background: black;
+  color: white;
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+    border-top:1px solid white ;
+}
+
+.resizable .resizers{
+  width: 100%;
+  height: 100%;}
+
+.resizer{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  cursor: grab;
+left: 50%;
+  transform: translate(0, -50%);
+
+}
+
+#boule_noire:active{
+  cursor: grabbing;
+}
+
+
+
+#txt_descriptif{
+font-family: Titre;
+font-size: 1.2em;
+    color:  white;
+      padding-left: 30px;
+            padding-top: 40px;
+      padding-right: 50px;
+}
+
+#lien_obj{
+  font-family: Titre;
+  color: white;
+  text-decoration: underline;
+}
+
+#lien_obj:hover{
+
+  text-shadow: black 1px 0 10px;
+}
+
+      /*---------------------------------LIEN-----------------------------*/ 
+#lien {
+  font-family: Titre;
+  z-index: 8;
+  color: white;
+  cursor: move;
+  background-color: black;
+  padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  border: 1px solid white;
+  width: 400px;
+  height: fit-content;
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  font-size: 1em;
+  animation: move 120s linear infinite;
+}
+
+#lien a{
+  color: white;
+}
+
+#lien a:hover{
+  color: white;
+    text-decoration: underline;  
+}
+#souligne{
+  text-decoration: underline;  
+}
+
+  @keyframes move {
+  0% {
+    right: 5%;
+    bottom:6%;
+  }
+  18.8% {
+    right: 5%;
+    bottom:6%;
+  }
+
+    19.4% {
+    right: 7%;
+    bottom:9%;
+  }
+    20% {
+    right: 5%;
+    bottom:12%;
+  }
+      20.6% {
+    right: 7%;
+    bottom:15%;
+  }
+      21.2% {
+    right: 5%;
+    bottom:18%;
+  }
+        99.9% {
+    right: 5%;
+    bottom:18%;
+  }
+}
+
+#boite_legende{
+  color: white;
+
+width: fit-content;
+height: auto;
+position: absolute;
+margin-top: 60vh;
+  padding-left: 25px;
+  padding-right: 25px;
+  white-space: nowrap;
+  padding-top: 0px;
+
+
+
+}
+
+
+#souligne_txt{
+text-decoration: underline;
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Tissage↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+  <!----------------------------MENU DU HAUT-------------------------------->    
+  <div id="entete"> 
+    <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Tissage</div>
+
+
+    <div id="droite">
+      <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_tissage.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+      </div>
+
+      <div id="couleur_boutons"> 
+
+        <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+        <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+        <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <!----------------------------LE CORPS DE PAGE--------------------------------> 
+  <div id="corps">
+
+    <!----------------------------PRECEDENT------------------------------>
+    <a href="javascript:history.go(-1)" id="nav" class="closed ">
+      <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+    </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p><span id="souligne_txt">Étape 15</span><br>savoir-faire pratiqué par les ouvrier·es tisseur·ses.</p>
+<a href="../montage_metier/savoir_montage_metier.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+</div>
+
+
+    <div id="les_pix" class="panel-one">
+
+
+      <div class="wrap">
+        <div id="carousel">
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> <source src="img/1.mp4" type="video/mp4"> </video>
+            <div id="boite_legende"><p class="legende"> Salle des métier à tisser - usine Perrier</p></div>
+          </span>
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/2.jpg">
+            <div id="boite_legende"><p class="legende"> Blouse de travail de Josette Schmelzle, ouvrière tisseuse - exposée au Lavoir, rue Peyronnet</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/3.jpg">
+            <div id="boite_legende"><p class="legende"> Métier à tisser</p></div>
+          </span>
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/4.jpg">
+            <div id="boite_legende"><p class="legende"> Mise en route d'un métier à tisser par un gareur</p></div>
+          </span>  
+
+          <span class="slide" id="image_h">    
+            <img class="image_h" src="img/5.jpg">
+            <div id="boite_legende"><p class="legende"> L'ouvrière tisseuse, Josette Schmelzle</p></div>
+          </span>
+
+          <span class="slide" id="image_h">    
+            <video controls class="blibli"> 
+              <source src="img/6.mp4" type="video/mp4"> 
+            </video>
+            <div id="boite_legende"><p class="legende">Démarrage d'un métier à tisser</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/7.jpg">
+            <div id="boite_legende"><p class="legende"> Moteur éléctrique et générateur</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/8.jpg">
+            <div id="boite_legende"><p class="legende"> Moteur</p></div>
+          </span>
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/9.jpg">
+            <div id="boite_legende"><p class="legende"> Coupelle pour rattraper l'huile coulant de l'axe de la courroie</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/10.jpg">
+            <div id="boite_legende"><p class="legende"> Tissage en soie, ensouple avant - dite porte-étoffe</p></div>
+          </span>   
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/11.jpg">
+            <div id="boite_legende"><p class="legende"> Trame de tissage - duite et armure</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">   
+            <video controls class="image_h"> 
+              <source src="img/12.mp4" type="video/mp4"> 
+            </video>
+            <div id="boite_legende"><p class="legende"> Mise en marche d'un métier à tisser à l'usine Perrier - source Delphine Gaud et Franck Besson, 2017</p></div>
+          </span>  
+
+          <span class="slide" id="image_v">    
+            <video controls class="image_h"> 
+              <source src="img/13.mp4" type="video/mp4"> 
+            </video>
+            <div id="boite_legende"><p class="legende"> Courroie et battant d'un métier à tisser à l'usine Perrier - source Delphine Gaud et Franck Besson, 2017</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <video controls class="image_h">
+              <source src="img/14.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Changement de la canette dans la navette - archive</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/15.jpg">
+            <div id="boite_legende"><p class="legende"> Mécanisme et engrenage d'un métier à tisser</p></div>
+          </span> 
+
+          <span class="slide" id="image_v"> 
+            <video controls class="image_h"> 
+              <source src="img/16.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Josette Schmelzle au métier à tisser - usine Perrier - archive</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/17.jpg">
+            <div id="boite_legende"><p class="legende"> Cartes perforées pour ratière</p></div>
+          </span>
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/18.jpg">
+            <div id="boite_legende"><p class="legende"> carton de cartes perforées pour ratière</p></div>
+          </span>
+
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/19.jpg">
+            <div id="boite_legende"><p class="legende">Cartes perforées pour ratière, armure du tissage</p></div>
+          </span> 
+                       
+          <span class="slide" id="image_v">   
+            <img class="image_v" src="img/20.jpg">
+            <div id="boite_legende"><p class="legende"> Métier jacquard pour la passementerie et la confection ruban</p></div>
+          </span>
+
+          <span class="slide" id="image_h">
+            <video controls class="image_h">
+              <source src="img/21.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Passementerie de Jonzieux</p></div>
+          </span>
+                          
+          <span class="slide" id="image_v">    
+            <img class="image_v" src="img/22.jpg">
+            <div id="boite_legende"><p class="legende"> Métier Jacquard - Entreprise Goutarel, broderie lyonnaise sur tûle</p></div>
+          </span>     
+        
+          <span class="slide" id="image_v">                
+            <video controls class="image_h"> 
+              <source src="img/23.mp4" type="video/mp4">
+            </video><div id="boite_legende"><p class="legende">Entreprise Passementerie Sahuc - film d'archive - source PNR du Pilat</p></div>
+          </span>             
+                          
+          <span class="slide" id="image_h">                
+            <video controls class="blibli"> 
+              <source src="img/24.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Débrayage du levier d'un métier à tisser</p></div>
+          </span> 
+         
+          <span class="slide" id="image_v">                
+            <video controls class="image_h"> 
+              <source src="img/25.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Métier à tisser en fonctionnement</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">                
+            <video controls class="image_h"> 
+              <source src="img/26.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Tissages - film d'archive</p></div>
+          </span> 
+                       
+          <span class="slide" id="image_v">    
+            <video controls class="image_h"> 
+              <source src="img/27.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Tissages Blanc, tissage moderne jet d'air - Bourg-Argental - film d'archive - source PNR du Pilat</p></div>
+          </span> 
+                         
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> 
+              <source src="img/28.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Tissages Coupat - film d'archive - source PNR du Pilat</p></div>
+          </span> 
+             
+          <span class="slide" id="image_v">    
+            <video controls class="image_h">
+              <source src="img/29.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Tissages Oriol - film d'archive - source PNR du Pilat</p></div>
+          </span>                 
+          
+          <span class="slide" id="image_v">    
+            <video controls class="image_h">
+              <source src="img/30.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Le son du bistanclaque</p></div>
+          </span> 
+          
+          <span class="slide" id="image_h">    
+            <video controls class="image_h"> 
+              <source src="img/31.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Changement de canette et navette</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">    
+            <img class="image_h" src="img/32.jpg">
+            <div id="boite_legende"><p class="legende"> Ouvrière tisseuse à la tâche</p></div></span> 
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/33.jpg">
+            <div id="boite_legende"><p class="legende"> Planche à clous ou support pour canettes</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/34.jpg">
+            <div id="boite_legende"><p class="legende"> Poitrinière et ensouple</p></div>
+          </span>
+
+          <span class="slide" id="image_h">            
+            <video controls class="blibli"> 
+              <source src="img/35.mp4" type="video/mp4">
+            </video>
+            <div id="boite_legende"><p class="legende"> Noeud du tisserand - Jacqueline Peyrachon</p></div>
+          </span>
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/36.jpg">
+            <div id="boite_legende"><p class="legende"> Porte navette, double réservoir en bout de châsse</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">
+            <video controls class="image_h"> 
+              <source src="img/37.mp4" type="video/mp4">
+            </video>    
+            <div id="boite_legende"><p class="legende"> Préparation de la navette et de la canette</p></div>
+          </span>
+
+          <span class="slide" id="image_h">            
+            <img class="image_v" src="img/38.jpg">
+            <div id="boite_legende"><p class="legende"> Poitrinière à l'avant du métier à tisser</p></div></span>
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/39.jpg">
+            <div id="boite_legende"><p class="legende">Poids régulateur jouant le rôle de frein</p></div>
+          </span>
+
+          <span class="slide" id="image_h">                
+            <img class="image_h" src="img/40.jpg">
+            <div id="boite_legende"><p class="legende"> Templets pour la lisière du tissage</p></div>
+          </span>
+
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/41.jpg">
+            <div id="boite_legende"><p class="legende"> Régulateur</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/42.jpg">
+            <div id="boite_legende"><p class="legende"> Poitrinière et battant du métier à tisser</p></div>
+          </span> 
+
+          <span class="slide" id="image_h">    
+            <img class="image_v" src="img/43.jpg">
+            <div id="boite_legende"><p class="legende"> Fiche d'instruction de tissage</p></div>
+          </span> 
+
+          <span class="slide" id="image_v">                
+            <audio id="audioBistanclaque" src="img/44.mp3">
+            </audio>
+            <button class="togglePlay" id="boite_audio" onClick="togglePlayBistanclaque()"><p id="lettre_play">Play
+            </button>
+            <div id="boite_legende"><p class="legende"> Émission radio Soie disant - <br>témoignage et entretiens d'ancien·ne·s ouvrièr·e·s - source Radio D'Ici - archives</p></div>
+          </span>
+
+</div>
+
+
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+                                    </div>
+
+
+                                    <div class='resizable'>
+
+                                      <div class='resizers'>
+                                        <div class='resizer' id="boule_noire"></div>
+                                        <div id="txt_descriptif" class="txt_descriptif"></div>
+
+                                      </div> 
+
+                                    </div>
+
+                                  </div>
+                                  <!-- partial -->
+                                  <script src='./../../jquery-2.js'></script>
+                                  <script  src="../ressource/script_modif.js"></script>
+                                  <script  src="script_changer_texte.js"></script>
+                                </body>
+                                </html>

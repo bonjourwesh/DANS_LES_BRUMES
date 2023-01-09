@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Teinturier ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Teinture</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_teinturier.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p><span id="souligne_txt">Étape 2</span><br>savoir-faire pratiqué par les ouvrier·es dévideur·ses, caneteur·ses et les moulinier·es.</p>
+<a href="../devidage/savoir_devidage.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+</div>
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      <span class="slide" id="image_h">    <img class="image_h" src="img/1.jpg">    <div id="boite_legende"><p class="legende"> Cône en carton pour l'étuvage du fil</p></div></span>
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"><div id="boite_legende"><p class="legende"> Cône en carton pour l'étuvage du fil</p></div></span>  
+      <span class="slide" id="image_v">    <img class="image_v" src="img/3.jpg"><div id="boite_legende"><p class="legende"> Écheveau de soie</p></div></span>
+      <span class="slide" id="image_v">    <img class="image_v" src="img/4.jpg"><div id="boite_legende"><p class="legende"> Stock de cônes en carton pour l'étuvage et le vaporisage du fil</p></div></span>  
+      <span class="slide" id="image_h">    <img class="image_h" src="img/5.jpg"><div id="boite_legende"><p class="legende"> Cuve de la buanderie de l'usine Sainte-Marie</p></div></span>
+      <span class="slide" id="image_v">    <img class="image_v" src="img/6.jpg"><div id="boite_legende"><p class="legende"> Gazinière dans la buanderie de l'usine Sainte-Marie</p></div></span>  
+      <span class="slide" id="image_h">    <video controls class="image_h"> <source src="img/7.mp4" type="video/mp4"></video><div id="boite_legende"><p class="legende"> Teinture du fil au Moulinage Barou</p></div></span>  
+      <span class="slide" id="image_v">    <img class="image_v" src="img/8.jpg"><div id="boite_legende"><p class="legende"> Flyer de l'entreprise Miraillet</p></div></span>  
+      <span class="slide" id="image_v">    <img class="image_v" src="img/9.jpg"><div id="boite_legende"><p class="legende"> Bobine en plastique pour l'étuvage et le vaporisage</p></div></span>
+      <span class="slide" id="image_v">    <img class="image_v" src="img/10.jpg"><div id="boite_legende"><p class="legende"> Vaporisage et étuvage</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/11.jpg"><div id="boite_legende"><p class="legende"> Canette emballée de papier de soie pour le vaporsage</p></div></span> 
+      <span class="slide" id="image_v">    <img class="image_v" src="img/12.jpg"><div id="boite_legende"><p class="legende"> Gazinière et cuve à teinture en métal</p></div></span>   
+      <span class="slide" id="image_v">    <img class="image_v" src="img/13.jpg"><div id="boite_legende"><p class="legende"> Gazinière et cuve à teinture en métal</p></div></span>  
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>

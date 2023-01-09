@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Visite de coupe ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Visite de coupe</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_visite_coupe.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p><span id="souligne_txt">Étape 17</span><br>savoir-faire pratiqué par les ouvrier·es épinceteur·euses.</p>
+<a href="../impression/savoir_impression.html"><span class="petite_fleche">></span> découvrir l'étape suivante</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+  </div>
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/1.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Canetage, visite de coupe et réserve de coupes - usine Perrier</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/2.jpg">
+        <div id="boite_legende"><p class="legende"> Coupe de soie pliée et attachée par un fil à capier</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/3.jpg">
+        <div id="boite_legende"><p class="legende"> Affichette dans la salle d'ourdissage - usine Perrier</p></div>
+      </span>
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/4.jpg">
+        <div id="boite_legende"><p class="legende"> Banque de visite de coupe</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/5.jpg">
+        <div id="boite_legende"><p class="legende"> Boite d'ouvrière contenant des étiquettes, crayons et fiches techniques</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/6.jpg">
+        <div id="boite_legende"><p class="legende"> Forces et canettes</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+        <video controls class="image_h"> 
+          <source src="img/7.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Tissage et visite de coupe - usine Perrier</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/8.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrière à la visite de coupe, pincetage et pliage, usine Bobichon - archive</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v"> 
+        <img class="image_v" src="img/9.jpg">   
+        <div id="boite_legende"><p class="legende"> Métrage sur trafusoir - Entreprise Goutarel</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/10.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Métrage de coupe</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/11.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Métrage de coupe</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">   
+        <video controls class="image_h"> 
+          <source src="img/12.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Métrage de coupe</p></div>
+     </span>   
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/13.jpg">
+        <div id="boite_legende"><p class="legende"> Balance de coupe</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">
+        <video controls class="image_h"> 
+          <source src="img/14.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Banque de visite de coupes et d'épincetage</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/15.jpg">
+        <div id="boite_legende"><p class="legende"> Épincetage - Entreprise Goutarel</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/16.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Épincetage et visite de coupes</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/17.jpg">
+        <div id="boite_legende"><p class="legende"> Machine à visiter les coupes</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/18.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Épincetage et visite de coupes - usine Perrier</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_v"> 
+          <source src="img/19.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Visite de coupes</p></div>
+      </span> 
+      
+      <span class="slide" id="image_h">    
+        <img class="image_v" src="img/20.jpg">
+        <div id="boite_legende"><p class="legende"> Pincette, pince, crochet, force et carcagnole</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/21.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Visite de coupe et épincetage - Pierre Schmelzle</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/22.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Visite de coupe </p></div>
+      </span>
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/23.jpg">
+        <div id="boite_legende"><p class="legende"> Démonstration de mémoire du pliage d'une coupe - Pierre Schmelzle</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/24.jpg">
+        <div id="boite_legende"><p class="legende"> Balance - buanderie Perrier</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/25.jpg">
+        <div id="boite_legende"><p class="legende"> Carnet de relève de coupe - archive</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/26.jpg">
+        <div id="boite_legende"><p class="legende"> Photo d'ouvrières pinceteuses à la visite de coupes</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/27.jpg">
+        <div id="boite_legende"><p class="legende"> Commande de coupe</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/28.jpg">
+        <div id="boite_legende"><p class="legende"> Commande de coupe</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/29.jpg">
+        <div id="boite_legende"><p class="legende"> Étagère et réserve de coupe - usine Perrier</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/30.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Visite de coupe et pliage</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/31.jpg">
+        <div id="boite_legende"><p class="legende"> Plateau de tissage et étagères de stockage - usine Perrier</p></div>
+      </span> 
+
+            <span class="slide" id="image_v">    
+        <img class="image_v" src="img/32.jpg">
+        <div id="boite_legende"><p class="legende"> Commande de coupe d'un donneur d'ordre</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <video controls class="image_h"> 
+          <source src="img/33.mp4" type="video/mp4">
+        </video>
+        <div id="boite_legende"><p class="legende"> Visite de coupe, bureau et salle des canetières - usine Perrier</p></div>
+      </span>  
+
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>

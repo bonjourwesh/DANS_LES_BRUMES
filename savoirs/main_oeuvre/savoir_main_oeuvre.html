@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Main d'œuvre ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_savoirs.html">Savoir-faire</a> / Main d'œuvre</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('pdf_main_oeuvre.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+  <div id="lien">
+                    <div id="fermer_lien" onclick="fermerLien()"></div>
+
+    <p>savoir-faire pratiqué par les ouvrier·es main d'œuvre.</p>
+<a href="../patron/savoir_patron.html"><span class="petite_fleche">></span> découvrir le métier de patron·ne</a><br>
+<a href="../filage/savoir_filage.html"><span class="petite_fleche">></span> commencer au début du cycle</a>
+  </div>
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/1.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvrier·es et patron</p></div>
+      </span>   
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/2.jpg">
+        <div id="boite_legende"><p class="legende"> Fermiers et main d'oeuvre sous la direction de la famille Dussuc - archive</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/3.jpg">
+        <div id="boite_legende"><p class="legende">  Fermiers et main d'oeuvre au potager sous la direction de la famille Dussuc - archive</p></div>
+      </span>
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/4.jpg">
+        <div id="boite_legende"><p class="legende"> Ancienne Fonderie Bancel, usine Joseph Perrier - quartier Pré battoir - archive</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/5.jpg">
+        <div id="boite_legende"><p class="legende"> Écurie de la cour de l'usine Sainte-Marie - maison de maître Dussuc-Corompt - archive</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/6.jpg">
+        <div id="boite_legende"><p class="legende"> Chenil de la cour de l'usine Sainte-Marie - maison de maître Dussuc-Corompt - archive</p></div>
+      </span>  
+      
+      <span class="slide" id="image_h">    
+        <img class="image_h" src="img/7.jpg">
+        <div id="boite_legende"><p class="legende"> Patron et main d'oeuvre - propriété Dussuc-Corompt - archive</p></div>
+      </span> 
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/8.jpg">
+        <div id="boite_legende"><p class="legende"> Travaux d'aménagement du parc Dussuc - archive</p></div>
+      </span>  
+      
+      <span class="slide" id="image_v"> 
+        <img class="image_v" src="img/9.jpg">   
+        <div id="boite_legende"><p class="legende"> Travaux d'aménagement du parc Dussuc - archive</p></div>
+      </span>
+      
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/10.jpg">
+        <div id="boite_legende"><p class="legende"> Travaux d'aménagement du parc Dussuc - archive</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/11.jpg">
+        <div id="boite_legende"><p class="legende"> Travaux d'aménagement du parc Dussuc, patron et main d'oeuvre - archives</p></div>
+      </span> 
+      
+      <span class="slide" id="image_v">   
+        <img class="image_h" src="img/12.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvriers, contremaitre, main d'oeuvre et patron</p></div>
+     </span>   
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/13.jpg">
+        <div id="boite_legende"><p class="legende"> Ouvriers, contremaitre, main d'oeuvre et patron</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">
+        <img class="image_h" src="img/14.jpg">
+        <div id="boite_legende"><p class="legende"> Atelier des gareurs - usine Perrier</p></div>
+      </span>  
+
+      <span class="slide" id="image_v">    
+        <img class="image_h" src="img/15.jpg">
+        <div id="boite_legende"><p class="legende"> Père d'Yvette Vincent - main d'oeuvre et gareur</p></div>
+      </span> 
+
+
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif"></div>
+
+  </div> 
+
+</div>
+
+</div>
+<!-- partial -->
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+    <script  src="script_changer_texte.js"></script>
+</body>
+</html>
