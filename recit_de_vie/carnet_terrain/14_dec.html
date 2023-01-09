@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr" x:lang="fr" xmlns="ht://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Carnet de Terrain ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./../ressource/style.css" type="text/css" >
+
+
+
+</head>
+<body>
+
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="menu" href="../../index.html">Dans les brumes</a> /<a id= "lienTitre" class="menu" href="carnet_terrain_intro.html">Carnet de Terrain</a></div>
+     
+
+      <div id="droite">
+
+        <div id="archive"> 
+         <a id="bouton_print" href="pdf_carnet_terrain.pdf"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <div id="nav_sommaire" class="closed ">
+    
+     <div id="page_precedente_text" class="titre_sommaire"> sommaire</div>
+     
+
+     <div id="boite_date">
+      <div id="anotherContentSommaire"></div>
+
+    </div>
+
+
+  </div>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+      <div id="boutons"> 
+  
+
+
+
+      </div>
+
+
+          <div id="text" class="textwesh_terrain">
+            <div id="espacement"></div>
+<span id="date">14 décembre 2021, à Saint-Julien-Molin-Molette.</span><br>
+<span id="intro" >Les yeux dans les doigts et le mythe de la soie.<br>8h.</span> 
+  <br><br>
+ L’objectif de ma matinée est de me rendre au <span class="souligne" id="remettage" onclick="fonctionMoulinageBarou()">Moulinage Barou</span> afin de rencontrer l’artisan homonyme.
+Je connais l’existence du Moulinage par trois facteurs:
+<br>– le panneau, aux couleurs criantes, vert d’eau, rouge et jaune, présent devant <span class="souligne" id="remettage" onclick="fonctionMoulinageBarou()">la manufacture Barou</span>, que je vois à chaque aller-retour à SJMM, par la route de Maclas.
+<br>– par <span class="souligne" id="remettage" onclick="fonctionHubert()">Hubert Sage</span>, qui m’a confié qu’en plus de conserver d’anciennes machines, les deux frères Barou ont préservé <span class="souligne" id="remettage" onclick="fonctionMoulinMas()">un ancien moulin</span> et sa roue, plus ou moins fonctionnel mais digne d’intérêt pour les férus d’histoire, de mécaniques et d’ingénierie. «Contacte-les de ma part, ils me connaissent bien».
+<br>– et enfin, un matin de l’été dernier, j’avais pioché dans la pile de flyers de <span class="souligne" id="remettage" onclick="fonctionBoulangerie()">la Boulangerie</span> - parmi ceux des trottinettes tous-terrains, gites locaux, et fromages AOP - un dépliant au graphisme bricolé: celui du Moulinage Barou à Lupé. Sur le dépliant, <span class="souligne" id="remettage" onclick="fonctionFoulard()">des foulards de soie</span> photoshopés, au détourage tremblotant, flottent sur le fond blanc d’un papier glacé de mauvaise qualité, une grosse typo déformée aux couleurs flashs annonce «ouvert tous les dimanches du mois et sur RDV.». 
+ <br><br>
+En octobre, à vélo, j’avais déjà essayé de me rendre au Moulinage. Mais après une heure de pédalage sur route vallonnée, j’étais arrivée devant un entrepôt fermé, son enseigne éteinte.
+ <br><br>
+Cette fois, une semaine avant mon arrivée à Saint-Julien-Molin-Molette, j’ai tenté de prendre rendez-vous. Le premier numéro de contact trouvé sur internet sonne dans le vide, le second n’est plus attribué. 
+<br>Le seul numéro fonctionnel est celui du dépliant, mais une série de longs bips me répond avant que mon appel soit pris. Après une brève présentation, j’avais annoncé vouloir passer un lundi ou mardi matin. La voix d’homme à l’autre bout, m’avait répondu en riant, «y a plus qu’à!» et avait raccroché, me laissant dans le flou de l’horaire et de sa disponibilité. Sur le site internet du moulinage, aucune information sur les horaires d’ouverture au public. Le siège de l’entreprise se trouve à Vinzieux, juste en dessous, en Ardèche. Le Moulinage se trouve sur la route de Maclas, à Lupé, mais je n’ai pas d’adresse précise.
+ <br><br>
+J’ai oublié le précieux dépliant à Paris, je vais à <span class="souligne" id="remettage" onclick="fonctionBoulangerie()">la Boulangerie</span> avec pour idée de retrouver les coordonnées <span class="souligne" id="remettage" onclick="fonctionMoulinageBarou()">du Moulinage</span>. Pas de dépliants dans la vitrine... On discute avec Mme Fanget la boulangère sans âge qui tient la boulangerie depuis des années avec son mari. Elle m’annonce «En mars, on ferme.» «Pour toujours?!» «Oui, c’est la retraite, là on fait durer pour les fêtes mais mon mari il bosse depuis ses 14 ans, dont 10 avec handicap, depuis l’accident de son pied. On fatigue.» «Mais il va y avoir des repreneurs?» «Pour l’instant rien de concret, c’est trop difficile ici, seul c’est du 4h50-19h, personne n’en veut. Nous on a repris des parents, on travaille avec le même meunier depuis longtemps, juste à côté, on fait la marguerite, le pain au maïs le dimanche... Et puis, le commerce est en dent de scie depuis le covid. Les gens, ils achètent le pain en faisant leurs grosses courses en grandes surfaces, et ils congèlent pour la semaine! Là, des fois tout part, des fois tout reste, le rythme a changé, impossible d’anticiper, et nous on fait qu’une fournée le matin. 
+<br>Ah! ça me fait penser, y a de drôles de combines aussi, y a des familles qui me commandent deux petites bûches pour les fêtes, ils ont peur qu’il y ait un contrôle, qu’on voit qu’ils ont acheté une bûche pour 20 personnes! C’est fou...». 
+<br><br>
+<span id="intro">Driiing.</span>
+<br><br>
+Un client entre, une petite file d’attente s’est formée dans la rue. 
+Je prends ma boule de seigle et rentre. Je décide d’aller au Moulinage pour 10h30, en pleine matinée, en espérant que ça soit ouvert. Je vérifie les batteries, les cartes SD, remplis ma gourde. Sur le chemin, je tombe sur une affichette plastifiée aux flèches orange et verte fluos «<span class="souligne" id="remettage" onclick="fonctionObjetParle()">L’objet qui parle</span>, expo vente, Métiers d’Art». À voir.
+ <br><br>
+Départ en voiture.
+<br>À la sortie de SJMM, côté <span class="souligne" id="remettage" onclick="fonctionZoneArtisanale()">Zone Artisanale</span>, je me place au carrefour de la station-service et de la route de la Condamine pour faire du stop. 
+Rapidement, un utilitaire s’arrête, un gars qui fait des livraisons de matelas à eau pour les hôpitaux des villes alentours, des aller-retours Saint-Étienne, Vienne, <span class="souligne" id="remettage" onclick="fonctionAnnonay()">Annonay</span>… entre le dépôt de son entreprise et les locaux des services publics. Il aime bien la route, au moins «C’est vallonné, on s’amuse un peu.».
+ <br><br>
+J’arrive au <span class="souligne" id="remettage" onclick="fonctionMoulinageBarou()">Moulinage Barou</span>, route de Maclas, à 10h40. 
+<br>Dès la sortie de l’habitacle de la camionnette, j’entends <span class="souligne" id="remettage" onclick="fonctionBistanclaque()">le son</span> des machines en action. J’espère que je ne vais pas déranger. Pas de lumières dans la maison adjacente à l’entrepôt à <span class="souligne" id="remettage" onclick="fonctionToit()">sheds</span>. Sur la porte de la boutique: «Pour le Moulinage, sonnez deux fois.». Une grosse sonnerie résonne derrière la porte du garage. Le rideau de métal se lève, et un homme me fait signe de venir vers lui. Dans le garage, le bruit <span class="souligne" id="remettage" onclick="fonctionMoteur()">des moteurs</span> s’intensifie, résonne. On crie pour s’entendre.
+Devant nous, des tables exposent <span class="souligne" id="remettage" onclick="fonctionRestaurant()">des foulards de soie</span> de la marque <span class="souligne" id="remettage" onclick="fonctionFoulard()">Lyre</span>, soigneusement pliés, ça dénote avec <span class="souligne" id="remettage" onclick="fonctionMoulin()">les moulins</span> noirs de <span class="souligne" id="remettage" onclick="fonctionGraisse()">graisse</span>. 
+ <br><br>
+Notes rapides de la rencontre avec Jean-Yves Barou:
+<br>Moulinage Barou, anti-vacc, continuer à voir les gens, le flicage les jours de marché et l’arrivée tardive des vaccins COVID dans les campagnes.
+<br>Entreprise familiale: les grands-parents, les parents… après leur départ à la retraite continuer l’activité en fratrie.
+<br>La fille kiné. Pas de reprise.
+<br>Les machines: <span class="souligne" id="remettage" onclick="fonctionMoulin()">moulin</span>, <span class="souligne" id="remettage" onclick="fonctionDevidoir()">dévidoir</span>, <span class="souligne" id="remettage" onclick="fonctionCantre()">cantre</span>, bobinoir…
+<br>Les étapes du <span class="souligne" id="remettage" onclick="fonctionMoulinage()">moulinage</span>: <span class="souligne" id="remettage" onclick="fonctionSericiculture()">filage</span>, décreusage, <span class="souligne" id="remettage" onclick="fonctionTeinture()">teinture</span>, <span class="souligne" id="remettage" onclick="fonctionDevidage()">dévidage</span>, moulinage, <span class="souligne" id="remettage" onclick="fonctionVaporisage()">vaporisage</span>, <span class="souligne" id="remettage" onclick="fonctionMoulinage()">bobinage</span>.
+<br>Faire avec des gabarits pour fabriquer ses outils et ses pièces de <span class="souligne" id="remettage" onclick="fonctionMoulin()">moulin</span> comme <span class="souligne" id="remettage" onclick="fonctionTubeCeramique()">les coronelles</span>.
+<br>Nos doigts sont nos yeux.
+<br>Transmettre et entretenir, pouvoir bidouiller la machine.
+<br>Voir les parents, apprendre petit, c’est génétique, héréditaire? 
+<br>Comprendre la mécanique.
+<br>L’école de la soie à Lyon. 
+<br>Purement technique.
+<br><span class="souligne" id="remettage" onclick="fonctionMoulinage()">Le moulinage</span>: concevoir le fil.
+<br>Torsion S ou torsion Z.
+<br>Travailler pour des industriels. Le marché de l’automobile. Les gants en fibre de verre.
+<br>Créativité et art.
+<br><span class="souligne" id="remettage" onclick="fonctionTissage()">Le tissage</span> et <span class="souligne" id="remettage" onclick="fonctionSerigraphie()">l’impression</span>, plus créatifs.
+<br>Besoin de créer et travailler la couleur à grande échelle.
+<br>Age de la retraite, ne pas pouvoir arrêter.
+<br>Création de la marque de foulards imprimés <span class="souligne" id="remettage" onclick="fonctionLyre()">Lyre</span>.
+<br>Le travail d’éditeur semi-artisanal, créer des motifs en peinture puis faire imprimer la soie à Lyon.
+<br>Le plaisir du travail, rester actif, des commandes occasionnelles et la vente des stocks aux copains ayant encore des usines.
+<br>Deux chouchous, <span class="souligne" id="remettage" onclick="fonctionBobine()">une bobine de soie</span> - deux paquets cadeaux, avec un nœud.
+<br>La soie c’est un mythe, le luxe et la qualité.
+<br>Une matière sensible et des cadeaux majoritairement pour les femmes.
+<br>La boutique ne prend pas la CB.
+<br>Le distrib est à Maclas.
+<br>Un aller-retour à pieds. 30 minutes de marche dans le brouillard en bordure de route.
+<br>Mini Kebab à 3 euros de Maclas - Kebab World.
+<br>La porte de l’atelier laissée ouverte, poser la monnaie sur le bureau de l’atelier et prendre les paquets.
+ <br><br>
+Les trois stops. 
+<br>Il est 13h45, je m’éloigne, le Moulinage Barou disparait rapidement dans la brume. Sur le bord de la route, <span class="souligne" id="remettage" onclick="fonctionBobine()">ma bobine de soie</span>, mes chouchous et mon tissu emballés dans un sac plastique, des papiers cadeaux sous le bras, je commence à faire du stop. Il y a peu de passage. Une voiture de la Poste s’arrête. Le postier vient de finir sa tournée, il propose de me remonter de quelques mètres jusqu’à Maclas, là-bas il bifurquera vers <span class="souligne" id="remettage" onclick="fonctionPelussin()">Pélussin</span> pour ramener le véhicule au dépôt. Il me dépose sur la place, devant le Petit Casino, je me place sur la route menant à Saint-Julien. Plusieurs véhicules passent. Puis une voiture s’arrête, le monsieur me propose de m’emmener jusqu’à «l’usine», il a RDV, il s’excuse de ne pas pouvoir m’emmener plus loin, me dépose sur le bord du parking. 
+<br><br> 
+L’usine, c’est un énorme cube vert d’eau, dans un virage entre deux hameaux. Au fond la forêt, devant des champs et la vallée. Derrière un portail surplombé d’une armada de caméras de surveillance, la fabrique Justin Bridou, une production massive de saucisses. Sur le parking devant l’usine, deux camionneurs attendent de charger leur marchandise.
+ <br><br>
+Je me place à la limite entre la zone de repos des transporteurs et la route. Une voiture toute cabossée arrive pleine balle, je lève le pouce. Elle freine, fait un virage brusque et s’arrête au milieu du parking. Dedans, une femme d’une trentaine d’années me dit de monter, elle va à Bourg-Argental, amener les anciens vêtements de son fils à une collègue qui vient d’avoir un gamin. On discute, jeune, elle faisait souvent du stop, ça marche bien dans la région… et puis «Y a pas de bus.».
+<br>Elle me dépose devant le Kebab, <span class="souligne" id="remettage" onclick="fonctionRueNeuve()">rue Neuve</span>. Sa voiture s’élance dans la montée de <span class="souligne" id="remettage" onclick="fonctionRueModure()">la rue de la Modure</span> puis disparait. Sur la place de <span class="souligne" id="remettage" onclick="fonctionMairie()">la Mairie</span>. C’est la fin du marché. On essaye de me vendre un poulet, des patates et un ananas.
+
+
+
+
+        <div id="lien">
+<div id="page_prec" class="boite_fleche"><a href="13_dec.html" class="prec_next"><span class="fleche"><</span> date précedente</a><br></div>
+<div id="page_next" class="boite_fleche"><a href="15_dec.html" class="prec_next">date suivante <span class="fleche">></span></a></div>
+  </div>
+
+
+
+      </div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="panel-two" id="rectangle_droit">
+  
+
+  <input id="bouton_fermer" class="boutonFermer" type="button" onclick="fonctionFermer()">
+
+<div id="anotherContentOutils"></div>
+<div id="anotherContentLieux"></div>
+<div id="anotherContentSavoirs"></div>
+<div id="anotherContentRecits"></div>
+<div id="anotherContentArchives"></div>
+</div>
+
+</div>
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./../ressource/script.js"></script>
+  <script  src="./../ressource/script_photo_outils.js"></script>
+    <script  src="./../ressource/script_photo_gens.js"></script>
+  <script  src="./../ressource/script_photo_lieux.js"></script>
+  <script  src="./../ressource/script_photo_savoirs.js"></script>
+    <script  src="./../ressource/script_photo_archives.js"></script>
+    <script  src="./../ressource/audio_video.js"></script>
+<script>
+ $(function(){
+ $("#anotherContentOutils").load("./../ressource/droiteOutils.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentSommaire").load("./../ressource/sommaire.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentLieux").load("./../ressource/droiteLieux.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentSavoirs").load("./../ressource/droiteSavoirs.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentRecits").load("./../ressource/droiteGens.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentArchives").load("./../ressource/droiteArchives.html"); 
+ });
+</script> 
+
+
+</body>
+</html>

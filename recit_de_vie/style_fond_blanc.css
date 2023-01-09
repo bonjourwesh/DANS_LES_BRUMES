@@ -1,0 +1,316 @@
+
+img {
+  max-width: 300px;
+  height: auto; }
+
+
+@font-face {
+      font-family: 'Titre';
+      src: url("../typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("../typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("../typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("../typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+
+html, body {
+ margin:0;
+ padding:0;
+   background-color: white;
+
+ }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background: white ;
+border-bottom: 1px solid black;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+}
+
+.brume:hover{
+  text-decoration: underline;
+}
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+}
+
+a.menu{
+    color: black;
+text-decoration: none;
+  margin-left: 10px;
+}
+
+
+a.menu:hover{
+    color: black;
+text-decoration: underline;
+}
+
+
+/*---------------------------------PRINT -----------------------------*/ 
+
+
+#bouton_print{
+font-family: Emojix;
+padding-top: 5px;
+font-size: 1.5em;
+line-height: 0.5em;
+cursor: pointer;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+
+/*---------------------------------BOUTON COULEUR-----------------------------*/ 
+
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: white;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+}
+
+ #bouton_nuit:hover {
+background-color: black;
+}
+
+ #bouton_color:hover {
+background-color: black;
+}
+
+#bouton_jour{
+background-color: black;  
+}
+
+#bouton_nuit{
+background-color: white;  
+}
+
+
+#bouton_color{
+  background-color: white;
+}
+
+
+
+
+
+
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+#corps{
+display: inline-flex;
+  height: 100%;
+width: 100%;  
+}
+
+#rectangle_gauche{
+  height: 100vh;
+width: 100%;  
+display: block; 
+}
+
+
+/*---------------------------------TEXTE-----------------------------*/ 
+
+
+
+.nom_des_gens{
+font-family: Titre;
+font-size: 1.9em;
+  position: absolute;
+    cursor: pointer;
+      line-height: 1em;
+
+}
+
+.div_gens{
+  width: 450px;
+  position: absolute;
+  padding-bottom: 100px;
+  font-family: Titre;
+  font-size: 1.3em;
+
+}
+
+
+#divFranck{
+  left: 800px;
+  top: 90px;
+}
+
+#divDidier{
+  left: 300px;
+  top: 150px;
+}
+
+#divMichel{
+  left: 100px;
+  top: 800px;
+}
+
+#divPierre{
+  left: 750px;
+  top: 1400px;
+}
+
+
+#divYvette{
+  left: 50px;
+  top: 400px;
+}
+
+#divJacqueline{
+  left: 550px;
+  top: 520px;
+}
+
+#divAmandineSebastien{
+  left: 650px;
+  top: 950px;
+}
+
+#divDelphineFranck{
+  left: 200px;
+  top: 1500px;
+}
+
+
+#divHubert{
+  left: 800px;
+  top: 1800px;
+}
+.nom_des_gens:hover{
+text-decoration: underline;
+}
+
+/*---------------------------------RETOUR-----------------------------*/ 
+
+#retour{
+  font-family: Titre;
+  position: fixed;
+  height: 100%;
+width: 10px;  
+background-color: white;
+border-right: 1px solid black;
+}
+
+
+.titre_retour{
+
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+color: black;
+padding-top: 80px;
+display: block;
+position: absolute;
+left:  -15px;
+}
+
+
+
+
+
+.souligne{
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  cursor: pointer;
+}
+
+.souligne:hover{
+text-shadow: black 1px 0 10px;
+}
+
+
+/*---------------------------------CARNET DE BORD-----------------------------*/ 
+
+#carnet_bord{
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  position: fixed;
+  right: 1px;
+  z-index: 20;
+  width: 20px;
+  background-color: white;
+  writing-mode: vertical-rl;
+  font-family: Titre;
+  font-size: 1.5em;
+  border: 1px solid black;
+}
+
+.carnet_bord:hover{
+  text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+}
+
+#boite_droite{
+  height: 100vh;
+  position: fixed;
+ width: 20px; 
+   right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

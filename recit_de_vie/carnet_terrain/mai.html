@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" x:lang="fr" xmlns="ht://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Carnet de Terrain ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./../ressource/style.css" type="text/css" >
+
+
+
+</head>
+<body>
+
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="menu" href="../../index.html">Dans les brumes</a> /<a id= "lienTitre" class="menu" href="carnet_terrain_intro.html">Carnet de Terrain</a></div>
+     
+
+      <div id="droite">
+
+        <div id="archive"> 
+         <a id="bouton_print" href="pdf_carnet_terrain.pdf"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <div id="nav_sommaire" class="closed ">
+    
+     <div id="page_precedente_text" class="titre_sommaire"> sommaire</div>
+     
+
+     <div id="boite_date">
+      <div id="anotherContentSommaire"></div>
+
+    </div>
+
+
+  </div>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+      <div id="boutons"> 
+  
+
+
+
+      </div>
+
+
+          <div id="text" class="textwesh_terrain">
+            <div id="espacement"></div>
+<span id="date">Début mai 2022, à Saint-Julien-Molin-Molette.</span><br>
+<span id="intro" >Les cerises et le garage.</span>
+</span> 
+  <br><br>
+Je retourne faire <span class="souligne" id="remettage" onclick="fonctionArchive()">des photos</span> du village et réalise une captation vidéo du <span class="souligne" id="remettage" onclick="fonctionNoeud()">nœud du tisserand</span> avec <span class="souligne" id="remettage" onclick="fonctionJacqueline()">Jacqueline</span>.
+Debout sur une chaise au milieu du salon, je fais plusieurs prises. Devant la caméra, ma grand-mère perd un peu ses moyens, et dit «Petite, j’ai fait <span class="souligne" id="remettage" onclick="fonctionNoeud()">ce nœud</span> des milliers de fois à l’atelier de mon grand-père <span class="souligne" id="remettage" onclick="fonctionRueModure()">rue de la Modure</span>, pour faire les canettes ou réparer les fils de <span class="souligne" id="remettage" onclick="fonctionChaine()">chaîne</span>. Mais quand je dois mettre des mots dessus et que je le conscientise, je l’oublie… Je le sais sans le savoir. Attends, je recommence.».
+ <br>
+L’après-midi, je retourne jardiner avec <span class="souligne" id="remettage" onclick="fonctionPierre()">Pierre</span>. On ramasse les prunes véreuses et les cerises dans le jardin de <span class="souligne" id="remettage" onclick="fonctionJosette()">Josette</span>. En passant par la cuisine de Josette, Pierre me montre la table, une coupe de soie est posée dessus. Il a réfléchi et se souvient du geste des ouvrières lors du pliage d’une coupe, de son laçage avec un fil à capier puis de <span class="souligne" id="remettage" onclick="fonctionEtiquette()">son étiquetage</span> avant son rangement dans une sache puis sur une étagère avant expédition au <span class="souligne" id="remettage" onclick="fonctionDonneurOrdre()">donneur d’ordre</span>. Des gestes quotidiennement réalisés par <span class="souligne" id="remettage" onclick="fonctionOuvriere()">les ouvrières</span> dans <span class="souligne" id="remettage" onclick="fonctionBureau()">le bureau</span> de <span class="souligne" id="remettage" onclick="fonctionSalleVisiteCoupe()">visite de coupe</span>.
+
+        <div id="lien">
+<div id="page_prec" class="boite_fleche"><a href="4_mars.html" class="prec_next"><span class="fleche"><</span> date précedente</a><br></div>
+<div id="page_next" class="boite_fleche"><a href="mai_fin.html" class="prec_next">date suivante <span class="fleche">></span></a></div>
+  </div>
+
+
+
+      </div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="panel-two" id="rectangle_droit">
+  
+
+  <input id="bouton_fermer" class="boutonFermer" type="button" onclick="fonctionFermer()">
+
+<div id="anotherContentOutils"></div>
+<div id="anotherContentLieux"></div>
+<div id="anotherContentSavoirs"></div>
+<div id="anotherContentRecits"></div>
+<div id="anotherContentArchives"></div>
+</div>
+
+</div>
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./../ressource/script.js"></script>
+  <script  src="./../ressource/script_photo_outils.js"></script>
+    <script  src="./../ressource/script_photo_gens.js"></script>
+  <script  src="./../ressource/script_photo_lieux.js"></script>
+  <script  src="./../ressource/script_photo_savoirs.js"></script>
+    <script  src="./../ressource/script_photo_archives.js"></script>
+    <script  src="./../ressource/audio_video.js"></script>
+<script>
+ $(function(){
+ $("#anotherContentOutils").load("./../ressource/droiteOutils.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentSommaire").load("./../ressource/sommaire.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentLieux").load("./../ressource/droiteLieux.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentSavoirs").load("./../ressource/droiteSavoirs.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentRecits").load("./../ressource/droiteGens.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentArchives").load("./../ressource/droiteArchives.html"); 
+ });
+</script> 
+
+
+</body>
+</html>

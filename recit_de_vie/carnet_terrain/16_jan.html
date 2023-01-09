@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr" x:lang="fr" xmlns="ht://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Carnet de Terrain ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./../ressource/style.css" type="text/css" >
+
+
+
+</head>
+<body>
+
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="menu" href="../../index.html">Dans les brumes</a> /<a id= "lienTitre" class="menu" href="carnet_terrain_intro.html">Carnet de Terrain</a></div>
+     
+
+      <div id="droite">
+
+        <div id="archive"> 
+         <a id="bouton_print" href="pdf_carnet_terrain.pdf"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <div id="nav_sommaire" class="closed ">
+    
+     <div id="page_precedente_text" class="titre_sommaire"> sommaire</div>
+     
+
+     <div id="boite_date">
+      <div id="anotherContentSommaire"></div>
+
+    </div>
+
+
+  </div>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+      <div id="boutons"> 
+  
+
+
+
+      </div>
+
+
+          <div id="text" class="textwesh_terrain">
+            <div id="espacement"></div>
+<span id="date">16 janvier 2022, à Saint-Julien-Molin-Molette.</span><br>
+<span id="intro" >La bougie ou la chandelle?</span> 
+  <br><br>
+À la suite de la visite de l’usine Sainte-Marie une anecdote d’<span class="souligne" id="remettage" onclick="fonctionHubert()">Hubert Sage</span> autour de l’éclairage des habitations et des usines avant l’électrification du village me revient: l’accès à la lumière était à l’époque une véritable gauge d’évolution du milieu social et des ressources des foyers.
+<br>Des bougies pour les riches – en cire d’abeilles, anciennement produites dans une fabrique de bougies située en face de <span class="souligne" id="remettage" onclick="fonctionUsineDussuc()">l’usine Sainte-Marie</span>, dans le bâtiment qui deviendra <span class="souligne" id="remettage" onclick="fonctionMaisonMaitre()">la maison de maitre Dussuc</span>. Et des chandelles pour les pauvres – réalisées à base de graisse animale, qui lors de leur combustion sentaient fort, mauvais et dont une fumée noire tâchait les murs.
+<br>Les habitations ont par la suite été éclairées au moyen de <span class="souligne" id="remettage" onclick="fonctionLampeUsine()">lampes</span> à pétrole.
+<br>Les usines quant à elles ont été équipées de <span class="souligne" id="remettage" onclick="fonctionMachineVapeur()">machines à vapeur</span> afin de produire <span class="souligne" id="remettage" onclick="fonctionReseauElectrique()">l’électricité</span> nécessaire au fonctionnement de lampes. Les maisons de maître ont été les premières habitations électrifiée, suivie <span class="souligne" id="remettage" onclick="fonctionLogementOuvrier()">des logements ouvriers</span>.
+
+        <div id="lien">
+<div id="page_prec" class="boite_fleche"><a href="15_jan.html" class="prec_next"><span class="fleche"><</span> date précedente</a><br></div>
+<div id="page_next" class="boite_fleche"><a href="3_fev.html" class="prec_next">date suivante <span class="fleche">></span></a></div>
+  </div>
+
+
+
+      </div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="panel-two" id="rectangle_droit">
+  
+
+  <input id="bouton_fermer" class="boutonFermer" type="button" onclick="fonctionFermer()">
+
+<div id="anotherContentOutils"></div>
+<div id="anotherContentLieux"></div>
+<div id="anotherContentSavoirs"></div>
+<div id="anotherContentRecits"></div>
+<div id="anotherContentArchives"></div>
+</div>
+
+</div>
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./../ressource/script.js"></script>
+  <script  src="./../ressource/script_photo_outils.js"></script>
+    <script  src="./../ressource/script_photo_gens.js"></script>
+  <script  src="./../ressource/script_photo_lieux.js"></script>
+  <script  src="./../ressource/script_photo_savoirs.js"></script>
+    <script  src="./../ressource/script_photo_archives.js"></script>
+    <script  src="./../ressource/audio_video.js"></script>
+<script>
+ $(function(){
+ $("#anotherContentOutils").load("./../ressource/droiteOutils.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentSommaire").load("./../ressource/sommaire.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentLieux").load("./../ressource/droiteLieux.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentSavoirs").load("./../ressource/droiteSavoirs.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentRecits").load("./../ressource/droiteGens.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentArchives").load("./../ressource/droiteArchives.html"); 
+ });
+</script> 
+
+
+</body>
+</html>

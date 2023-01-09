@@ -1,0 +1,442 @@
+@font-face {
+      font-family: 'Titre';
+      src: url("../../typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("../../typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("../../typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Typo_fleche';
+      src: url("../../typo/fleche_typo.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("../../typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+
+html, body {
+ margin:0;
+ padding:0;
+  background: white;
+ }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.fleche{
+  font-family: Typo_fleche ;
+font-size: 1.6em;
+color: white;
+}
+
+.fleche:hover{
+text-shadow: white 1px 0 10px;
+}
+
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background: #3683ff ;
+border-bottom: 1px solid black;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+}
+
+
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+}
+
+a.menu{
+    margin-left: 10px;
+    color: black;
+text-decoration: none;
+}
+
+a.menu:hover{
+    color: black;
+text-decoration: none;
+}
+
+
+/*---------------------------------PRINT -----------------------------*/ 
+
+
+#bouton_print{
+font-family: Emojix;
+padding-top: 5px;
+font-size: 1.5em;
+line-height: 0.5em;
+cursor: pointer;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+.drag-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+[class^=panel] {
+}
+
+#rectangle_gauche {
+  width: 50%;
+}
+
+.panel-two {
+  flex: 1;
+  width: 50%;
+}
+
+.dragbar {
+  padding: 6px;
+  cursor: col-resize;
+  background-color: white;
+}
+/*---------------------------------RETOUR-----------------------------*/
+
+#nav {
+  z-index: 3;
+  position: fixed;
+ height: 100vh;
+  top: 0;
+  left: -30px;
+  cursor: pointer;
+  width: 30px;
+  background-color: white;
+  border-right: 1px solid black;
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+color: black;
+padding-top: 80px;
+padding-right: 10px;
+    transition: width 0.5s;
+    font-family: Titre;
+}
+
+    #nav.closed:hover {
+      width: 60px; }
+
+
+
+/*---------------------------------BOUTON COULEUR-----------------------------*/ 
+
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: #3683ff;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+}
+
+ #bouton_nuit:hover {
+background-color: black;
+}
+
+ #bouton_jour:hover {
+background-color: white;
+}
+
+#bouton_jour{
+background-color: #3683ff;  
+}
+
+#bouton_nuit{
+background-color: #3683ff;  
+}
+
+
+#bouton_color{
+  background-color: black;
+}
+
+
+
+/*---------------------------------TEXTE-----------------------------*/ 
+
+
+
+#text {
+font-family: Texte_Serif;
+padding-top: 100px;
+padding-left: 40px;
+padding-right: 30px;
+font-size: 3em;
+}
+
+.souligne{
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  cursor: pointer;
+}
+
+
+ #text a:hover{
+text-shadow: black 1px 0 10px;;
+}
+
+
+
+
+/*---------------------------------PARTIE PIX-----------------------------*/ 
+
+
+#bouton_fermer{
+position: fixed;
+margin-left: 20px;
+z-index: 7;
+border:  1px solid black;
+border-radius: 0px;
+  margin-top: 70px;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+}
+
+#bouton_fermer:hover{
+  cursor: pointer;
+  background-color: black;
+}
+
+
+
+
+
+
+
+.pix_obj{
+  margin-top: 120px;
+    max-width: 40vw;
+    max-height: 50vh;
+  z-index: 4;
+  vertical-align: middle;
+  background-size: contain;
+  display: block;
+  background-repeat: no-repeat;
+  margin: auto;
+    margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.pix_obj:hover {
+  cursor: pointer;
+
+}
+
+
+video{
+    max-width: 40vw;
+    max-height: 50vh;
+      vertical-align: middle;
+  background-size: contain;
+  display: block;
+  background-repeat: no-repeat;
+  margin: auto;
+    margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.pix_obj_full{
+  margin-top: 50px;
+    max-width: 50vw;
+    max-height: 80vh;
+  background-size: contain;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.description_obj{
+  max-width: 65%;
+  margin-top: 10px;
+  font-size: 1em;
+font-family: Titre;
+padding-top: 50px;
+    margin-left: auto;
+margin-right: auto; 
+line-height: 1.25em; 
+
+}
+
+
+.mot_fiche_tech{
+text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
+
+
+a#vers_obj{
+
+  color: white;
+  text-decoration: none;
+
+}
+
+a#vers_obj:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+a.dans_description{
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a.dans_description:hover{
+  color: white;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+
+
+/*---------------------------------CHANGEMENT COULEUR-----------------------------*/ 
+
+
+
+.fondOutils{
+  background-color: #3683ff;
+  color: white;
+    flex: 1;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/*---------------------------------SLIDER-----------------------------*/ 
+
+
+
+.container {
+    margin-top: 120px;
+  position: relative;
+    margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+
+}
+
+.mySlides {
+  display: none;
+height: 45vh;
+width: 40vw;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 150px;
+  width: auto;
+  padding: 30px;
+  color: white;
+  font-size: 40px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.row{
+
+display: flex;
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+    margin-right: auto;
+  margin-left: auto;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 100px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height: 100px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

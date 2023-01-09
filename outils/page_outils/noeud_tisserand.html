@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Noeud du tisserand ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_page_outils.css">
+
+</head>
+<body onload="fonctionFondCooleur()" >
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a href="../../index.html">Dans les brumes</a><a href="../menu_outils.html"> / Objets</a> / Noeud du tisserand</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+
+          <a id="bouton_print" onclick="printPdf('pdf/pdf_noeud_tisserand.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+        
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+ 
+
+
+  <div id="anotherContent"></div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="fondOutils" id="rectangle_droit">
+  
+ <input id="bouton_fermer" class="boutonFermer" type="button" onclick="window.location.href ='./../menu_outils.html'">
+
+<div class="container">
+  <div class="mySlides">
+    <img src="../../image/outils/noeud.jpg" id="photo" onclick="fonctionFullPix()" class="pix_obj">
+  </div>
+
+ <div class="mySlides">
+     <video controls>
+  <source src="../../image/outils/noeud_2.mp4" type="video/mp4" id="photo" class="pix_obj">
+  </div>
+
+     <a class="prev" onclick="plusSlides(-1)"><span class="fleche"><</span></a>
+  <a class="next" onclick="plusSlides(1)"><span class="fleche">></span></a> 
+
+</div>
+
+
+
+
+      <p id="description" class="description_obj">
+    <span class="mot_fiche_tech">Nom:</span> Noeud du tisserand
+<br><span class="mot_fiche_tech">Lieu:</span> 
+<a class="dans_description"  href="../../lieux/usine_perrier/lieu_usine_perrier.html" >usine Perrier</a>,
+<a class="dans_description"  href="../../lieux/cooperative_soie/lieu_cooperative_soie.html" >Coopérative de la soie</a>
+<a class="dans_description"  href="../../lieux/remettage_piraillon/lieu_remettage_piraillon.html" >remettage Piraillon</a>,
+
+<a class="dans_description"  href="../../lieux/moulinage_barou/lieu_moulinage_barou.html" >moulinage Barou</a>.
+
+<br>
+<br><span class="mot_fiche_tech">Descriptif:</span> 
+ Assemblage de fils de soie par nouage. 
+<br>
+<br><span class="mot_fiche_tech">Usage et histoire:</span> 
+Ce nœud à la particularité de se resserrer lorsque l’on tire dessus, il est peu proéminent et ne s’accroche pas dans les lisses et le peigne. On l’utilise pour raccorder une nouvelle chaîne à l’ancienne. C’est l’un des premiers gestes appris dans les tissages.
+
+
+
+<br>
+
+<br><span class="mot_fiche_tech">Usager·es:</span> 
+<a class="dans_description" href="../../savoirs/tissage/savoir_tissage.html">ouvrieres tisseuses</a>, 
+<a class="dans_description" href="../../savoirs/canetage/savoir_canetage.html">ouvrières caneteuses</a>, 
+<a class="dans_description" href="../../savoirs/page_savoirs/tordage.html">ouvrières tordeuses</a>, 
+<a class="dans_description" href="../../savoirs/rapondage/savoir_rapondage.html">ouvrières tordeuses</a>, 
+
+<a class="dans_description" href="../../savoirs/ourdissage/savoir_ourdissage.html">ouvrières ourdisseuses</a>, 
+<a class="dans_description" href="../../savoirs/moulinage/savoir_moulinage.html">mouliniers</a>,
+<a class="dans_description" href="../../savoirs/remettage/savoir_remettage.html">remetteurs</a>.
+<br>
+<br><span class="mot_fiche_tech">Objets liés:</span> 
+<a class="dans_description" href="bobine.html">bobine</a>, 
+<a class="dans_description" href="ensouple.html">ensouple</a>, 
+<a class="dans_description" href="cadre.html">cadre</a>, 
+<a class="dans_description" href="remisse.html">remisse</a>, 
+<a class="dans_description" href="lisse.html">lisse</a>, 
+<a class="dans_description" href="devidoir.html">dévidoir</a>, 
+<a class="dans_description" href="navette.html">navette</a>, 
+<a class="dans_description" href="canette.html">canette</a>, 
+<a class="dans_description"  href="chaine.html">chaine</a>.
+<br>
+<br>
+
+</p>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo" src="../../image/outils/noeud.jpg"  onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="../../image/outils/noeud_2.jpg"  onclick="currentSlide(2)" >
+    </div>
+
+
+
+  </div>
+
+
+<br><br><br><br>  
+  </div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./script.js"></script>
+        <script  src="./script_photo.js"></script>
+ <script>$(function(){
+ $("#anotherContent").load("txt_gauche.html"); 
+ });</script>
+
+</body>
+</html>

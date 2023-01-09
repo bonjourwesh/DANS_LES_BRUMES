@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁Logements ouvriers ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_lieux.html">Lieux</a> / Logements ouvriers</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('../pdf/pdf_logement_ouvrier.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/1.jpg"><div id="boite_legende"><p class="legende">Alentours du village, rue Peyronnet</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"><div id="boite_legende"> <p class="legende">Alentours du village, usine Chirol et usine Blanc Ligue</p></div></span>
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/3.jpg"><div id="boite_legende"><p class="legende">Alentours du village, avenue de Colombier</p></div></span>  
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/4.jpg"><div id="boite_legende"><p class="legende">HLM, quartier du Pré-Battoir</p></div></span>  
+
+      <span class="slide" id="image_h">    <img class="image_h" src="img/5.jpg"><div id="boite_legende"><p class="legende">Logements ouvriers et jardins potagers</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/6.jpg"><div id="boite_legende"> <p class="legende">Logements ouvriers</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/7.jpg"><div id="boite_legende"><p class="legende">HLM, quartier du Pré-Battoir</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/8.jpg"><div id="boite_legende"><p class="legende">Logements ouvriers</p></div></span>  
+
+       <span class="slide" id="image_v">  <img class="image_h" src="img/9.jpg"><div id="boite_legende"><p class="legende">Alentours du village - archive</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/10.jpg"><div id="boite_legende"> <p class="legende">Moulin du Mas, usine Bobichon, usine Sainte-Marthe, Sainte-Julie, carte postale - archive </p></div></span>
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/11.jpg"><div id="boite_legende"><p class="legende">Saint-Julien-Molin-Molette - archive</p></div></span>  
+
+       <span class="slide" id="image_v">    <img class="image_v" src="img/12.jpg"><div id="boite_legende"><p class="legende">Place de la Bascule, avenue de Colombier</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/13.jpg"><div id="boite_legende"> <p class="legende">Devanture d'atelier à façon, rue de la Modure</p></div></span>
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/14.jpg"><div id="boite_legende"><p class="legende">Logements ouvriers, avenue de Colombier</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/15.jpg"><div id="boite_legende"> <p class="legende">Logements ouvriers, avenue de Colombier</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/16.jpg"><div id="boite_legende"><p class="legende">Logements ouvriers, avenue de Colombier</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/17.jpg"><div id="boite_legende"><p class="legende">Logements ouvriers, quartier Pré-Battoir</p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/18.jpg"><div id="boite_legende"><p class="legende">Logements ouvriers, rue de la Modure</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/19.jpg"><div id="boite_legende"> <p class="legende">Logements ouvriers, rue de la Modure</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/20.jpg"><div id="boite_legende"><p class="legende">Rue Vieille</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/21.jpg"><div id="boite_legende"><p class="legende">Logements ouvriers</p></div></span>  
+
+       <span class="slide" id="image_v">  <img class="image_v" src="img/22.jpg"><div id="boite_legende"><p class="legende">Devanture d'un atelier à façon</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/23.jpg"><div id="boite_legende"> <p class="legende">Grande Place de Saint-Julien-Molin-Molette </p></div></span>
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/24.jpg"><div id="boite_legende"><p class="legende">Devanture d'un atelier à domicile, Place de la Bascule</p></div></span>  
+
+       <span class="slide" id="image_h">    <img class="image_h" src="img/25.jpg"><div id="boite_legende"><p class="legende">Route du Bourg-Argental - archive</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/26.jpg"><div id="boite_legende"> <p class="legende">Devanture d'un atelier à domicile, rue de la Modure - archive</p></div></span>
+
+      <span class="slide" id="image_h">    <img class="image_h" src="img/27.jpg"><div id="boite_legende"><p class="legende">Rue de la Modure - archive</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/28.jpg"><div id="boite_legende"> <p class="legende">Commerces, Faubourg - archive</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/29.jpg"><div id="boite_legende"><p class="legende">Jardins ouvriers</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/30.jpg"><div id="boite_legende"><p class="legende">Jardins ouvriers, avenue de Colombier</p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/31.jpg"><div id="boite_legende"><p class="legende">Jardins ouvriers, quartier du Mas</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/32.jpg"><div id="boite_legende"> <p class="legende">Jardins</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/33.jpg"><div id="boite_legende"><p class="legende">Paillage pour blanchir les cardons <br> réalisé avec un sac servant anciennement à l'importation des écheveaux de soie</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/34.jpg"><div id="boite_legende"><p class="legende">Lavoir et canal, quartier du Mas</p></div></span>  
+
+       <span class="slide" id="image_v">  <img class="image_v" src="img/35.jpg"><div id="boite_legende"><p class="legende">Lavoir</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/36.jpg"><div id="boite_legende"> <p class="legende">Ouvrières lavant son linge dans la rivière du Ternay - archive</p></div></span>
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/37.jpg"><div id="boite_legende"><p class="legende">Avenue des Ateliers</p></div></span>  
+
+       <span class="slide" id="image_h">    <img class="image_h" src="img/38.jpg"><div id="boite_legende"><p class="legende">Dortoirs de l'usine Perrier</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/39.jpg"><div id="boite_legende"> <p class="legende">Dortoirs de l'usine Bobichon</p></div></span>
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/40.jpg"><div id="boite_legende"><p class="legende">Dortoirs et ferme, puis Fabrique de Bonbons,<br> situés à la jonction entre Peyronnet le Bas et le pont Neuf</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/41.jpg"><div id="boite_legende"> <p class="legende">Cuisine des ouvrièr·e·s au sous-sol de l'usine Perrier</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/42.jpg"><div id="boite_legende"><p class="legende">Fourneaux</p></div></span>  
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/43.jpg"><div id="boite_legende"><p class="legende">Réfectoire - archive</p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/44.jpg"><div id="boite_legende"><p class="legende">Évier des ouvrières</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/45.jpg"><div id="boite_legende"> <p class="legende">Exemple d'usine-pensionnat, les dortoirs du couvent de Colcombet</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/46.jpg"><div id="boite_legende"><p class="legende">Parc du Soleil</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/47.jpg"><div id="boite_legende"><p class="legende">Pavillons et résidences du Parc du Soleil, <br> alentours du quartier de la Condamine</p></div></span>  
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif">
+       <span id="souligne_txt">Logements ouvriers</span>
+<br><br>
+
+Les bâtiments les plus anciens du village sont construits selon les techniques paysannes, en chaux et 
+pierres de granit - les pierres étaient extraites des carrières alentour comme celle de la rue Peyronnet ou 
+celle de la Roche, chemin de Taillis-Vert, aujourd’hui disparues. <br>
+Avec le développement de <a id= "lien_obj" href="../../savoirs/tissage/savoir_tissage.html">l’activité industrielle</a> - extraction du plomb dans les mines puis industrie de la 
+soie - le nombre d’ouvrier·es augmente et le problème du logement se pose. L’activité ouvrière marque la 
+construction des habitations. Le centre bourg - Rue Vieille, Place de la Bascule, Grande Place et Rue du 
+Faubourg - est occupé par divers <a id= "lien_obj" href="../commerce/lieu_commerce.html">commerces</a>, hôtels et cafés.<br>
+Ainsi, les prés anciennement situés aux abords de la montée de l’avenue de Colombier, de la Rue de la 
+Modure, du quartier Pré-Martin et Pré-Battoir, ainsi que Rue Peyronnet, rue de Taillis-Vert et montée de 
+Drevard, sont aménagés en petites maisons prêtes à habiter. Ces habitations s’élèvent sur un ou deux 
+étages, et ont une ou deux fenêtres à chacun de ces derniers. <br><br>
+Ces maisons sont construites sur le même modèle: une cuisine en rez-de-chaussée avec un fourneau 
+qui suffisait à chauffer toute l’habitation et à cuisiner. Le pain de seigle, principale denrée alimentaire 
+- dont la farine provenait du meunier, notamment du <a id= "lien_obj" href="../moulin_mas/lieu_moulin_mas.html">Moulin du Mas</a> - était préparé par le boulanger à 
+façon, il était possible pour les piraillons de venir cuire certains de leurs repas dans son four. Aux étages 
+supérieurs des maisons se trouvaient les chambres, et sous les combles, le grenier. À l’arrière de la cuisine 
+se trouvaient une cave garde-manger et le stockage du charbon. Puis, en enfilade, un petit jardin avec 
+clapier, poulailler et potager. Certaines maisons avaient une source, sinon il fallait aller à la fontaine - au 
+faubourg, une pompe à bras permettait de puiser <a id= "lien_obj" href="../systeme_hydraulique/lieu_systeme_hydraulique.html">l’eau de la rivière du Ternay</a>. <br><br>
+Avant l’arrivée de l’électricité, les logements ouvriers sont éclairés au moyen de bougies de suif ou de 
+lampes à huile dont l’odeur était forte et les fumées dégagées noires - les bougies de cire sont une denrée 
+de luxe. Certaines maisons ont été réhaussées suivant les besoins et l’enrichissement des propriétaires. <br>
+<a id= "lien_obj" href="../../savoirs/patron/savoir_patron.html">Les patrons</a> achêtaient des immeubles et bâtiments afin de loger <a id= "lien_obj" href="../../savoirs/main_oeuvre/savoir_main_oeuvre.html">leurs ouvriers</a> en échange d’un loyer. <br>
+Dans cette configuration, les logements sont séparés par étages - comme l’immeuble Corompt-Jamet 
+situé au dessus de l’épicerie de la Grande Place ou l’immeuble Gillier situé rue de la Modure. Les ouvrières 
+venues de la campagne étaient logées du lundi au samedi en dortoirs - usines pensionnats.<br><br>
+
+Les logements ouvriers sont souvent partagés par plusieurs générations d’une même famille ou par 
+plusieurs familles - par exemple Josette et Paul Schmelzle, avant de faire construire leur maison dans 
+le lotissement de la Condamine dans les années 70 - louaient une simple chambre dans un immeuble 
+Montée de Drevard. Leur fils, Pierre, vivait avec sa grand-mère et son oncle dans une maison située 
+Avenue de Colombier. À la sortie du travail, les repas étaient partagés dans cet espace de vie commune 
+puis Paul et Josette rejoignaient leur logement-dortoir en traversant l’avenue.<br>
+Par ailleurs, <a id= "lien_obj" href="../../savoirs/travail_facon/savoir_travail_facon.html">les tisseurs et tisseuses à façon</a> travaillaient dans des ateliers installés à domicile. Leur 
+espace privé et leur espace de travail étaient regroupés au sein d’immeubles à l’architecture typique: 
+une grande devanture vitrée, donnant sur la rue, laisse entrer un maximum de lumière dans l’atelier, 
+généralement situé au rez-de-chaussée. <br><br>
+De nombreux <a id= "lien_obj" href="../../outils/page_outils/metier_tisser.html">métiers à tisser</a> sont installés dans ces ateliers indépendants travaillant à façon. Après la 
+seconde guerre mondiale, on dénombre plus d’une vingtaine d’unités et de foyers équipés de quatre à dix 
+métiers - soit plus de cent métiers répartis sur le village.
+<br><br>
+<a id= "lien_obj" href="../logement/lieu_logement.html">visiter un logement ouvrier</a>
+
+<br><br>
+      <span id="souligne_txt">Usines pensionnats et dortoirs</span>
+
+<br><br>
+Étant donné le nombre important d’ouvrières venues des campagnes et des fermes alentours, n’habitant 
+pas le village, il était nécessaire pour les fabriques de prévoir des dortoirs afin de loger leurs ouvrières la 
+semaine - du lundi au samedi. Le lundi matin, un car, dépêché par les patrons, effectuait le ramassage 
+des ouvrières rentrées dans leurs familles le dimanche.<br>
+Les usines pensionnats sont équipées de cuisines - avec un grand fourneau -permettant aux ouvrières 
+de faire cuire leurs aliments. Dans certaines fabriques, un·e cuisinier·e préparait une soupe collective 
+servie au réfectoire. Les fabriques, dont certaines possédaient ferme et grange, avaient des espaces de 
+stockage pour les denrées alimentaires - telles que les caves dans lesquelles étaient entreposées des 
+dames-jeanne d’huile, de lait et des sacs de farine. Les ouvrières en pension ramenaient des provisions 
+le lundi matin qu’elles pouvaient stocker dans un placard individuel situé dans la cuisine ou près de leur 
+lit au sein du dortoir. Le pain, dont la farine provient du meunier - Moulin du Mas - était préparé par le 
+boulanger à façon. La tourte au pain de seigle pouvait se conserver une semaine et constituait une part 
+importante de l’alimentation des ouvrier·es et habitant·es du village.<br><br>
+À la suite de la seconde guerre mondiale, avec le développement du transport individuelle et du service de 
+cars, les dortoirs sont de moins en moins utilisés. Contrairement à d’autres établissements de la région, 
+il ne semble pas que des religieuses aient été employées à la surveillance des ouvrières. Cependant, 
+certaines usines - telle que <a id= "lien_obj" href="../usine_perrier/lieu_usine_perrier.html">l’usine Perrier</a> - avait un gardien logé au sein de la fabrique. Les employé·es 
+ayant le rôle de surveillant des mœurs étaient souvent assignés à la préparation des repas. Les maisons 
+de maitre et de contremaitres étaient d’ailleurs construites en enfilade ou proche des fabriques. Le 
+rythme de vie des ouvrières était marqué par une emprise forte de la religion, encourageant bonne 
+conduite et reconnaissance envers les patrons et <a id= "lien_obj" href="../eglise/lieu_eglise.html">l’église</a>. Les ouvrier·es se rendaient à la messe matin et 
+soir. L’activité des derniers dortoirs a cessé dans les années 1950. <br>
+À l’usine, le travail était effectué sous le regard de la “surveillante générale” - vierge Marie, Sainte-Thérèse - 
+la présence d’autels au sein des dortoirs et des salles des fabriques rappelaient aux ouvrier·es 
+leur devoir. 
+
+
+
+
+
+
+
+     </div>
+
+  </div> 
+
+</div>
+
+</div>
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+</body>
+</html>

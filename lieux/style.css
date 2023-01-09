@@ -1,0 +1,539 @@
+
+@font-face {
+      font-family: 'Titre';
+      src: url("../typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("../typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("../typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Typo_fleche';
+      src: url("../typo/fleche_typo.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("../typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+
+html, body {
+ margin:0;
+ padding:0;
+ color: white;
+ background: #1b3a12;
+ height: 710vh;
+ }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.fleche{
+  font-family: Typo_fleche ;
+font-size: 1.3em;}
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background:  #1b3a12;
+border-bottom: 1px solid white;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+}
+
+
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+}
+
+a.menu{
+      margin-left: 10px;
+    color: white;
+text-decoration: none;
+}
+
+a.menu:hover{
+    color: white;
+text-decoration: underline;
+}
+
+
+/*---------------------------------PRINT -----------------------------*/ 
+
+
+#bouton_print{
+font-family: Emojix;
+padding-top: 5px;
+font-size: 1.5em;
+line-height: 0.5em;
+cursor: pointer;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+
+/*---------------------------------BOUTON COULEUR-----------------------------*/ 
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: #1b3a12;
+border: 1px solid white;
+cursor: pointer;
+z-index: 3;
+}
+
+ #bouton_nuit:hover {
+background-color: white;
+}
+
+ #bouton_jour:hover {
+background-color: white;
+}
+
+#bouton_jour{
+background-color: #1b3a12;  
+}
+
+#bouton_nuit{
+background-color: #1b3a12;  
+}
+
+
+#bouton_color{
+  background-color: white;
+}
+
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+#corps{
+display: inline-flex;
+  height: 100%;
+width: 100%;  
+}
+
+
+/*---------------------------------PHOTOS-----------------------------*/ 
+
+#corps{
+  margin-top: 200px;
+}
+
+#souligne_etape{
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  cursor: pointer;
+}
+
+
+     .objlienhorizontal {
+      position: absolute;
+    background-repeat: none;
+        height: 200px;
+        width: auto;}
+
+
+     .objlienvertical {
+      position: absolute;
+        height: auto;
+        width: 200px;}
+
+
+
+#cadet{
+  top: 15vh;
+  left: 8vw;
+position: absolute;}
+
+#cooperative_soie{
+  top: 47vh;
+  left: 40vw;
+position: absolute;}
+
+
+#eglise{
+  top:  30vh;
+  left: 65vw;
+  position: absolute;
+}
+
+#fabrique_malliquet{
+  top:  75vh;
+  left: 15vw;
+  position: absolute;
+}
+
+#fabrique_taillis_vert{
+  top:  85vh;
+  left: 70vw;
+  position: absolute;
+}
+
+#logement_ouvrier{
+  top: 110vh;
+  left: 50vw;
+position: absolute;}
+
+
+#fonderie_bancel{
+  top:  140vh;
+  left: 6vw;
+  position: absolute;
+}
+
+#maison_maitre{
+  top:  160vh;
+  left: 32vw;
+  position: absolute;
+}
+
+#moulin_mas{
+  top:  180vh;
+  left: 60vw;
+  position: absolute;
+}
+
+#loisir_education{
+  top:  200vh;
+  left: 5vw;
+  position: absolute;
+}
+
+
+#moulinage_etienne{
+  top:  220vh;
+  left: 40vw;
+  position: absolute;
+}
+
+#moulinage_cellard{
+  top:  230vh;
+  left: 72vw;
+  position: absolute;
+}
+
+#moulinage_roche{
+  top:  270vh;
+  left: 37vw;
+  position: absolute;
+}
+
+#orangerie{
+  top:  250vh;
+  left: 12vw;
+  position: absolute;
+}
+
+
+#systeme_hydraulique{
+  top:  105vh;
+  left: 45vw;
+  position: absolute;
+}
+
+#usine_blanc{
+  top:  310vh;
+  left: 4vw;
+  position: absolute;
+}
+
+#usine_blanc_ligue{
+  top:  340vh;
+  left: 28vw;
+  position: absolute;
+}
+
+#usine_bobichon{
+  top:  330vh;
+  left: 50vw;
+  position: absolute;
+}
+
+#usine_chirol{
+  top:  300vh;
+  left: 75vw;
+  position: absolute;
+}
+
+#usine_joseph_perrier{
+  top:  387vh;
+  left: 51vw;
+  position: absolute;
+}
+
+#usine_saint_joseph{
+  top:  400vh;
+  left: 30vw;
+  position: absolute;
+}
+
+#usine_saint_joseph_bas{
+  top:  380vh;
+  left: 2vw;
+  position: absolute;
+}
+
+#usine_saint_victor{
+  top:  450vh;
+  left: 8vw;
+  position: absolute;
+}
+
+#usine_sainte_julie{
+  top:  440vh;
+  left: 60vw;
+  position: absolute;
+}
+
+#usine_sainte_marthe{
+  top:  480vh;
+  left: 35vw;
+  position: absolute;
+}
+
+#usine_sainte_marie{
+  top:  500vh;
+  left: 5vw;
+  position: absolute;
+}
+
+
+#usine_perrier{
+  top:  507vh;
+  left: 57vw;
+  position: absolute;
+}
+
+#logement{
+  top:  392vh;
+  left: 70vw;
+  position: absolute;
+}
+
+
+#commerce{
+  top:  550vh;
+  left: 10vw;
+  position: absolute;
+}
+
+
+#parc_naturel{
+  top:  525vh;
+  left: 40vw;
+  position: absolute;
+}
+
+#pavillon{
+  top:  550vh;
+  left: 67vw;
+  position: absolute;
+}
+#pelussin{
+  top:  620vh;
+  left: 55vw;
+  position: absolute;
+}
+
+#remettage_piraillon{
+  top:  610vh;
+  left: 4vw;
+  position: absolute;
+}
+
+#moulinage_barou{
+  top:  655vh;
+  left: 28vw;
+  position: absolute;
+}
+
+#davezieux{
+  top:  640vh;
+  left: 77vw;
+  position: absolute;
+}
+
+#barrage_ternay{
+  top:  650vh;
+  left: 2vw;
+  position: absolute;
+  margin-bottom: 60px;
+}
+
+img:hover + .box_legende {
+  display: block;
+}
+/*---------------------------------TEXTE-----------------------------*/ 
+
+
+#ligne{
+  width: 100vw;
+  height: 20px;
+  border-bottom: 1px solid white;
+  border-bottom-style: dashed;
+  position: absolute;
+  top: 600vh;
+}
+
+.legende{
+  color: black;
+  font-family: Titre;
+}
+
+.box_legende{
+  display: none;
+  width: fit-content;
+  position: absolute;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  padding-left: 25px;
+  padding-right: 25px;
+  white-space: nowrap;
+  padding-top: 0px;
+  top: 200px;
+  left: 60px;
+  z-index: 2;
+}
+
+
+
+/*---------------------------------RETOUR-----------------------------*/
+#nav {
+  z-index: 3;
+  position: fixed;
+ height: 100vh;
+  top: 0;
+  left: -30px;
+  cursor: pointer;
+  width: 30px;
+  background-color: black;
+  border-right: 1px solid white;
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+color: white;
+padding-top: 80px;
+padding-right: 10px;
+    transition: width 0.5s;
+}
+
+    #nav.closed:hover {
+      width: 60px; }
+
+
+#nav_sommaire {
+  z-index: 3;
+  position: fixed;
+ height: 100vh;
+  top: 0;
+  left: -30px;
+  cursor: pointer;
+  width: 70px;
+  background-color: white;
+  border-right: 1px solid white;
+color: black;
+padding-top: 80px;
+padding-right: 0px;
+    transition: width 0.5s;
+font-family: Titre;
+font-size: 1.3em;
+}
+
+
+.titre_sommaire{
+  position: absolute;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+right: 8px;
+
+}
+    #nav_sommaire.closed:hover {
+      width: 350px; }
+
+
+.date_sommaire{
+position: relative;
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+    margin-bottom: 2px ;
+}
+
+
+.date_sommaire:hover {
+  text-shadow:black 1px 0 10px ;
+
+}
+
+.prec_next{
+position: relative;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+    margin-bottom: 2px ;
+    top: 30px;
+}
+
+#boite_date{
+  display: grid;
+    position: absolute;
+  text-align: left;
+  font-size: 0.75em;
+  width: 290px;
+  right: 30px;
+  overfow-y: scroll;
+  height: 80%;
+      direction:rtl; 
+      padding-bottom: 30px;
+
+}
+
+.txt_sommaire{
+  direction: ltr;
+  margin-left: 30px;
+}

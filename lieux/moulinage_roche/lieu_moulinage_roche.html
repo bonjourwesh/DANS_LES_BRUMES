@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Moulinage de la Roche ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_lieux.html">Lieux</a> / Moulinage de la Roche </div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('../pdf/pdf_moulinage_roche.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/1.jpg"><div id="boite_legende"><p class="legende">Moulinage de la Roche - archive </p></div></span>  
+
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"><div id="boite_legende"><p class="legende"> Camping, montée de Taillis-Vert, quartier Pré-Battoir</p></div></span>  
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/3.jpg"><div id="boite_legende"> <p class="legende">Moulinage de la Roche, Pré-Battoir</p></div></span>
+ 
+
+</div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif">
+       <span id="souligne_txt">Moulinage de la Roche</span><br><br>
+
+
+       la fabrique était située en dessous d’un rocher surnommé la roche du Curé, à proximité d’une ancienne
+carrière d’où ont dû être extraites les pierres ayant servi à la construction de la fabrique - sur le chemin
+de Taillis-Vert et au-dessus du Pré-Battoir.<br><br>
+L’architecture du moulinage est proche des plus anciennes fabriques du village – telle que <a id= "lien_obj" href="../cadet/lieu_cadet.html">Chez Cadet</a>,
+fabrique située au croisement entre le Faubourg et le pont Vieille - datant de la fin du XVIIIème siècle. Cette
+architecture traditionnelle avec <a id= "lien_obj" href="../maison_maitre/lieu_maison_maitre.html">la maison du maître</a> accolée à la fabrique, est aussi appelée « maison
+princière ». Au rez-de-chaussée se trouvaient les greniers-débarras. Au premier étage, les cuisines et les
+chambres. Et au second, d’autres chambres.<br><br>
+Le moulinage a été un temps exploité par les Demoiselles Schmelzle, mais ces dernières firent faillite.
+Au début du XXème siècle, le moulinage est racheté par Joannès Cellard - <a id= "lien_obj" href="../../savoirs/contremaitresse/savoir_contremaitresse.html">contremaître</a> chez Gillier. Ce
+dernier transforme le moulinage en logements pour ses ouvrier·es travaillant dans les ateliers de <a id= "lien_obj" href="../fabrique_taillis_vert/lieu_fabrique_taillis_vert.html">Taillis-
+Vert</a>. <a id= "lien_obj" href="../../outils/page_outils/roue_aube.html">La roue hydraulique</a> est alors démontée et vendue à <a id= "lien_obj" href="../../savoirs/moulinage/savoir_moulinage.html">un moulinier</a> de Dunières.<br><br>
+En 1953, <a id= "lien_obj" href="../../savoirs/tissage/savoir_tissage.html">les tissages</a> de Taillis-Vert ferment. En 1956, la famille Cellard décide de vendre la maison de la
+Roche aux éclaireurs de France. Inhabitée, elle est rachetée en 1975 par la Municipalité Bancel.
+Le 16 avril 1977, les sapeurs-pompiers réalisent un exercice de mise à feu marquant ainsi la disparition
+de la fabrique et de la maison de la Roche.
+
+
+
+     </div>
+
+  </div> 
+
+</div>
+
+</div>
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+</body>
+</html>

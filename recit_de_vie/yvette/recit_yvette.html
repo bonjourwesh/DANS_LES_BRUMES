@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Yvette Vincent ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./../ressource/style.css" type="text/css" >
+
+
+
+</head>
+<body>
+
+<!----------------------------POP UP PRINT--------------------------------> 
+
+  <div id="myModal" class="modal">
+ 
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<p> imprimer le récit de vie de Yvette intégralement <button id= "txt_integral" class="btn_print" onclick="printPdf('pdf_yvette_integral.pdf')"></button> </p>
+
+<p> imprimer le récit de vie de Yvette <button id= "txt_recit" class="btn_print" onclick="printPdf('pdf_yvette_recit.pdf')"></button></p>
+
+<p> imprimer le récit de vie de Yvette qui parle des lieux <button id= "txt_lieu" class="btn_print" onclick="printPdf('pdf_yvette_lieu.pdf')"></button></p>
+
+<p>imprimer le récit de vie de Yvette qui parle des savoirs <button id= "txt_outil" class="btn_print" onclick="printPdf('pdf_yvette_savoir.pdf')"></button></p>
+  </div>
+
+</div>
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="menu" href="../../index.html">Dans les brumes</a> / <a id= "lienTitre" class="menu" href="../menu_recit.html">Récits de vie</a> / <a id= "lienTitre" class="menu" href="recit_yvette.html">Yvette-Vincent<a></div>
+     
+
+      <div id="droite">
+
+        <div id="archive"> 
+         <a id="bouton_print"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+      <div id="boutons"> 
+  
+<div id="les_boutons" class="boutons">
+  <input id="bouton_recit" class="bouton" type="button" onclick="fonctionRecitDeVie()" onmouseover="fonctionB1()" onmouseleave="fonctionB1Leave()"> 
+   <p id="b1" class="texte_b"> lire la partie sur le récit de vie </p>
+
+    <input id="bouton_objet" class="bouton" type="button" onclick="fonctionObjet()" onmouseover="fonctionB2()" onmouseleave="fonctionB2Leave()">
+    <p id="b2" class="texte_b"> lire la partie sur les-faires</p>
+
+
+  <input id="bouton_lieu" class="bouton" type="button" onclick="fonctionLieu()" onmouseover="fonctionB3()" onmouseleave="fonctionB3Leave()">
+    <p id="b3" class="texte_b"> lire la partie sur le territoire</p>
+
+</div>
+
+
+      </div>
+
+
+          <div id="text" class="textwesh">
+      </div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+
+  <div class="panel-two" id="rectangle_droit">
+  
+
+  <input id="bouton_fermer" class="boutonFermer" type="button" onclick="fonctionFermer()">
+
+<div id="anotherContentOutils"></div>
+<div id="anotherContentLieux"></div>
+<div id="anotherContentSavoirs"></div>
+<div id="anotherContentRecits"></div>
+<div id="anotherContentArchives"></div>
+</div>
+
+</div>
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./../ressource/script.js"></script>
+
+  <script  src="./script_couper_texte.js"></script>
+  <script  src="./../ressource/script_photo_outils.js"></script>
+    <script  src="./../ressource/script_photo_gens.js"></script>
+  <script  src="./../ressource/script_photo_lieux.js"></script>
+  <script  src="./../ressource/script_photo_savoirs.js"></script>
+    <script  src="./../ressource/script_photo_archives.js"></script>
+
+<script>
+ $(function(){
+ $("#anotherContentOutils").load("./../ressource/droiteOutils.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentLieux").load("./../ressource/droiteLieux.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentSavoirs").load("./../ressource/droiteSavoirs.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentRecits").load("./../ressource/droiteGens.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentArchives").load("./../ressource/droiteArchives.html"); 
+ });
+</script> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Duite ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_page_outils.css">
+
+</head>
+<body onload="fonctionFondCooleur()" >
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a href="../../index.html">Dans les brumes</a><a href="../menu_outils.html"> / Objets</a> / Duite</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+
+          <a id="bouton_print" onclick="printPdf('pdf/pdf_duite.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+        
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+ 
+
+
+ 
+   <div id="anotherContent"></div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="fondOutils" id="rectangle_droit">
+  
+ <input id="bouton_fermer" class="boutonFermer" type="button" onclick="window.location.href ='./../menu_outils.html'">
+
+<div class="container">
+  <div class="mySlides">
+    <img src="../../image/outils/duite.jpg" id="photo" onclick="fonctionFullPix(1)" class="pix_obj">
+  </div>
+
+
+
+
+
+      <p id="description" class="description_obj">
+    <span class="mot_fiche_tech">Nom:</span> Duite
+
+<br><br><span class="mot_fiche_tech">Lieu:</span> 
+
+<a class="dans_description"  href="../../lieux/usine_perrier/lieu_usine_perrier.html" >usine Perrier</a>, 
+<a class="dans_description"  href="../../lieux/education_sante/lieu_education_sante.html" >le lavoir</a>,
+
+<a class="dans_description"  href="../../lieux/moulinage_barou/lieu_moulinage_barou.html" >moulinage Barou</a>,
+
+<a class="dans_description"  href="../../lieux/cooperative_soie/lieu_cooperative_soie.html" >Coopérative de la soie</a>, 
+<a class="dans_description"  href="../../lieux/moulinage_cellard/lieu_moulinage_cellard.html" >Moulinage Cellard</a>, 
+
+<a class="dans_description"  href="../../lieux/moulinage_etienne/lieu_moulinage_etienne.html" >Chez Baptiste - Moulinage Étienne</a>, 
+
+<a class="dans_description"  href="../../lieux/fabrique_taillis_vert/lieu_fabrique_taillis_vert.html" >Fabrique de Taillis-Vert</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_bobichon/lieu_usine_bobichon.html" >Usine Bobichon</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_blanc/lieu_usine_blanc.html" >Usine Blanc</a>, 
+
+<a class="dans_description"  href="../../lieux/fabrique_malliquet/lieu_fabrique_malliquet.html" >Fabrique Malliquet</a>, 
+
+<a class="dans_description"  href="../../lieux/cadet/lieu_cadet.html" >Chez Cadet</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_sainte_marie/lieu_usine_sainte_marie.html" >Usine Sainte-Marie</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_sainte_julie/lieu_usine_sainte_julie.html" >Usine Sainte-Julie</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_sainte_marthe/lieu_usine_sainte_marthe.html" >Usine Sainte-Marthe</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_blanc_ligue/lieu_usine_blanc_ligue.html" >Usine Blanc-Ligue</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_saint_joseph/lieu_usine_saint_joseph.html" >Usine Saint-Joseph</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_saint_victor/lieu_usine_saint_victor.html" >Usine Saint-Victor</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_joseph_perrier/lieu_usine_joseph_perrier.html" >fabrique Joseph Perrier</a>, 
+
+<a class="dans_description"  href="../../lieux/remettage_piraillon/lieu_remettage_piraillon.html" >remettage Piraillon</a>.
+
+
+
+<br>
+<br><span class="mot_fiche_tech">Descriptif:</span> 
+ Fil et armure.
+ <br>
+<br><span class="mot_fiche_tech">Usage et histoire:</span> 
+ Passage d'un coup de trame lors de la lève des cadres. Le fil de trame est déposé 
+perpendiculairement aux fils de chaine lors du passage de la navette sur le battant à l’ouverture de la 
+foule. L’accumulation de duites forme l’armure du tissu. 
+
+
+<br>
+
+<br><span class="mot_fiche_tech">Usager·es:</span> 
+<a class="dans_description" href="../../savoirs/tissage/savoir_tissage.html">ouvrieres tisseuses</a>, 
+<a class="dans_description" href="../../savoirs/remettage/savoir_remettage.html">remetteurs</a>,
+<a class="dans_description" href="../../savoirs/montage_metier/savoir_montage_metier.html">gareurs</a>.
+
+<br>
+<br><span class="mot_fiche_tech">Objets liés:</span> 
+<a class="dans_description" href="metier_tisser.html">metier à tisser</a>, 
+<a class="dans_description" href="carte.html">carte perforée</a>, 
+<a class="dans_description"  href="navette.html">navette</a>, 
+<a class="dans_description"  href="canette.html">canette</a>, 
+<a class="dans_description"  href="chaine.html">chaine</a>, 
+<a class="dans_description"  href="ratiere.html">ratière</a>, 
+<a class="dans_description"  href="compteur.html">compteur</a>, 
+<a class="dans_description"  href="foule.html">foule</a>, 
+<a class="dans_description"  href="remisse.html">remisse</a>, 
+<a class="dans_description"  href="mousseline.html">mousseline</a>, 
+<a class="dans_description"  href="cavalier.html">cavalier</a>, 
+<a class="dans_description"  href="trame.html">trame</a>,
+<a class="dans_description"  href="battant.html">battant</a>.
+<br>
+<br>
+
+
+</p>
+
+
+<br><br><br><br>  
+  </div>
+
+
+
+</div>
+
+</div>
+
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./script.js"></script>
+        <script  src="./script_photo.js"></script>
+ <script>$(function(){
+ $("#anotherContent").load("txt_gauche.html"); 
+ });</script>
+</body>
+</html>

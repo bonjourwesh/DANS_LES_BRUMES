@@ -1,0 +1,719 @@
+@font-face {
+      font-family: 'Titre';
+      src: url("../../typo/Blop.otf") format('truetype');
+      font-style: normal;
+
+  }
+
+
+@font-face {
+      font-family: 'Texte_Serif';
+      src: url("../../typo/BBBBaskervvol-Base.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Texte_Sans_Serif';
+      src: url("../../typo/NectoMono-Regular.otf") format('truetype');
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'Emojix';
+      src: url("../../typo/wingdingdeux.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+@font-face {
+      font-family: 'Typo_fleche';
+      src: url("../../typo/fleche_typo.ttf") format('truetype');
+      font-style: normal;
+}
+
+
+
+html, body {
+ margin:0;
+ padding:0;
+ background-color: white;
+ }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#boite_audio{
+  color: black;
+  font-size: 2.5em;
+width: 150px;
+height: 100px;
+background-color: white;
+border-radius:75px / 50px ;
+border: 1px solid black;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+text-align: center;
+margin-bottom: 20px;
+cursor: pointer;
+
+}
+
+#lettre_play{
+font-family: Titre;
+font-style: italic;
+    vertical-align: middle;
+        transform: translateY(-40%);
+
+}
+
+
+#boite_audio:hover{
+box-shadow:black 1px 0 10px ;
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+.fleche{
+  font-family: Typo_fleche ;
+font-size: 1.3em;}
+
+/*---------------------------------LE HAUT-----------------------------*/ 
+
+#entete{
+  z-index: 5;
+    font-family: Titre;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+width: 100%;
+height: 4em;
+background: white;
+border-bottom: 1px solid black;
+}
+
+
+#titre{
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 7px;
+  text-align: left;
+  font-size: 2.5em ;
+}
+
+
+
+#droite{
+  position: absolute;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1em ;
+  right: 0px;
+  font-family: Titre;
+}
+
+a.menu{
+    color: black;
+text-decoration: none;
+  margin-left: 10px;
+}
+
+a:hover{
+    color: black;
+text-decoration: none;
+}
+
+
+#archive{
+  display: inline;
+  margin-left: 20px;
+}
+
+/*---------------------------------PRINT -----------------------------*/ 
+
+
+#bouton_print{
+font-family: Emojix;
+padding-top: 5px;
+font-size: 1.5em;
+line-height: 0.5em;
+cursor: pointer;
+color: black;
+text-decoration: none;
+}
+
+#bouton_print:hover{
+text-decoration: underline;
+text-shadow: black 1px 0 10px;
+}
+
+
+
+
+/*---------------------------------BOITE PRINT -----------------------------*/ 
+
+.btn_print{
+  padding-top: 10px; 
+  margin-left: 10px;
+  height: 30px;
+width: 30px;
+border-radius: 15px;
+background-color: white;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+    transition: border-radius 0.5s;
+}
+
+ .btn_print:hover {
+background-color: black;
+border-radius: 0px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+font-family: Titre;
+font-size: 1.5em;
+  background-color: white;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid black;
+  width: fit-content;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+margin-top: -30px;
+margin-right: -15px;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*---------------------------------BTN COULEUR-----------------------------*/ 
+
+.boutonCouleur{
+  margin-top: 5px; 
+  height: 20px;
+width: 20px;
+border-radius: 10px;
+background-color: white;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+}
+
+ .boutonCouleur:hover {
+
+background-color: black;
+
+}
+
+#bouton_jour{
+  background-color: black;
+}
+
+
+/*---------------------------------LE CORPS-----------------------------*/ 
+
+.drag-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+[class^=panel] {
+}
+
+.panel-one {
+  width: 70%;
+}
+
+.panel-two {
+  flex: 1;
+  width: 30%;
+  display: none;
+}
+
+#dragbar {
+  padding: 6px;
+  cursor: col-resize;
+  background-color: white;
+}
+
+/*---------------------------------RETOUR-----------------------------*/
+
+#nav {
+  font-family: Titre;
+  z-index: 3;
+  position: fixed;
+ height: 100vh;
+  top: 0;
+  left: -30px;
+  cursor: pointer;
+  width: 30px;
+  background-color: white;
+  border-right: 1px solid black;
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+color: black;
+padding-top: 80px;
+padding-right: 10px;
+    transition: width 0.5s;
+}
+
+    #nav.closed:hover {
+      width: 60px; }
+
+
+
+#nav_sommaire {
+  z-index: 3;
+  position: fixed;
+ height: 100vh;
+  top: 0;
+  left: -30px;
+  cursor: pointer;
+  width: 70px;
+  background-color: white;
+  border-right: 1px solid black;
+color: black;
+padding-top: 80px;
+padding-right: 0px;
+    transition: width 0.5s;
+
+font-size: 1.3em;
+}
+
+
+.titre_sommaire{
+  position: absolute;
+writing-mode: vertical-rl;
+text-orientation: mixed;
+right: 8px;
+
+}
+    #nav_sommaire.closed:hover {
+      width: 300px; }
+
+
+.date_sommaire{
+position: relative;
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+    margin-bottom: 2px ;
+    font-family: Titre;
+}
+
+
+.date_sommaire:hover {
+  text-shadow:black 1px 0 10px ;
+
+}
+
+.prec_next{
+  font-family: Titre;
+position: relative;
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+    margin-bottom: 2px ;
+    top: 40px;
+}
+
+#boite_date{
+  display: grid;
+    position: absolute;
+  text-align: left;
+  font-size: 0.8em;
+  width: 220px;
+  right: 30px;
+
+}
+
+
+
+/*---------------------------------BOUTONS-----------------------------*/ 
+#les_boutons{
+  padding-top: 4em;
+  margin-top: 15px; 
+  padding-left: 40px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bouton{
+height: 30px;
+width: 30px;
+border-radius: 15px;
+background-color: white;
+border: 1px solid black;
+cursor: pointer;
+z-index: 3;
+}
+
+
+.boutonRecit{
+background-color: black;
+border: none;
+height: 30px;
+width: 30px;
+border-radius: 15px;
+cursor: pointer;
+}
+
+
+#bouton_recit:hover {
+background-color: black;
+border: none;
+}
+
+.boutonLieu{
+background-color: black;
+border: none;
+height: 30px;
+width: 30px;
+border-radius: 15px;
+cursor: pointer;
+}
+
+
+#bouton_lieu:hover {
+background-color: black;
+border: none;
+}
+
+
+.boutonObjet{
+background-color: black;
+height: 30px;
+width: 30px;
+border-radius: 15px;
+border: none;
+}
+
+
+#bouton_objet:hover {
+background-color: black;
+border: none;
+}
+
+
+.texte_b{
+  font-family: Titre;
+  font-size: 0.8em;
+  margin-top: 7px;
+  padding-left: 34px;
+  display: none;
+  z-index: 0;
+  position: absolute;
+  width: 51%;
+}
+
+#b2{
+  text-align: center;
+  margin-left: 10px;
+}
+
+#b3{
+  text-align: end;
+  margin-left: 10px;
+}
+/*---------------------------------TEXTE-----------------------------*/ 
+.textwesh{
+font-family: Titre;
+padding-top: 30px;
+padding-left: 40px;
+padding-right: 30px;
+/*line-height: 23px;*/
+font-size: 1.5em;
+}
+
+
+
+.textwesh_terrain{
+font-family: Titre;
+padding-top: 10px;
+padding-left: 70px;
+padding-right: 30px;
+color: black;
+font-size: 1.5em;
+}
+
+.marge_haut{
+  position: relative;
+top: 6em;
+bottom: 50px;
+}
+
+#espacement{
+  height: 6em;
+}
+
+
+#date{
+font-family: Texte_Serif;
+text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
+
+#intro{
+text-align: justify;
+font-family: Titre;
+font-style: italic;
+
+}
+
+
+.souligne{
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  cursor: pointer;
+}
+
+.souligne:hover{
+text-shadow: black 1px 0 10px;;
+}
+
+/*---------------------------------DROITE-----------------------------*/ 
+
+
+#bouton_fermer{
+position: fixed;
+margin-left: 13px;
+z-index: 7;
+border:  1px solid black;
+border-radius: 0px;
+  margin-top: 70px;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+
+#bouton_fermer:hover{
+  cursor: pointer;
+  background-color: black;
+}
+
+
+.fiche_technique{
+height: 100%;
+width: -moz-available;
+width: -webkit-fill-available;
+position: fixed;
+display: block;
+margin-left: auto;
+margin-right: auto;
+overflow-y: scroll; }
+
+
+
+.pix_obj{
+  margin-top: 120px;
+    max-width: 250px;
+    max-height: 350px;
+  z-index: 4;
+  background-size: contain;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video{
+  margin-top: 120px;
+    max-width: 250px;
+    max-height: 350px;
+  z-index: 4;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.pix_obj_full{
+  margin-top: 30px;
+    max-width: 100%;
+  z-index: 4;
+  background-size: contain;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description_obj{
+  max-width: 80%;
+  margin-top: 10px;
+  font-size: 1em;
+font-family: Titre;
+padding-top: 20px;
+    margin-left: auto;
+margin-right: auto;  
+line-height: 18px;
+text-align: center;
+margin-bottom: 120px;
+}
+
+
+.mot_fiche_tech{
+text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
+
+.vers_obj{
+text-align: center;
+  width: 100%;
+}
+
+
+a#vers_obj{
+  text-align: center;
+padding-right: auto;
+padding-right: auto;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+
+}
+
+a#vers_obj:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+a.dans_description{
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a.dans_description:hover{
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+
+/*---------------------------------CHANGEMENT COULEUR-----------------------------*/ 
+
+
+.fondOutils{
+  background-color: white;
+  color: black;
+    flex: 1;
+  width: 30%;
+    height: auto;
+  display: block;
+  border-left: 1px solid black ;
+
+}
+
+.fondLieux{
+  background-color: white;
+  color: black;
+    flex: 1;
+  width: 30%;
+  height: auto;
+  display: block;
+  border-left: 1px solid black ;
+}
+
+.fondRecit{
+  background-color: white;
+  color: black;
+    flex: 1;
+  width: 30%;
+  height: auto;
+  display: block;
+  border-left: 1px solid black ;
+}
+
+.fondSavoir{
+  background-color: white;
+  color: black;
+    flex: 1;
+  width: 30%;
+  height: auto;
+  display: block;
+  border-left: 1px solid black ;
+}
+
+
+a.fondRecit{
+color: black;
+}
+
+
+
+
+      /*---------------------------------LIEN-----------------------------*/ 
+#lien {
+justify-content: space-evenly;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+display: inline-flex;
+  width: 100%;
+  height: 180px;
+margin-top: 60px; 
+
+ font-size: 1.1em;
+
+}
+
+
+
+.boite_fleche:hover {
+box-shadow: black 1px 0 10px;
+}
+
+
+.boite_fleche{
+    border: 1px solid black;
+width: 280px;    
+text-align: center;
+height: 120px;
+    border-radius: 50%;
+}
+
+#souligne{
+  text-decoration: underline;  
+}
+
+.lien_txt{
+  color: black;
+  text-decoration: underline;
+}
+
+.lien_txt:hover {
+  text-shadow: black 1px 0 10px;
+}

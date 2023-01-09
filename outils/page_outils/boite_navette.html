@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Boite à avette ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_page_outils.css">
+
+</head>
+<body onload="fonctionFondCooleur()" >
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a href="../../index.html">Dans les brumes</a><a href="../menu_outils.html"> / Objets</a> / Boite à navette</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+
+          <a id="bouton_print" onclick="printPdf('pdf/pdf_boite_navette.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+        
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+ 
+ <div id="anotherContent"></div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="fondOutils" id="rectangle_droit">
+  
+ <input id="bouton_fermer" class="boutonFermer" type="button" onclick="window.location.href ='./../menu_outils.html'">
+
+<div class="container">
+  <div class="mySlides">
+    <img src="../../image/outils/boite_navette.jpg" id="photo" onclick="fonctionFullPix()" class="pix_obj">
+  </div>
+
+  <div class="mySlides">
+    <img src="../../image/outils/boite_navette_2.jpg" id="pix_obj_1" onclick="fonctionFullPix1()"class="pix_obj">
+  </div>
+
+
+
+     <a class="prev" onclick="plusSlides(-1)"><span class="fleche"><</span></a>
+  <a class="next" onclick="plusSlides(1)"><span class="fleche">></span></a> 
+
+</div>
+
+
+
+
+      <p id="description" class="description_obj">
+    <span class="mot_fiche_tech">Nom:</span> Boite à navette
+<br><br><span class="mot_fiche_tech">Lieu:</span> 
+
+<a class="dans_description"  href="../../lieux/usine_perrier/lieu_usine_perrier.html" >usine Perrier</a>,
+
+<a class="dans_description"  href="../../lieux/cooperative_soie/lieu_cooperative_soie.html" >Coopérative de la soie</a>, 
+<a class="dans_description"  href="../../lieux/moulinage_cellard/lieu_moulinage_cellard.html" >Moulinage Cellard</a>, 
+
+<a class="dans_description"  href="../../lieux/moulinage_etienne/lieu_moulinage_etienne.html" >Chez Baptiste - Moulinage Étienne</a>, 
+
+<a class="dans_description"  href="../../lieux/fabrique_taillis_vert/lieu_fabrique_taillis_vert.html" >Fabrique de Taillis-Vert</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_bobichon/lieu_usine_bobichon.html" >Usine Bobichon</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_blanc/lieu_usine_blanc.html" >Usine Blanc</a>, 
+
+<a class="dans_description"  href="../../lieux/fabrique_malliquet/lieu_fabrique_malliquet.html" >Fabrique Malliquet</a>, 
+
+<a class="dans_description"  href="../../lieux/cadet/lieu_cadet.html" >Chez Cadet</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_sainte_marie/lieu_usine_sainte_marie.html" >Usine Sainte-Marie</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_sainte_julie/lieu_usine_sainte_julie.html" >Usine Sainte-Julie</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_sainte_marthe/lieu_usine_sainte_marthe.html" >Usine Sainte-Marthe</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_blanc_ligue/lieu_usine_blanc_ligue.html" >Usine Blanc-Ligue</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_saint_joseph/lieu_usine_saint_joseph.html" >Usine Saint-Joseph</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_saint_victor/lieu_usine_saint_victor.html" >Usine Saint-Victor</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_joseph_perrier/lieu_usine_joseph_perrier.html" >fabrique Joseph Perrier</a>,
+<a class="dans_description"  href="../../lieux/fonderie_bancel/lieu_fonderie_bancel.html" >fonderie Bancel</a>,
+<a class="dans_description"  href="../../lieux/education_sante/lieu_education_sante.html" >le lavoir</a>,
+<a class="dans_description"  href="../../lieux/cooperative_soie/lieu_cooperative_soie.html" >atelier à façon</a>.
+
+<br>
+<br><span class="mot_fiche_tech">Descriptif:</span> 
+Réceptacle en bois et métal, positionné aux extrémité du battant du métier à tisser.
+<br>
+<br><span class="mot_fiche_tech">Usage et histoire:</span> 
+: Au lieu d'être lancée à la main, la navette est introduite dans une boite à navette 
+placée à chaque extrémité du battant et un peu plus longue que la navette elle-même. Le rat est la petite 
+pièce coulissante de bois dur placée dans la boite à navette et équipée d'une pièce de cuir assurant 
+la réception et le renvoi de la navette. La navette volante, dite aussi navette droite, est lancée par un 
+mécanisme dit chasse-navette. La navette est alors chassée de la boite à navette d’un bout à l’autre du 
+battant par les coups du marteau. En fin de course, la navette vient se loger dans la chasse avant d’être 
+renvoyée. Chaque passage de fil de trame est nommée duite. De manière coordonnée avec la battant et 
+le marteau, entre chaque passage de navette, le peigne vient frapper la duite contre la façure du tissu, de 
+manière à tasser ce dernier. Certains métiers et battants sont équipés de boites à navettes permettant 
+d’alterner les navettes et ainsi les couleurs de fils de trame.
+
+
+
+<br>
+
+<br><span class="mot_fiche_tech">Usager·es:</span> 
+<a class="dans_description" href="../../savoirs/tissage/savoir_tissage.html">ouvrieres tisseuses</a>, 
+<a class="dans_description" href="../../savoirs/montage_metier/savoir_montage_metier.html">gareurs</a>, 
+<a class="dans_description" href="../../savoirs/fabrication_outils/savoir_fabrication_outils.html">menuisier, ébeniste</a>,
+<a class="dans_description" href="../../savoirs/main_oeuvre/savoir_main_oeuvre.html">main d'oeuvre</a>.
+
+<br>
+<br><span class="mot_fiche_tech">Objets liés:</span> 
+<a class="dans_description" href="metier_tisser.html">metier à tisser</a>, 
+<a class="dans_description" href="peigne.html">peigne</a>, 
+<a class="dans_description"  href="trame.html">trame</a>, 
+<a class="dans_description"  href="canette.html">canette</a>, 
+<a class="dans_description"  href="battant.html">battant</a>, 
+<a class="dans_description" href="navette.html">navette</a>, 
+<a class="dans_description"  href="remisse.html">remisse</a>, 
+<a class="dans_description"  href="foule.html">foule</a>, 
+<a class="dans_description"  href="poids.html">poids</a>, 
+<a class="dans_description" href="regulateur.html">regulateur</a>, 
+<a class="dans_description"  href="cavalier.html">cavalier</a>, 
+<a class="dans_description"  href="came.html">came</a>.
+<br>
+<br>
+
+</p>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo" src="../../image/outils/boite_navette.jpg"  onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="../../image/outils/boite_navette_2.jpg"  onclick="currentSlide(2)" >
+    </div>
+
+
+
+
+  </div>
+
+
+<br><br><br><br>  
+  </div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./script.js"></script>
+        <script  src="./script_photo.js"></script>
+ <script>$(function(){
+ $("#anotherContent").load("txt_gauche.html"); 
+ });</script>
+</body>
+</html>

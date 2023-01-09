@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr" x:lang="fr" xmlns="ht://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Carnet de Terrain ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./../ressource/style.css" type="text/css" >
+
+
+
+</head>
+<body>
+
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="menu" href="../../index.html">Dans les brumes</a> /<a id= "lienTitre" class="menu" href="carnet_terrain_intro.html">Carnet de Terrain</a></div>
+     
+
+      <div id="droite">
+
+        <div id="archive"> 
+         <a id="bouton_print" href="pdf_carnet_terrain.pdf"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <div id="nav_sommaire" class="closed ">
+    
+     <div id="page_precedente_text" class="titre_sommaire"> sommaire</div>
+     
+
+     <div id="boite_date">
+      <div id="anotherContentSommaire"></div>
+
+    </div>
+
+
+  </div>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+      <div id="boutons"> 
+  
+
+
+
+      </div>
+
+
+          <div id="text" class="textwesh_terrain">
+            <div id="espacement"></div>
+<span id="date">Fin juin – début juillet 2022, à Lyon.</span><br>
+<span id="intro" >Des nouvelles du loin – La Fondation du Patrimoine
+</span>
+  <br><br>
+Par mail, je reçois le compte-rendu de la visite, ayant eu lieu le 21 juin à Saint-Julien-Molin-Molette, du délégué départemental de la Fondation du Patrimoine. Le compte-rendu est rédigé par Didier Lazzareschi, chargé de mission, avec qui je réalise les captations autour des savoir-faire textiles présents au sein du <span class="souligne" id="remettage" onclick="fonctionParcPilat()">Parc Naturel Régional du Pilat</span>. Didier est le principal intermédiaire entre la commune, la région et le Parc, il agit comme médiateur et soutien pour les projets culturels des différentes communes du Parc. Dans son mail, il rappelle le déroulé de la visite puis recense les différents projets présentés au représentant et explique l’enjeu de l’obtention du soutien de la Fondation du Patrimoine:
+ <br><br>
+«Le principe de “déambulation” site par site en suivant le cours de la rivière a permis de faire découvrir la richesse du patrimoine du village et, en particulier, de son patrimoine industriel. 
+<br>L’aménagement du circuit piétonnier par la municipalité donne une véritable plus-value à la commune autour de son identité et ses atouts. Le choix d’aménagements qui répondent aux enjeux actuels (renaturation des espaces, îlots de fraîcheur, mobilité douce, plantations d’espèces locales …) viennent renforcer la cohérence d’ensemble.
+ <br><br>
+Dans cet environnement, la présentation des différents projets et des différents sites a souligné la dynamique des acteurs et la volonté d’ouvrir des perspectives collectives de valorisation du patrimoine pour en faire un potentiel de développement local. 
+<br><span class="souligne" id="remettage" onclick="fonctionTaillisVert()">Le Taillis Vert</span> – Projet de restauration d’un viaduc historique.
+<br>Circuit piétonnier – Sentier mettant en valeur <span class="souligne" id="remettage" onclick="fonctionMonteeFabrique()">le Chemin des usines</span>, et aménagements paysagers: <span class="souligne" id="remettage" onclick="fonctionCanal()">canaux</span>, vannes, biefs…
+<br><span class="souligne" id="remettage" onclick="fonctionEglise()">Église de Saint-Julien</span> – Restauration des fresques et travaux contre l’humidité.
+<br><span class="souligne" id="remettage" onclick="fonctionUsineDussuc()">Usine Saint-Marie</span> – Réhabilitation de l’usine comme lieu d’hébergement et d’activités socio-culturelles.
+<br>Circuit piétonnier le long de <span class="souligne" id="remettage" onclick="fonctionRiviereTernay()">la rivière</span> – <span class="souligne" id="remettage" onclick="fonctionLavoir()">lavoir</span>, Parc de <span class="souligne" id="remettage" onclick="fonctionNouvelleEcole()">l’école</span>, <span class="souligne" id="remettage" onclick="fonctionMoulinMas()">Moulin du Mas</span>...
+<br><span class="souligne" id="remettage" onclick="fonctionUsinePerrier()">Usine Perrier</span> – Projet d’ouverture au public de l’atelier de tissage “dans son jus”.
+<br>Circuit piétonnier – Projet de réouverture de <span class="souligne" id="remettage" onclick="fonctionRiviereTernay()">la rivière</span> entre les deux ponts, partie <span class="souligne" id="remettage" onclick="fonctionRueFaubourg()">faubourg</span>, sous le parking du HLM.
+<br><span class="souligne" id="remettage" onclick="fonctionEngrenage()">Usine Blanc</span> – Projet de reconstruction “à l’identique” suite à l’incendie.
+<br><span class="souligne" id="remettage" onclick="fonctionUsineSainteMarthe()">Usine Sainte Marthe</span> – Aménagement salle d’exposition et activités culturelles.
+<br>Visite du Calvaire
+ <br><br>
+Éléments non évoqués au cours de la journée mais à prendre en compte:
+<br>- Brasserie du Pilat
+<br>- Artisans d’art
+<br>- Typicité des logements ouvriers du centre-bourg
+<br>- <span class="souligne" id="remettage" onclick="fonctionInOff()">Festival In & Off</span>
+<br>- <span class="souligne" id="remettage" onclick="fonctionCinema()">Ciné Molette</span>
+<br>- <span class="souligne" id="remettage" onclick="fonctionRadio()">Radio d’ici</span>
+ <br><br>
+(…)
+<br>La Fondation du Patrimoine peut intervenir à différents niveaux dans des modes de reconnaissance et de financement de projets. Cela peut aller de l’attribution d’un label ouvrant droit à des défiscalisations du montant des travaux, aux dotations via un appel à financement participatif, jusqu’à l’inscription des projets au titre de la “mission Bern” et l’émargement des projets au titre du Loto du Patrimoine.(…) Il a été proposé que la démarche collective de Saint-Julien-Molin-Molette soit présentée à la Fondation du Patrimoine en un seul dossier. Cela constituerait une originalité plutôt favorable si tant est que le collectif soit en mesure de présenter un projet cohérent associant porteurs privés et publics.».
+ <br><br>
+À la suite de sa visite, le délégué départemental de la Fondation du Patrimoine écrit:
+ <br><br>
+«J’ai été séduit par la richesse du patrimoine historique et industriel de cette commune et la gestion écologique des cheminements piétons, du réseau des canaux qui alimentaient en eau les usines et les espaces verts publics.
+ <br><br>
+J’ai aussi été très impressionné par la synergie de tous les partenaires de la commune: nouvelle équipe municipale / association du «Patrimoine Piraillon» / propriétaires privés qui ont acheté les anciennes usines de moulinage et de tissage de la soie.
+ <br><br>
+Cette commune est réputée et reconnue nationalement voire internationalement dans le milieu artistique pour ses résidences d’artistes et ses événements culturels. J’ajoute que cette commune est sur le chemin «Saint Jacques de Compostelle» et sur l’itinéraire du GR 65.
+<br>De plus, <span class="souligne" id="remettage" onclick="fonctionHubert()">M. Hubert SAGE</span> (…) a dirigé la rédaction et l’édition d’un ouvrage remarquable sur <span class="souligne" id="remettage" onclick="fonctionAsso()">le patrimoine Piraillon</span>. Ajoutons le tournage d’un film en 2017, <span class="souligne" id="remettage" onclick="fonctionFilmMelancolie()">Mélancolie ouvrière</span>, disponible en projection privée.
+ <br><br>
+La municipalité va réunir tous les partenaires concernés pour élaborer un dossier global et cohérent de tous les projets d’ici la fin du mois de septembre avec l’aide des techniciens du Parc Naturel Régional du Pilat.
+ <br><br>
+Bien cordialement,
+<br>Lucien MOULLIER»
+
+
+
+        <div id="lien">
+<div id="page_prec" class="boite_fleche"><a href="4_juin.html" class="prec_next"><span class="fleche"><</span> date précedente</a><br></div>
+<div id="page_next" class="boite_fleche"><a href="aout.html" class="prec_next">date suivante <span class="fleche">></span></a></div>
+  </div>
+
+
+
+      </div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="panel-two" id="rectangle_droit">
+  
+
+  <input id="bouton_fermer" class="boutonFermer" type="button" onclick="fonctionFermer()">
+
+<div id="anotherContentOutils"></div>
+<div id="anotherContentLieux"></div>
+<div id="anotherContentSavoirs"></div>
+<div id="anotherContentRecits"></div>
+<div id="anotherContentArchives"></div>
+</div>
+
+</div>
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./../ressource/script.js"></script>
+  <script  src="./../ressource/script_photo_outils.js"></script>
+    <script  src="./../ressource/script_photo_gens.js"></script>
+  <script  src="./../ressource/script_photo_lieux.js"></script>
+  <script  src="./../ressource/script_photo_savoirs.js"></script>
+    <script  src="./../ressource/script_photo_archives.js"></script>
+    <script  src="./../ressource/audio_video.js"></script>
+<script>
+ $(function(){
+ $("#anotherContentOutils").load("./../ressource/droiteOutils.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentSommaire").load("./../ressource/sommaire.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentLieux").load("./../ressource/droiteLieux.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentSavoirs").load("./../ressource/droiteSavoirs.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentRecits").load("./../ressource/droiteGens.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentArchives").load("./../ressource/droiteArchives.html"); 
+ });
+</script> 
+
+
+</body>
+</html>

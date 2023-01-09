@@ -1,0 +1,75 @@
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  height: 100%;
+}
+.fleche{
+  font-family: Typo_fleche ;
+font-size: 1.3em;}
+
+
+.container {
+  position: relative;
+  height: 100px;
+}
+
+.mySlides {
+  display: none;
+    height: 100px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: px;
+  margin-top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 25%;
+  height: 70px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+height: 100px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+

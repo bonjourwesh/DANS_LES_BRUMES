@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁Chez Cadet ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body >
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_lieux.html">Lieux</a> / Chez Cadet</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('../pdf/pdf_cadet.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      
+      <span class="slide" id="image_v">    
+        <img class="image_v" src="img/1.jpg"></img>
+        <div id="boite_legende"><p class="legende">Chez Cadet, rue Vieille - archive</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"></img><div id="boite_legende"> <p class="legende">Chez Cadet, HLM, avenue des Ateliers</p></div></span>
+      
+      <span class="slide" id="image_h">   <div> <img class="image_h" src="img/3.jpg"></div><div id="boite_legende"><p class="legende">Chez Cadet, HLM, rue du Faubourg</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/4.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, HLM, rue du Faubourg</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/5.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, HLM, rue du Faubourg</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/6.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, HLM, rue Vieille</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/7.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, HLM, avenue des Ateliers</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/8.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, maison de maître Corompt-Jamet, rue Vieille</p></div></span>  
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/9.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, pont Vieille - archive</p></div></span>  
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/10.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, pont Vieille - archive</p></div></span>
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/11.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, vue depuis la place du marché - archive, carte postale</p></div></span>  
+
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/12.jpg"><div id="boite_legende"><p class="legende">Chez Cadet, place du marché - archive</p></div></span>  
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/13.jpg"></img><div id="boite_legende"><p class="legende">Chez Cadet, place du marché - archive</p></div></span>  
+  
+
+  
+     <span class="slide" id="image_v">    <img class="image_v" src="img/14.jpg"></img><div id="boite_legende"><p class="legende">Chez Cadet, rue du Faubourg - archive</p></div></span>  
+  
+
+  
+     <span class="slide" id="image_h">    <img class="image_h" src="img/15.jpg"></img><div id="boite_legende"><p class="legende">Chez Cadet, salle de moulinage - archive</p></div></span>  
+  
+
+  
+     <span class="slide" id="image_h">    <img class="image_h" src="img/16.jpg"></img><div id="boite_legende"><p class="legende">Chez Cadet, ouvrier·es et patron - archive</p></div></span>  
+  
+
+  
+     <span class="slide" id="image_h">    <img class="image_h" src="img/17.jpg"></img><div id="boite_legende"><p class="legende">Chez Cadet, ouvrières rue Vieille - archive, carte postale</p></div></span>  
+  
+
+
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif">
+       <span id="souligne_txt">Chez Cadet - dite Grande Fabrique ou Usine du Pont</span>,
+<br><br>
+
+la fabrique est située entre la rue Vieille et le Pont de la Planche, sur la rive de la rivière faisant face au
+Faubourg. L’usine est surnommée la « Grande Fabrique » au XVIIIème siècle puis « l’Usine du Pont » à la
+fin du XIXème. L’usine est sans doute la plus ancienne du village. La fabrique, fondée en 1669 par
+Monsieur Guérin, possède trois ateliers situés le long de la rivière du Ternay, côté rue Vieille.<br>
+En 1710, Monsieur Guérin, ruiné, vend le bâtiment à Monsieur Bertholet – bourgeoisie lyonnaise. Cette
+usine sera détruite par la crue de 1768. En 1785, Jean-François Corompt rachète l’emplacement et ses
+dépendances – prise d’eau et droits afférents – aux héritiers Bertholet. L’année suivante commence la
+reconstruction de l’usine en ajoutant les bâtiments compris entre l’emplacement de l’ancienne fabrique
+– rue Vieille – et le pont - rue des Ateliers. La maison de maître, installée dans la continuité de la fabrique,
+se situait à l’angle de la rue Vieille.<br><br>
+L’activité est exclusivement le <a href="../moulinage/savoir_moulinage.html">moulinage de la soie</a> et n’utilisera que <a id= "lien_obj" href="../systeme_hydraulique/lieu_systeme_hydraulique.html">la force hydraulique</a> jusqu’à l’arrivée
+de l’électricité au début du XXème siècle. L’usine est léguée à Pancrace Corompt puis à Jean-Baptiste
+Jamet. De 1953 à 1965 - date de l’arrêt définitif de la fabrique – sera développée <a href="../impression/savoir_impression.html"><span class="petite_fleche">l’impression sur soie.</a><br>
+Les derniers exploitants sont la famille Blanc.<br>
+En 1966, l’usine sera transformée en logements HLM. Sa façade est recouverte de matériaux modernes
+ne la rendant plus identifiable, cependant l’ancienne prise d’eau, alimentant autrefois <a id= "lien_obj" href="../../outils/page_outils/roue_aube.html">la roue à augets</a>,
+est visible au sous-sol du bâtiment. La rivière, qui traversait le faubourg de la rue des Ateliers au pont
+Neuf, sera couverte lors de la construction du parking du bâtiment, le pont de la rue Vieille a aujourd’hui
+disparu.<br><br>
+Un sentier pédestre, récemment aménagé par la Mairie le long de la rivière débute au Pré-Battoir et
+passe par le multi-sport, le chemin des Tissages, le Faubourg, l’usine Sainte-Marie, le canal de Lyponne
+
+et l’ancien lavoir, jusqu’au Moulin du Mas. Ce chemin permet au public de découvrir le patrimoine archi-
+tectural du village. La Mairie réfléchit, afin de valoriser la rivière et son histoire, à faire redécouvrir cette
+
+dernière à partir du Pont de l’Avenue des ateliers jusqu’au pont Neuf, en supprimant le parking du HLM et
+reconstruisant le pont de la Rue Vieille, comme sur <a id= "lien_obj" href="../../archives/menu_archives.html">les cartes postales et photos d’archives</a>.
+
+
+
+
+
+     </div>
+
+  </div> 
+
+</div>
+
+</div>
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+</body>
+</html>

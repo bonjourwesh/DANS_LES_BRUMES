@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁Fabrique Joseph Perrier ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body >
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_lieux.html">Lieux</a> / Fabrique Joseph Perrier</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('../pdf/pdf_usine_joseph_perrier.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/1.jpg"><div id="boite_legende"><p class="legende">Fabrique Malliquet et Joseph Perrier, quartier Pré-Battoir - archive</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"><div id="boite_legende"> <p class="legende">Fabrique Joseph Perrier, quartier Pré-Battoir</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/3.jpg"><div id="boite_legende"><p class="legende">Fabrique Joseph Perrier, quartier Pré-Battoir</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/4.jpg"><div id="boite_legende"><p class="legende">Fabrique Joseph Perrier, quartier Pré-Battoir</p></div></span>  
+
+ 
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif">
+       <span id="souligne_txt">Quartier Pré-Battoir</span>
+<br>le nom du quartier Pré-Battoir a pour origine le moulin-battoir. Un moulin à eau pouvant extraire par pilage le tan des écorces de chêne ou de
+châtaignier. Ce tan était ensuite utilisé en tannerie pour rendre les peaux imputrescibles. Dans les écrits de Joseph Bancel et de l’Abbé Chaland, il est
+fait référence la présence de tanneries implantées au Pré-Battoir. Trois usines dédiées à la soie seront par la suite construites par la famille Coront.
+<br><br>
+<span id="souligne_txt">Fabrique Joseph Perrier – dite fabrique Nouvelle</span><br>
+<br>
+
+la seconde fabrique du Pré-Battoir,la Fabrique Nouvelle,est située en dessus de <a id= "lien_obj" href="../systeme_hydraulique/lieu_systeme_hydraulique.html">la fabrique Malliquet</a>, rue
+Pré-Battoir, en amont du Chemin des Tissages et du multi-sports - Pré-Martin. En 1781, le lieu accueille
+une petite unité de moulinage de soie. En 1817, la fabrique est reconstruite et se dénomme la « Fabrique
+Nouvelle ». En 1859, elle est vendue à la famille Perrier – et rebaptisée Fabrique Joseph Perrier – puis
+quelques années plus tard à la famille Corompt. L’activité principale de l’usine est <a id= "lien_obj" href="../../savoirs/moulinage/savoir_moulinage.html">le moulinage</a>. L’eau
+nécessaire au fonctionnement de <a id= "lien_obj" href="../../outils/page_outils/roue_aube.html">la roue hydraulique</a> était acheminée par <a id= "lien_obj" href="../../outils/page_outils/canal.html">un bief</a> - canal - provenant de
+<a id= "lien_obj" href="../systeme_hydraulique/lieu_systeme_hydraulique.html">Taillis-Vert</a>.<br><br>
+L’activité de moulinage cesse en 1970. Les derniers exploitants sont la famille Gillier.<br>
+En 1890, l’usine change d’affectation et devient la Fabrique de Croix. Puis, au début du 19ème siècle,
+Antoine Oriol y installera son atelier de tourneur sur bois. Elle est, depuis 1990, une résidence d’habitation.<br>
+En aval, se situe le camping municipal du village.
+
+
+
+     </div>
+
+  </div> 
+
+</div>
+
+</div>
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+</body>
+</html>

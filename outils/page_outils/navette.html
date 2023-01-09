@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Navette ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_page_outils.css">
+
+</head>
+<body onload="fonctionFondCooleur()" >
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a href="../../index.html">Dans les brumes</a><a href="../menu_outils.html"> / Objets</a> / Navette</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+
+          <a id="bouton_print" onclick="printPdf('pdf/pdf_navette.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+                  </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+        
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+ 
+
+
+  <div id="anotherContent"></div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="fondOutils" id="rectangle_droit">
+  
+ <input id="bouton_fermer" class="boutonFermer" type="button" onclick="window.location.href ='./../menu_outils.html'">
+
+<div class="container">
+  <div class="mySlides">
+    <img src="../../image/outils/navette.jpg" id="photo" onclick="fonctionFullPix()" class="pix_obj">
+  </div>
+
+  <div class="mySlides">
+    <img src="../../image/outils/navette_2.jpg" id="pix_obj_1" onclick="fonctionFullPix1()"class="pix_obj">
+  </div>
+
+  <div class="mySlides">
+    <img src="../../image/outils/navette_3.jpg" id="pix_obj_2" onclick="fonctionFullPix2()"class="pix_obj">
+  </div>
+    
+ <div class="mySlides">
+     <video controls>
+  <source src="../../image/outils/navette_4.mp4" type="video/mp4" id="photo" class="pix_obj">
+  </div>
+
+     <a class="prev" onclick="plusSlides(-1)"><span class="fleche"><</span></a>
+  <a class="next" onclick="plusSlides(1)"><span class="fleche">></span></a> 
+
+</div>
+
+
+
+
+      <p id="description" class="description_obj">
+    <span class="mot_fiche_tech">Nom:</span> Navette
+<br><br><span class="mot_fiche_tech">Lieu:</span> 
+<a class="dans_description"  href="../../lieux/usine_perrier/lieu_usine_perrier.html" >usine Perrier</a>
+
+<a class="dans_description"  href="../../lieux/usine_sainte_marie/lieu_usine_sainte_marie.html" >Usine Sainte-Marie</a>, 
+
+<a class="dans_description"  href="../../lieux/education_sante/lieu_education_sante.html" >le lavoir</a>,
+ garage de Pierre, collection privée d’Hubert Sage, maisons des habitants.
+<br>
+<br><span class="mot_fiche_tech">Descriptif:</span> 
+Pièce de bois sculptée de forme allongée et pointue aux extrémités. Renforts métalliques aux extrémités. Différents trous de passage de fil, avec des perles de céramique serties à l’intérieur. Rainures sur les côtés latéraux.
+<br>
+<br><span class="mot_fiche_tech">Usage et histoire:</span> 
+ Une navette est un élément mobile des métiers à tisser, elle contient la canette sur 
+laquelle est enroulé le fil de soie. Ce logement de la canette est nommé la chasse. La navette est glissée 
+entre les nappes de fils de chaîne afin de faire passer le fil de trame d’un côté à l’autre du métier à 
+tisser. L’ouverture des nappes est nommée la foule. La navette est dite volante ou lancée, sur les métiers 
+pourvus d’un système de relance, sur les métiers anciens : les battants. La forme de la navette est 
+aérodynamique, ses pointes sont revêtues de métal pour résister aux chocs donnés par les battants. La 
+broche ou Pointizelle, est l’Axe de rotation de la canette à l'intérieur de la navette ou axe de support de 
+bobine ou roquet. L’intérieur de la navette est garni de poils ou de moustache de chat afin de maintenir 
+la canette dans son creux, et permettre au fil de se dérouler de manière fluide. L’Agnolet est le Petit tube 
+de verre ou porcelaine, placé dans le trou de sortie du fil de la canette sur le flanc de la navette. Il sert à 
+éviter le frottement du fil de trame sur le bois de la canette. 
+<br>Expression : Siffler le bout = attirer au moyen d'une forte aspiration de la bouche, le bout (fil) de la canette 
+au travers de l'agnolet. L’Annelet est le petit anneau de verre, porcelaine ou de métal, fixé sur le devant de 
+la navette et dans lequel passe le fil de trame.
+<br>Ces différents tubes de verre, de métal et de porcelaine empêchent le cisaillement du fil de soie par le 
+bois de la navette. Le conducteur est l’arc de cercle en laiton fixé au flanc de la navette et comportant un 
+système de tension ou freinage du fil de trame composé du tendeur et de ses anneaux.
+
+
+<br>
+
+<br><span class="mot_fiche_tech">Usager·es:</span> 
+<a class="dans_description" href="../../savoirs/tissage/savoir_tissage.html">ouvrieres tisseuses</a>, 
+<a class="dans_description" href="../../savoirs/montage_metier/savoir_montage_metier.html">gareurs</a>, 
+<a class="dans_description" href="../../savoirs/fabrication_outils/savoir_fabrication_outils.html">menuisier, ébeniste</a>.
+
+<br>
+<br><span class="mot_fiche_tech">Objets liés:</span> 
+<a class="dans_description" href="metier_tisser.html">metier à tisser</a>,  
+<a class="dans_description"  href="trame.html">trame</a>, 
+<a class="dans_description"  href="canette.html">canette</a>, 
+<a class="dans_description"  href="battant.html">battant</a>.
+<br>
+<br>
+
+</p>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo" src="../../image/outils/navette.jpg"  onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="../../image/outils/navette_2.jpg"  onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="../../image/outils/navette_3.jpg"  onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="../../image/outils/navette_4.jpg" onclick="currentSlide(4)" >
+    </div>
+
+
+  </div>
+
+
+<br><br><br><br>  
+  </div>
+
+
+
+</div>
+
+</div>
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./script.js"></script>
+        <script  src="./script_photo.js"></script>
+ <script>$(function(){
+ $("#anotherContent").load("txt_gauche.html"); 
+ });</script>
+
+</body>
+</html>

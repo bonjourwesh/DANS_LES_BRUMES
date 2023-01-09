@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Pavillon du pont de la planche ↠ Dans les brumes 🌁</title>
+  <link rel="stylesheet" type="text/css" href="../ressource/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body >
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="brume" href="../../index.html">Dans les brumes</a>  / <a id= "lienTitre" class="menu_savoir" href="../menu_lieux.html">Lieux</a> / Pavillon du pont de la planche</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+        <a id="bouton_print" onclick="printPdf('../pdf/pdf_pavillon.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+  <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+<!----------------------------LE CORPS DE PAGE--------------------------------> 
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+  <!----------------------------LES LIENS------------------------------>
+
+
+
+
+<div id="les_pix" class="panel-one">
+
+
+<div class="wrap">
+    <div id="carousel">
+      
+      <span class="slide" id="image_h">    <img class="image_h" src="img/1.jpg"><div id="boite_legende"><p class="legende">Pont de la rivière du Ternay et pavillon en face de l'usine Saint-Joseph - archive</p></div></span>  
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/2.jpg"><div id="boite_legende"> <p class="legende">Maison de maître Gillier, rue des Ateliers</p></div></span>
+      
+      <span class="slide" id="image_v">    <img class="image_v" src="img/3.jpg"><div id="boite_legende"><p class="legende">Pont de la Planche, avenue des Ateliers</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/4.jpg"><div id="boite_legende"><p class="legende">Pont de la Planche, avenue des Ateliers</p></div></span>  
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/5.jpg"><div id="boite_legende"><p class="legende">HLM, pont de la Planche, avenue des Ateliers</p></div></span>  
+
+     <span class="slide" id="image_v">    <img class="image_v" src="img/6.jpg"><div id="boite_legende"><p class="legende">Pont de la Planche</p></div></span>  
+
+     <span class="slide" id="image_h">    <img class="image_h" src="img/7.jpg"><div id="boite_legende"><p class="legende">Pavillon du pont de la Planche - archive, carte postale</p></div></span>  
+
+
+
+    </div>
+
+  <span id="prev" class="fleche"><</span>
+  <span id="next" class="fleche" >></span>
+</div>
+
+</div>
+
+
+<div class='resizable'>
+
+  <div class='resizers'>
+    <div class='resizer' id="boule_noire"></div>
+     <div id="txt_descriptif" class="txt_descriptif">
+       <span id="souligne_txt">Le Pavillon du pont de la Planche</span>,
+<br><br>
+Jean-Baptiste Jamet hérite de <a id= "lien_obj" href="../cadet/lieu_cadet.html">la fabrique Chez Cadet</a> et habite <a id= "lien_obj" href="../maison_maitre/lieu_maison_maitre.html">la maison de maître</a> attenante à la 
+fabrique - côté rue Vieille. Dans les années 1890, il fait construire, en face de la fabrique Chez Cadet, en 
+traversant l’actuelle Avenue des Ateliers, un pavillon et fait aménager un parc avec une serre et un jardin 
+potager. Une partie du parc deviendra le potager du curé, tandis que le reste sera conservé par la famille 
+Jamet-Blanc. <br><br>
+Le pavillon de la Planche est construit à l’entrée du Parc - actuelle Place Bancel - en face de la maison 
+de maitre Gillier - située sur l’autre rive de <a id= "lien_obj" href="../systeme_hydraulique/lieu_systeme_hydraulique.html">la rivière du Ternay</a>, en traversant le pont de la Planche- et 
+concurrent de la famille Jamet-Blanc. Le pavillon, en coupant la vue, empêchait la famille Gillier de 
+contrôler la fréquentation de <a id= "lien_obj" href="../eglise/lieu_eglise.html">l’église</a> par son personnel.<br><br>
+Le pavillon fut détruit en 1968, sur décision du conseil municipal, afin d’y implanter un transformateur 
+électrique, baptisé le transformateur du château.<br><br>
+Le parc et le jardin, situés de l’autre côté de la rivière du Ternay, et appartenant à la famille Gillier ont été 
+réinvestis en parking - Place Bancel - et en parc municipal.
+
+
+
+
+
+
+     </div>
+
+  </div> 
+
+</div>
+
+</div>
+  <script src='./../../jquery-2.js'></script>
+  <script  src="../ressource/script_modif.js"></script>
+</body>
+</html>

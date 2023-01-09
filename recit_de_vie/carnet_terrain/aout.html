@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr" x:lang="fr" xmlns="ht://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Carnet de Terrain ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./../ressource/style.css" type="text/css" >
+
+
+
+</head>
+<body>
+
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a id= "lienTitre" class="menu" href="../../index.html">Dans les brumes</a> /<a id= "lienTitre" class="menu" href="carnet_terrain_intro.html">Carnet de Terrain</a></div>
+     
+
+      <div id="droite">
+
+        <div id="archive"> 
+         <a id="bouton_print" href="pdf_carnet_terrain.pdf"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <div id="nav_sommaire" class="closed ">
+    
+     <div id="page_precedente_text" class="titre_sommaire"> sommaire</div>
+     
+
+     <div id="boite_date">
+      <div id="anotherContentSommaire"></div>
+
+    </div>
+
+
+  </div>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+      <div id="boutons"> 
+  
+
+
+
+      </div>
+
+
+          <div id="text" class="textwesh_terrain">
+            <div id="espacement"></div>
+<span id="date">Fin août 2022, à Saint-Julien-Molin-Molette.</span><br>
+<span id="intro" >Passage d’été, la mairesse, les gitans et la rupture générationnelle.
+</span>
+  <br><br>
+Fin août, je me rends une dernière fois à Saint-Julien pour prendre les photos manquantes des objets et lieux que je souhaite présenter sur le site que je suis en train de constituer. Quelques semaines plus tôt ont eu lieu le stage de chant des Oiseaux Rares, la vogue et la fête des conscrits de l’année. Pour l’occasion, un énorme feu a été allumé sur la place Bancel, les conscrits sautent à travers les flammes, signe de leur passage d’un âge à l’autre. La pénurie d’eau et la sécheresse touchent de plein fouet le village. Depuis juin, les villes-portes et les communes ont trop puisé dans la source du Ternay, le niveau de <span class="souligne" id="remettage" onclick="fonctionRiviereTernay()">la rivière</span> est très bas, <span class="souligne" id="remettage" onclick="fonctionBarrage()">le barrage</span> est presque à sec. L’eau est livrée par camion-citerne chaque semaine, des concertations citoyennes sont organisées pour trouver des solutions et sensibiliser les habitant·es à l’économie de l’eau au quotidien. Des incendies se sont déclarés dans les champs alentour, vite maîtrisés. La carrière est obligée d’ouvrir sa réserve d’eau aux sapeurs-pompiers.
+ <br><br>
+La semaine suivante, <span class="souligne" id="remettage" onclick="fonctionVival()">le Vival</span>, le café la Clé à Molette et l’Alimentation Générale sont fermés durant deux semaines pour congés estivaux. <span class="souligne" id="remettage" onclick="fonctionRadio()">La Radio d’Ici</span> diffuse une bande son éclectique et quelques nouvelles régionales. Seul <span class="souligne" id="remettage" onclick="fonctionTabac()">le Tabac</span> reste ouvert. <span class="souligne" id="remettage" onclick="fonctionCamping()">Le Camping</span> organise quelques soirées karaokés, ambiance Gilets Jaunes. La piscine est à deux euros en journée. <span class="souligne" id="remettage" onclick="fonctionSamediBar()">Le samedi Bar</span> ouvre en soirée du vendredi au dimanche. Sinon, c’est le calme plat. <span class="souligne" id="remettage" onclick="fonctionBoulangerie()">La Boulangerie</span>, la Pizzeria, le Kebab et <span class="souligne" id="remettage" onclick="fonctionBoucherie()">la Boucherie</span> ont fermé définitivement. 
+<br>Les courses se font sous forme de provisions pour la semaine, le pain en miche est stocké dans des torchons frais ou congelé. Pas de <span class="souligne" id="remettage" onclick="fonctionInOff()">In & Off</span> cet été.
+ <br><br>
+Je vais découvrir le nouveau Syndicat d’Initiatives dans <span class="souligne" id="remettage" onclick="fonctionMathevet()">l’ancien magasin Mathevet</span>. Des goodies, fin de stock de T-shirt édités par la Parc, tire-bouchons réalisés par <span class="souligne" id="remettage" onclick="fonctionFonderieBancel()">la Fonderie Bancel</span>, <span class="souligne" id="remettage" onclick="fonctionCartePostaleSainteMarthe()">cartes postales</span> et la réédition du <span class="souligne" id="remettage" onclick="fonctionLivreSJMM()">livre Saint-Julien-Molin-Molette et son patrimoine lié à l’industrie textile</span> sont en vente. Des glaces aussi.
+<br>Un soir, à <span class="souligne" id="remettage" onclick="fonctionSalleFete()">la Salle des fêtes</span>, un anniversaire.
+ <br><br>
+Avec des amis, nous allons visiter la Brasserie du Pilat. Au bar de la fabrique, la serveuse nous demande d’où nous venons. On discute du développement de la brasserie grâce à sa stratégie de réseau et de service de suivi client. Au détour de la conversation, elle se présente, Céline Élie, propriétaire de <span class="souligne" id="remettage" onclick="fonctionUsineSainteJulie()">l’usine Sainte-Julie</span> – ancienne fondatrice, avec sa sœur, de <span class="souligne" id="remettage" onclick="fonctionEssaimJulie()">l’association l’Essaim de Julie</span>… et mairesse du village! Elle nous raconte la passation de pouvoir de la précédente municipalité à la sienne, elle sait que sa municipalité fait débat au sein des habitant·es. Le mode de gouvernance instauré est horizontal, elle ne veut pas être la décideuse. Elle dit «s’en foutre de la politique, des amitiés et de la lèche avec les préfets.». Elle ne brigue pas de deuxième mandat, trop usant, les politiques régionales délaissent le village, il faut bricoler. «Si on veut obtenir quelque chose, il faut le rendre médiatique, faire du bruit, inviter la presse.». Elle enchaîne d’un ton bourru et déterminé «Par exemple, ça fait quinze ans qu’une communauté de gitans vient tous les hivers à Saint-Julien. Les enfants sont scolarisés à <span class="souligne" id="remettage" onclick="fonctionNouvelleEcole()">l’École</span>, mais ils ne s’intègrent pas faute de moyens de prise en charge et de relais locaux. Ils logent dans leurs caravanes <span class="souligne" id="remettage" onclick="fonctionAnneSylvestre()">chemin Anne-Sylvestre</span>. L’hiver, on leur apporte des couvertures, de la nourriture et des bottes de paille pour nourrir leurs chevaux tellement on voit leurs os. Le voisinage n’en peut plus des combats de coqs et du bruit. Ça crée des différends. <span class="souligne" id="remettage" onclick="fonctionMairie()">La Mairie</span> est démunie, on n’est pas formé, on est juste des habitants. On aimerait leur donner un terrain de la municipalité mais l’accord du préfet est impossible à obtenir parce que ce n’est pas intéressant pour sa carrière politique. Ici, il y a beaucoup de copinages entre élus régionaux et départementaux.
+<br>Beaucoup de dossiers trainent. On aimerait développer le village et empêcher qu’il ne devienne un village dortoir. Au <span class="souligne" id="remettage" onclick="fonctionRueFaubourg()">Faubourg</span>, on aimerait déconstruire/détruire le parking du HLM pour découvrir/mettre à jour <span class="souligne" id="remettage" onclick="fonctionRiviereTernay()">la rivière</span> – comme autrefois avec <span class="souligne" id="remettage" onclick="fonctionRueNeuve()">le pont de la Rue Vieille</span> – mais on n’a pas les moyens. On essaye de faire labéliser le village par la Fondation du Patrimoine pour obtenir des financements, peut-être qu’on sera dans le loto du Patrimoine. On ne sait pas comment valoriser la place du textile dans le futur du village. Ça ramènerait du tourisme, mais constituer le dossier de candidature demande beaucoup de temps. En milieu rural, être élu·e, ce n’est pas du temps plein, on est payé cinq cents euros pour des heures qui n’en finissent pas. Dès qu’il y a un souci – un orage, une coupure électrique, un accident, un litige entre voisins – on est appelé·es. C’est compliqué d’être investie politiquement de manière neutre, on essaye, on a suivi des formations pour animer des concertations citoyennes mais c’est difficile de faire venir les habitants, de les pousser à s’investir pour la commune. On est 1200 dans le village, il y a pleins d’associations, tout le monde se connait, pourtant il y a de vraies ruptures entre milieux sociaux et générations.».
+ <br><br>
+On discute quelques minutes, elle dit avoir entendu parler de mon mémoire lors de la réunion de juin avec le Parc. Il faudrait qu’on se rencontre…
+ <br><br>
+Nous rentrons à la maison, la discussion me rappelle un podcast ArteRadio «Le répondeur du Maire» autour de la messagerie du téléphone d’un maire en milieu rural.
+
+
+
+        <div id="lien">
+<div id="page_prec" class="boite_fleche"><a href="juin.html" class="prec_next"><span class="fleche"><</span> date précedente</a><br></div>
+<div id="page_next" class="boite_fleche"><a href="2021_2022.html" class="prec_next">date suivante <span class="fleche">></span></a></div>
+  </div>
+
+
+
+      </div>
+
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="panel-two" id="rectangle_droit">
+  
+
+  <input id="bouton_fermer" class="boutonFermer" type="button" onclick="fonctionFermer()">
+
+<div id="anotherContentOutils"></div>
+<div id="anotherContentLieux"></div>
+<div id="anotherContentSavoirs"></div>
+<div id="anotherContentRecits"></div>
+<div id="anotherContentArchives"></div>
+</div>
+
+</div>
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./../ressource/script.js"></script>
+  <script  src="./../ressource/script_photo_outils.js"></script>
+    <script  src="./../ressource/script_photo_gens.js"></script>
+  <script  src="./../ressource/script_photo_lieux.js"></script>
+  <script  src="./../ressource/script_photo_savoirs.js"></script>
+    <script  src="./../ressource/script_photo_archives.js"></script>
+    <script  src="./../ressource/audio_video.js"></script>
+<script>
+ $(function(){
+ $("#anotherContentOutils").load("./../ressource/droiteOutils.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentSommaire").load("./../ressource/sommaire.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentLieux").load("./../ressource/droiteLieux.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentSavoirs").load("./../ressource/droiteSavoirs.html"); 
+ });
+
+ $(function(){
+ $("#anotherContentRecits").load("./../ressource/droiteGens.html"); 
+ });
+
+  $(function(){
+ $("#anotherContentArchives").load("./../ressource/droiteArchives.html"); 
+ });
+</script> 
+
+
+</body>
+</html>

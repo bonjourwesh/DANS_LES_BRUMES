@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>🌁 Coronelle ↠ Dans les brumes 🌁</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_page_outils.css">
+
+</head>
+<body onload="fonctionFondCooleur()" >
+
+
+<!----------------------------MENU DU HAUT-------------------------------->    
+    <div id="entete"> 
+      <div id= "titre"><a href="../../index.html">Dans les brumes</a><a href="../menu_outils.html"> / Objets</a> / Coronelle</div>
+     
+
+      <div id="droite">
+        <div id="archive"> 
+
+          <a id="bouton_print" onclick="printPdf('pdf/pdf_coronelle.pdf')"></a>
+          <a class="menu" href="../../archives/menu_archives.html">Archives</a>
+        </div>
+
+        <div id="couleur_boutons"> 
+
+  <input id="bouton_color" class="boutonCouleur" type="button" onclick="fonctionCouleur()">
+
+  <input id="bouton_jour" class="boutonCouleur" type="button" onclick="fonctionJour()">
+
+  <input id="bouton_nuit" class="boutonCouleur" type="button" onclick="fonctionNuit()">
+        </div>
+
+        
+      </div>
+
+    </div>
+<!------------------------LE CORPS DE PAGE----------------------------> 
+
+
+<div id="corps">
+
+  <!----------------------------PRECEDENT------------------------------>
+  <a href="javascript:history.go(-1)" id="nav" class="closed ">
+  <div id="page_precedente_text" class="titre_retour"> page précedente</div>
+
+  </a>
+
+
+
+<div class="drag-container">
+
+
+  <!------------------------GAUCHE--------------------------------> 
+
+  <div class="panel-one" id="rectangle_gauche">
+ 
+
+
+    <div id="anotherContent"></div>
+</div>
+
+  <div class="dragbar" id="dragbar"></div>
+
+
+
+    <!------------------------DROITE--------------------------------> 
+
+  <div class="fondOutils" id="rectangle_droit">
+  
+ <input id="bouton_fermer" class="boutonFermer" type="button" onclick="window.location.href ='./../menu_outils.html'">
+
+<div class="container">
+  <div class="mySlides">
+    <img src="../../image/outils/guide_fil.jpg" id="photo" onclick="fonctionFullPix()" class="pix_obj">
+  </div>
+
+  <div class="mySlides">
+    <img src="../../image/outils/coronelle_2.jpg" id="pix_obj_1" onclick="fonctionFullPix1()"class="pix_obj">
+  </div>
+
+  <div class="mySlides">
+    <img src="../../image/outils/coronelle_3.jpg" id="pix_obj_2" onclick="fonctionFullPix2()"class="pix_obj">
+  </div>
+    
+
+     <a class="prev" onclick="plusSlides(-1)"><span class="fleche"><</span></a>
+  <a class="next" onclick="plusSlides(1)"><span class="fleche">></span></a> 
+
+</div>
+
+
+
+
+      <p id="description" class="description_obj">
+    <span class="mot_fiche_tech">Nom:</span> Coronelle [guide-fil]
+<br>
+<br><span class="mot_fiche_tech">Lieu:</span> 
+moulinage Barou, 
+<a class="dans_description"  href="../../lieux/usine_bobichon/lieu_usine_bobichon.html" >Usine Bobichon</a>, 
+<a class="dans_description"  href="../../lieux/usine_perrier/lieu_usine_perrier.html" >usine Perrier</a>, collection privée d'Hubert Sage
+
+<a class="dans_description"  href="../../lieux/moulinage_cellard/lieu_moulinage_cellard.html" >Moulinage Cellard</a>, 
+
+<a class="dans_description"  href="../../lieux/moulinage_etienne/lieu_moulinage_etienne.html" >Chez Baptiste - Moulinage Étienne</a>, 
+
+<a class="dans_description"  href="../../lieux/fabrique_taillis_vert/lieu_fabrique_taillis_vert.html" >Fabrique de Taillis-Vert</a>, 
+
+<a class="dans_description"  href="../../lieux/usine_blanc/lieu_usine_blanc.html" >Usine Blanc</a>, 
+
+<a class="dans_description"  href="../../lieux/fabrique_malliquet/lieu_fabrique_malliquet.html" >Fabrique Malliquet</a>, 
+
+<a class="dans_description"  href="../../lieux/cadet/lieu_cadet.html" >Chez Cadet</a>.
+
+
+<br><br><span class="mot_fiche_tech">Descriptif:</span> 
+Bague traversée par un fil de fer avec à ses extrémités deux boucles destinées au passage du fil.  
+<br>
+<br><span class="mot_fiche_tech">Usage et histoire:</span> 
+Fil d’acier avec 2 ou 4 perles (anneaux) qui sert à tenir la torsion et la tension du fil de soie au moulin. Elle est positionnée au-dessus du roquet, sur l’axe du fuseau.
+
+<br><br><span class="mot_fiche_tech">Usager·es:</span> 
+<a class="dans_description" href="../../savoirs/tissage/savoir_tissage.html">Ouvrières tisseuses</a>, 
+<a class="dans_description" href="../../savoirs/montage_metier/savoir_montage_metier.html">gareurs</a>, 
+<a class="dans_description" href="../../savoirs/canetage/savoir_canetage.html">ouvrières caneteuses</a>,
+<a class="dans_description" href="../../savoirs/moulinage/savoir_moulinage.html">mouliniers</a>.
+.
+
+<br>
+<br><span class="mot_fiche_tech">Objets liés:</span> 
+<a class="dans_description" href="moulin.html">moulin</a>, 
+<a class="dans_description"  href="engrenage.html">engrenage</a>, 
+<a class="dans_description"  href="bobine.html">bobine</a>, 
+<a class="dans_description"  href="poulie_folle.html">poulie</a>, 
+<a class="dans_description"  href="courroie.html">courroie</a>,
+<a class="dans_description"  href="regulateur.html">regulateur</a>,
+<a class="dans_description"  href="fuseau.html">fuseau</a>.
+<br>
+<br>
+<br>
+<br>
+
+</p>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo" src="../../image/outils/guide_fil.jpg"  onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="../../image/outils/coronelle_2.jpg"  onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="../../image/outils/coronelle_3.jpg"  onclick="currentSlide(3)" >
+    </div>
+
+
+
+  </div>
+
+
+<br><br><br><br>  
+  </div>
+
+
+
+</div>
+
+</div>
+
+
+  <script src='./../../jquery-2.js'></script>
+  <script  src="./script.js"></script>
+        <script  src="./script_photo.js"></script>
+ <script>$(function(){
+ $("#anotherContent").load("txt_gauche.html"); 
+ });</script>
+
+</body>
+</html>

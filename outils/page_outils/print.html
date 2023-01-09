@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=yes">
+</head>
+<body>
+
+<p> imprimer le récit de vie de Pierre intégralement <button id= "txt_integral" class="btn_print" onclick="printPdf('pdf_pierre_integral.pdf')"></button> </p>
+
+<p> imprimer le récit de vie de Pierre <button id= "txt_recit" class="btn_print" onclick="printPdf('pdf_pierre_recit.pdf')"></button></p>
+
+<p> imprimer le récit de vie de Pierre qui parle des lieux <button id= "txt_lieu" class="btn_print" onclick="printPdf('pdf_pierre_lieu.pdf')"></button></p>
+
+<p>imprimer le récit de vie de Pierre qui parle des outils <button id= "txt_outil" class="btn_print" onclick="printPdf('pdf_pierre_outil.pdf')"></button></p>
+
+
+<script>
+printPdf = function (pdfUrl) {
+  if (!this.printedIframe) {
+    this.printedIframe = document.createElement('iframe');
+    document.body.appendChild(this.printedIframe);
+    this.printedIframe.style.display = 'none';
+    this.printedIframe.onload = function() {
+      setTimeout(function() {
+        this.printedIframe.focus();
+        this.printedIframe.contentWindow.print();
+      }, 100);
+    };
+  }
+  this.printedIframe.src = pdfUrl;
+}
+</script>
+</body>
+</html>
