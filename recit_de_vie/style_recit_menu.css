@@ -163,9 +163,9 @@ width: 100vw;
   font-family: Titre;
   font-size: 2em;
     /*text-decoration: underline;
-  text-decoration-thickness: 0.5px;*/
+  text-decoration-thickness: 0.5px;
+  line-height: 1em;*/
   cursor: pointer;
-  line-height: 1em;
 }
 
 .div_gens{
