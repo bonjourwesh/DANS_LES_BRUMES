@@ -162,8 +162,8 @@ width: 100vw;
   position: absolute;
   font-family: Titre;
   font-size: 2em;
-    /*text-decoration: underline;*/
-  text-decoration-thickness: 0.5px;
+    /*text-decoration: underline;
+  text-decoration-thickness: 0.5px;*/
   cursor: pointer;
   line-height: 1em;
 }
