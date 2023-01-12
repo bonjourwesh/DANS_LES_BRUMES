@@ -90,7 +90,7 @@ text-decoration: none;
 
 a.menu:hover{
     color: white;
-text-decoration: none;
+text-decoration: underline;
 }
 
 /*---------------------------------PRINT -----------------------------*/ 
