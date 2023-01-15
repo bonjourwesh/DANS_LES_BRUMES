@@ -196,7 +196,7 @@ background-color: white;
   top: 0;
   left: -30px;
   cursor: pointer;
-  width: 30px;
+  width: 20px;
   background-color: white;
   border-right: 1px solid black;
   writing-mode: vertical-rl;
@@ -208,7 +208,7 @@ padding-right: 10px;
 }
 
     #nav.closed:hover {
-      width: 60px; }
+      width: 50px; }
 
 
 /*---------------------------------TEXTE-----------------------------*/ 
