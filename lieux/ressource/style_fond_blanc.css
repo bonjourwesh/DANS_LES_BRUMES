@@ -291,6 +291,7 @@ img.image_v{
   margin-top: 2vh;
 width: auto;
   height: 45vh;
+  max-width: 400px;
 background-size: contain;
 background-repeat: no-repeat;}
 

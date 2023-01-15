@@ -199,7 +199,7 @@ text-shadow: white 1px 0 10px;
   top: 0;
   left: -30px;
   cursor: pointer;
-  width: 30px;
+  width: 20px;
   background-color: white;
   border-right: 1px solid black;
   writing-mode: vertical-rl;
@@ -212,7 +212,7 @@ padding-right: 10px;
 }
 
     #nav.closed:hover {
-      width: 60px; }
+      width: 50px; }
 
 /*---------------------------------BOUTON COULEUR-----------------------------*/ 
 
@@ -289,6 +289,7 @@ img.image_v{
   margin-top: 2vh;
 width: auto;
   height: 65vh;
+  max-width: 650px;
 background-size: contain;
 background-repeat: no-repeat;}
 

@@ -287,6 +287,7 @@ img.image_v{
   margin-top: 2vh;
 width: auto;
   height: 65vh;
+  max-width: 650px;
 background-size: contain;
 background-repeat: no-repeat;}
 
