@@ -196,7 +196,7 @@ text-shadow: white 1px 0 10px;
   top: 0;
   left: -30px;
   cursor: pointer;
-  width: 30px;
+  width: 20px;
   background-color: black;
   border-right: 1px solid white;
   writing-mode: vertical-rl;
@@ -208,7 +208,7 @@ padding-right: 10px;
 }
 
     #nav.closed:hover {
-      width: 60px; }
+      width: 50px; }
 
 
 
