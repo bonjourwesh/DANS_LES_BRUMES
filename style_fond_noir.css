@@ -336,7 +336,7 @@ bottom: 15px;
 }
 
 .titre_boite_droite{
-  position: absolute;
+  position: relative;
     font-size: 1.2em;
       writing-mode: vertical-rl;
 text-orientation: mixed;
@@ -348,7 +348,7 @@ margin-left:20px;
   font-size: 1em;
   width: 300px;
 margin-left: 60px;
-
+margin-top: -210px;
 text-align: left;
 }
 
