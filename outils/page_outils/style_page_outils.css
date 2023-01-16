@@ -142,6 +142,8 @@ text-shadow: black 1px 0 10px;
   cursor: col-resize;
   background-color: white;
 }
+
+
 /*---------------------------------RETOUR-----------------------------*/
 
 #nav {
@@ -440,3 +442,20 @@ display: flex;
 .demo:hover {
   opacity: 1;
 }
+
+      /*---------------------------------truc du milieu-----------------------------*/ 
+
+#boule_noire{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 52vh;
+  position: fixed;
+  margin-left: -14px;
+  display: none;
+  z-index: 10;
+
+
+}
+

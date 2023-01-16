@@ -8,6 +8,31 @@ let cooleurFond = sessionStorage.getItem("cooleur");
 const drag = (e) => {
   document.selection ? document.selection.empty() : window.getSelection().removeAllRanges();
   left.style.width = (e.pageX - bar.offsetWidth / 2) + 'px';
+  right.style.width = (window.innerWidth - left.style.width) + 'px';
+if (right.offsetWidth >800 && right.offsetWidth < 900){
+    document.querySelector('#description').style.fontSize = "1.3em";
+    document.querySelector('#description').style.lineHeight = "normal";
+    document.querySelector('#text').style.fontSize = "2.7em";
+
+}else if(right.offsetWidth >900 && right.offsetWidth < 1000){
+    document.querySelector('#description').style.fontSize = "1.5em";
+    document.querySelector('#description').style.lineHeight = "normal";
+    document.querySelector('#text').style.fontSize = "2.4em";
+
+
+}else if(right.offsetWidth >1000){
+  document.querySelector('#description').style.fontSize = "2em";
+    document.querySelector('#description').style.lineHeight = "normal";
+    document.querySelector('#text').style.fontSize = "2em";
+
+}else{
+  document.querySelector('#description').style.fontSize = "1.1em";
+    document.querySelector('#description').style.lineHeight = "26px";
+        document.querySelector('#text').style.fontSize = "3em";
+
+}
+
+
 
 }
 
@@ -74,4 +99,17 @@ printPdf = function (pdfUrl) {
     };
   }
   this.printedIframe.src = pdfUrl;
+}
+
+
+   ///////////////////////APPARITION DISPARITION BOULE//////////////////////////////////
+
+
+function fonctionApparitionBoule(){
+  document.querySelector('#boule_noire').style.display="block";
+
+}
+
+function fonctionDisparitionBoule(){
+  document.querySelector('#boule_noire').style.display="none";
 }
