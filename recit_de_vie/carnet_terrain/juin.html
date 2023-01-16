@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr" x:lang="fr" xmlns="ht://www.w3.org/1999/xhtml">
 <head>
@@ -10,6 +11,7 @@
 
 </head>
 <body>
+
 
 
 
@@ -37,12 +39,14 @@
       </div>
 
     </div>
+
 <!------------------------LE CORPS DE PAGE----------------------------> 
 
 
 <div id="corps">
 
-  <!----------------------------PRECEDENT------------------------------>
+  
+<!----------------------------PRECEDENT------------------------------>
   <div id="nav_sommaire" class="closed ">
     
      <div id="page_precedente_text" class="titre_sommaire"> sommaire</div>
@@ -61,7 +65,8 @@
 <div class="drag-container">
 
 
-  <!------------------------GAUCHE--------------------------------> 
+  
+<!------------------------GAUCHE--------------------------------> 
 
   <div class="panel-one" id="rectangle_gauche">
       <div id="boutons"> 
@@ -133,11 +138,14 @@ Bien cordialement,
 
 </div>
 
-  <div class="dragbar" id="dragbar"></div>
+  <div class="dragbar" id="dragbar" onmouseover="fonctionApparitionBoule()" onmouseleave="fonctionDisparitionBoule()">
+        <div id="boule_noire"></div>
+
+  </div>
 
 
-
-    <!------------------------DROITE--------------------------------> 
+    
+<!------------------------DROITE--------------------------------> 
 
   <div class="panel-two" id="rectangle_droit">
   
@@ -155,7 +163,7 @@ Bien cordialement,
 
 
   <script src='./../../jquery-2.js'></script>
-  <script  src="./../ressource/script.js"></script>
+  <script  src="./../ressource/script_carnet_terrain.js"></script>
   <script  src="./../ressource/script_photo_outils.js"></script>
     <script  src="./../ressource/script_photo_gens.js"></script>
   <script  src="./../ressource/script_photo_lieux.js"></script>

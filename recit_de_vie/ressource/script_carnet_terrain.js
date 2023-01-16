@@ -17,21 +17,21 @@ const drag = (e) => {
   left.style.width = (e.pageX - bar.offsetWidth / 2) + 'px';
   right.style.width = (window.innerWidth - left.style.width) + 'px';
 if (left.offsetWidth >800 && left.offsetWidth < 900){
-    document.querySelector('.textwesh').style.fontSize = "1.3em";
-    document.querySelector('.textwesh').style.lineHeight = "normal";
+    document.querySelector('.textwesh_terrain').style.fontSize = "1.3em";
+    document.querySelector('.textwesh_terrain').style.lineHeight = "normal";
 
 }else if(left.offsetWidth >900 && left.offsetWidth < 1000){
-    document.querySelector('.textwesh').style.fontSize = "1.5em";
-    document.querySelector('.textwesh').style.lineHeight = "normal";
+    document.querySelector('.textwesh_terrain').style.fontSize = "1.5em";
+    document.querySelector('.textwesh_terrain').style.lineHeight = "normal";
 
 
 }else if(left.offsetWidth >1000){
-  document.querySelector('.textwesh').style.fontSize = "2em";
-    document.querySelector('.textwesh').style.lineHeight = "normal";
+  document.querySelector('.textwesh_terrain').style.fontSize = "2em";
+    document.querySelector('.textwesh_terrain').style.lineHeight = "normal";
 
 }else{
-  document.querySelector('.textwesh').style.fontSize = "1.1em";
-    document.querySelector('.textwesh').style.lineHeight = "26px";
+  document.querySelector('.textwesh_terrain').style.fontSize = "1.1em";
+    document.querySelector('.textwesh_terrain').style.lineHeight = "26px";
 }
 
 
@@ -139,3 +139,20 @@ function fonctionFull(){
     }
 }
 
+
+
+   ///////////////////////APPARITION DISPARITION BOULE//////////////////////////////////
+
+
+function fonctionApparitionBoule(){
+  document.querySelector('#boule_noire').style.display="block";
+  document.querySelector('#dragbar').classList.remove('dragbar');
+  document.querySelector('#dragbar').classList.add('dragbar_visible');
+
+}
+
+function fonctionDisparitionBoule(){
+  document.querySelector('#boule_noire').style.display="none";
+
+  document.querySelector('#dragbar').classList.remove('dragbar_visible');
+  document.querySelector('#dragbar').classList.add('dragbar');}
