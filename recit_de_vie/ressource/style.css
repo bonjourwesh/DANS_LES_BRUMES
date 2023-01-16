@@ -302,10 +302,18 @@ background-color: #f97000;
   display: none;
 }
 
-#dragbar {
+.dragbar {
   padding: 6px;
   cursor: col-resize;
   background-color: white;
+}
+
+.dragbar_visible {
+  padding: 6px;
+  cursor: col-resize;
+  background-color: white;
+    border-right: 1px solid black;
+
 }
 
 /*---------------------------------RETOUR-----------------------------*/
@@ -755,3 +763,22 @@ height: 90px;
 .lien_txt:hover {
   text-shadow: black 1px 0 10px;
 }
+
+
+
+      /*---------------------------------truc du milieu-----------------------------*/ 
+
+#boule_noire{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 52vh;
+  position: fixed;
+  margin-left: -14px;
+  display: none;
+  z-index: 10;
+
+
+}
+

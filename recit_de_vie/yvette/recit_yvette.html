@@ -78,7 +78,7 @@
    <p id="b1" class="texte_b"> lire la partie sur le récit de vie </p>
 
     <input id="bouton_objet" class="bouton" type="button" onclick="fonctionObjet()" onmouseover="fonctionB2()" onmouseleave="fonctionB2Leave()">
-    <p id="b2" class="texte_b"> lire la partie sur les-faires</p>
+    <p id="b2" class="texte_b"> lire la partie sur les savoir-faire</p>
 
 
   <input id="bouton_lieu" class="bouton" type="button" onclick="fonctionLieu()" onmouseover="fonctionB3()" onmouseleave="fonctionB3Leave()">
@@ -95,7 +95,10 @@
 
 </div>
 
-  <div class="dragbar" id="dragbar"></div>
+  <div class="dragbar" id="dragbar" onmouseover="fonctionApparitionBoule()" onmouseleave="fonctionDisparitionBoule()">
+        <div id="boule_noire"></div>
+
+  </div>
 
 
 

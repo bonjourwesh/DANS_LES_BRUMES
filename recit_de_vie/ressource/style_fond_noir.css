@@ -260,6 +260,15 @@ background-color: white;
   padding: 6px;
   cursor: col-resize;
   background-color: black;
+
+}
+
+.dragbar_visible {
+  padding: 6px;
+  cursor: col-resize;
+  background-color: black;
+    border-right: 1px solid white;
+
 }
 
 /*---------------------------------RETOUR-----------------------------*/
@@ -716,3 +725,21 @@ height: 110px;
 .lien_txt:hover {
   text-shadow: white 1px 0 10px;
 }
+
+
+      /*---------------------------------truc du milieu-----------------------------*/ 
+
+#boule_noire{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 52vh;
+  position: fixed;
+  margin-left: -14px;
+  display: none;
+  z-index: 10;
+
+
+}
+
