@@ -9,7 +9,7 @@ const drag = (e) => {
   document.selection ? document.selection.empty() : window.getSelection().removeAllRanges();
   left.style.width = ((e.pageX - bar.offsetWidth / 2)-20) + 'px';
   right.style.width = (window.innerWidth - left.style.width) + 'px';
-if (left.offsetWidth < 700){
+if (left.offsetWidth < 700 && left.offsetWidth > 280){
   document.querySelector('#boite_txt_1').style.display = "none";
     document.querySelector('#boite_txt_2').style.display = "none";
   document.querySelector('#boite_txt_3').style.display = "none";
@@ -61,8 +61,14 @@ if (left.offsetWidth < 700){
   document.querySelector('#boite_txt_49').style.display = "none";
   document.querySelector('#boite_txt_50').style.display = "none";
     document.querySelector('#boite_txt_96').style.display = "none";
+      document.querySelector('#interieur_gauche').style.display = "block";
+
 }
-else{
+else if (left.offsetWidth < 280){
+
+ document.querySelector('#interieur_gauche').style.display = "none";
+
+}else{
    document.querySelector('#boite_txt_1').style.display = "inline-block";
    document.querySelector('#boite_txt_2').style.display = "inline-block";
    document.querySelector('#boite_txt_3').style.display = "inline-block";
@@ -119,7 +125,7 @@ else{
  
 }
 
-if (right.offsetWidth < 700){
+if (right.offsetWidth < 700 && right.offsetWidth > 280){
   document.querySelector('#boite_txt_51').style.display = "none";
   document.querySelector('#boite_txt_52').style.display = "none";
   document.querySelector('#boite_txt_53').style.display = "none";
@@ -167,6 +173,12 @@ if (right.offsetWidth < 700){
   document.querySelector('#boite_txt_95').style.display = "none";
   document.querySelector('#boite_txt_97').style.display = "none";
   document.querySelector('#boite_txt_98').style.display = "none";
+      document.querySelector('#contenu_droite').style.display = "block";
+
+}
+else if (right.offsetWidth < 280){
+
+ document.querySelector('#contenu_droite').style.display = "none";
 
 }
 else{
