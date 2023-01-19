@@ -240,6 +240,8 @@ img:hover + .box_legende {
 .legende{
   color: black;
   white-space: nowrap;
+    font-family: Titre;
+
 }
 
 .box_legende{
