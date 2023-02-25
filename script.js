@@ -259,3 +259,6 @@ function fonctionCredit(){
 function fonctionFermerCredit(){
   document.getElementById("credit").style.display = "none";
 }
+
+
+

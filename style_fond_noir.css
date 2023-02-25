@@ -41,6 +41,14 @@ html, body {
 
 
 /*---------------------------------LE HAUT-----------------------------*/ 
+#lienInsta{
+text-decoration: underline;
+
+}
+
+#lienInsta: hover {
+  font-style: italic;
+}
 
 #entete{
   color: white;
@@ -171,8 +179,8 @@ background-color: white;
 }
 
 .resizable .resizers .resizer.bottom-right {
-  right: -20px;
-  bottom: -20px;
+  right: -18px;
+  bottom: -18px;
   cursor: grabbing;
 }
 

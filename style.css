@@ -48,6 +48,16 @@ border-bottom: 2px dotted black;
 
 /*---------------------------------LE HAUT-----------------------------*/ 
 
+ #lienInsta #boite_lien a{
+text-decoration: underline;
+
+}
+
+#lienInsta: hover {
+  font-style: italic;
+}
+
+
 #entete{
   z-index: 5;
     font-family: Titre;
