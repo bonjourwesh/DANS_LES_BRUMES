@@ -39,7 +39,7 @@ html, body {
  padding:0;
  color: white;
  background: black;
- height: 710vh;
+ height: 580vh;
  }
 
 a{
@@ -172,35 +172,34 @@ width: 100%;
      .objlienvertical {
       position: absolute;
         height: auto;
-        width: 230px;}
-
+        width: 210px;}
 
 
 #cadet{
-  top: 15vh;
+  top: 13vh;
   left: 8vw;
 position: absolute;}
 
 #cooperative_soie{
-  top: 47vh;
+  top: 32vh;
   left: 40vw;
 position: absolute;}
 
 
 #eglise{
-  top:  30vh;
+  top:  20vh;
   left: 65vw;
   position: absolute;
 }
 
 #fabrique_malliquet{
-  top:  75vh;
+  top:  63vh;
   left: 15vw;
   position: absolute;
 }
 
 #fabrique_taillis_vert{
-  top:  85vh;
+  top:  70vh;
   left: 70vw;
   position: absolute;
 }
@@ -212,186 +211,186 @@ position: absolute;}
 
 
 #fonderie_bancel{
-  top:  140vh;
-  left: 6vw;
+  top:  115vh;
+  left: 26vw;
   position: absolute;
 }
 
 #maison_maitre{
-  top:  160vh;
-  left: 32vw;
+  top:  140vh;
+  left: 52vw;
   position: absolute;
 }
 
 #moulin_mas{
-  top:  180vh;
-  left: 60vw;
+  top:  120vh;
+  left: 80vw;
   position: absolute;
 }
 
 #loisir_education{
-  top:  200vh;
-  left: 5vw;
+  top:  180vh;
+  left: 15vw;
   position: absolute;
 }
 
 
 #moulinage_etienne{
-  top:  220vh;
-  left: 40vw;
+  top:  130vh;
+  left: 4vw;
   position: absolute;
 }
 
 #moulinage_cellard{
-  top:  230vh;
+  top:  185vh;
   left: 72vw;
   position: absolute;
 }
 
 #moulinage_roche{
-  top:  270vh;
-  left: 37vw;
+  top:  220vh;
+  left: 10vw;
   position: absolute;
 }
 
 #orangerie{
-  top:  250vh;
-  left: 12vw;
+  top:  190vh;
+  left: 42vw;
   position: absolute;
 }
 
 
 #systeme_hydraulique{
-  top:  105vh;
+  top:  85vh;
   left: 45vw;
   position: absolute;
 }
 
 #usine_blanc{
-  top:  310vh;
+  top:  260vh;
   left: 4vw;
   position: absolute;
 }
 
 #usine_blanc_ligue{
-  top:  340vh;
+  top:  275vh;
   left: 28vw;
   position: absolute;
 }
 
 #usine_bobichon{
-  top:  330vh;
+  top:  245vh;
   left: 50vw;
   position: absolute;
 }
 
 #usine_chirol{
-  top:  300vh;
+  top:  235vh;
   left: 75vw;
   position: absolute;
 }
 
 #usine_joseph_perrier{
-  top:  387vh;
+  top:  300vh;
   left: 51vw;
   position: absolute;
 }
 
 #usine_saint_joseph{
-  top:  400vh;
+  top:  330vh;
   left: 30vw;
   position: absolute;
 }
 
 #usine_saint_joseph_bas{
-  top:  380vh;
-  left: 2vw;
+  top:  310vh;
+  left: 6vw;
   position: absolute;
 }
 
 #usine_saint_victor{
-  top:  450vh;
-  left: 8vw;
+  top:  360vh;
+  left:5vw;
   position: absolute;
 }
 
 #usine_sainte_julie{
-  top:  440vh;
-  left: 60vw;
+  top:  335vh;
+  left: 75vw;
   position: absolute;
 }
 
 #usine_sainte_marthe{
-  top:  480vh;
-  left: 35vw;
+  top:  440vh;
+  left: 30vw;
   position: absolute;
 }
 
 #usine_sainte_marie{
-  top:  500vh;
-  left: 5vw;
+  top:  400vh;
+  left: 9vw;
   position: absolute;
 }
 
 
 #usine_perrier{
-  top:  507vh;
-  left: 57vw;
+  top:  450vh;
+  left: 62vw;
   position: absolute;
 }
 
 #logement{
-  top:  392vh;
+  top:  290vh;
   left: 70vw;
   position: absolute;
 }
 
 
 #commerce{
-  top:  550vh;
-  left: 10vw;
+  top:  390vh;
+  left: 35vw;
   position: absolute;
 }
 
 
 #parc_naturel{
-  top:  525vh;
-  left: 40vw;
-  position: absolute;
-}
-
-#pavillon{
-  top:  550vh;
-  left: 67vw;
-  position: absolute;
-}
-#pelussin{
-  top:  620vh;
+  top:  350vh;
   left: 55vw;
   position: absolute;
 }
 
+#pavillon{
+  top:  390vh;
+  left: 78vw;
+  position: absolute;
+}
+#pelussin{
+  top:  510vh;
+  left: 35vw;
+  position: absolute;
+}
+
 #remettage_piraillon{
-  top:  610vh;
+  top:  550vh;
   left: 4vw;
   position: absolute;
 }
 
 #moulinage_barou{
-  top:  655vh;
-  left: 28vw;
+  top:  500vh;
+  left: 8vw;
   position: absolute;
 }
 
 #davezieux{
-  top:  640vh;
+  top:  495vh;
   left: 77vw;
   position: absolute;
 }
 
 #barrage_ternay{
-  top:  650vh;
-  left: 2vw;
+  top:  532vh;
+  left: 56vw;
   position: absolute;
   margin-bottom: 60px;
 }
@@ -408,7 +407,7 @@ img:hover + .box_legende {
   border-bottom: 1px solid white;
   border-bottom-style: dashed;
   position: absolute;
-  top: 600vh;
+  top: 485vh;
 }
 
 .legende{
