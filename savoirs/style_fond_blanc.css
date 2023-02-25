@@ -39,6 +39,8 @@ html, body {
  padding:0;
  color: black;
    background-color: white;
+    height: 375vh;
+
  }
 
 a{
@@ -181,152 +183,153 @@ width: 100%;
         height: auto;
         width: 150px;}
 
+
 #filage{
-  top: 15vh;
+  top: 13vh;
   left: 8vw;
 position: absolute;}
 
 #teinture{
-  top: 47vh;
-  left: 40vw;
+  top: 32vh;
+  left: 35vw;
 position: absolute;}
 
 
 #devidage{
-  top:  30vh;
+  top:  20vh;
   left: 65vw;
   position: absolute;
 }
 
 #moulinage{
-  top:  75vh;
+  top:  65vh;
   left: 15vw;
   position: absolute;
 }
 
 #ourdissage{
-  top:  85vh;
-  left: 70vw;
+  top:  58vh;
+  left: 77vw;
   position: absolute;
 }
 
 #parage{
-  top: 110vh;
-  left: 50vw;
+  top: 70vh;
+  left: 55vw;
 position: absolute;}
 
 
 #lissage{
-  top:  140vh;
+  top:  120vh;
   left: 6vw;
   position: absolute;
 }
 
 #fabrication_peigne{
-  top:  160vh;
-  left: 32vw;
+  top:  100vh;
+  left: 36vw;
   position: absolute;
 }
 
 #montage_chaine{
-  top:  180vh;
+  top:  130vh;
   left: 60vw;
   position: absolute;
 }
 
 #remettage{
-  top:  200vh;
-  left: 5vw;
+  top:  160vh;
+  left: 4vw;
   position: absolute;
 }
 
 
 #envergure{
-  top:  220vh;
-  left: 40vw;
+  top:  150vh;
+  left: 38vw;
   position: absolute;
 }
 
 #rapondage{
-  top:  230vh;
+  top:  170vh;
   left: 72vw;
   position: absolute;
 }
 
 #enroulage{
-  top:  270vh;
-  left: 41vw;
+  top:  200vh;
+  left: 35vw;
   position: absolute;
 }
 
 #canetage{
-  top:  234vh;
-  left: 12vw;
-  position: absolute;
-}
-
-#tissage{
-  top:  270vh;
-  left: 60vw;
-  position: absolute;
-}
-
-#montage_metier{
-  top:  285vh;
+  top:  210vh;
   left: 10vw;
   position: absolute;
 }
 
-#visite_coupe{
-  top:  325vh;
+#tissage{
+  top:  215vh;
+  left: 65vw;
+  position: absolute;
+}
+
+#montage_metier{
+  top:  260vh;
   left: 4vw;
   position: absolute;
 }
 
+#visite_coupe{
+  top:  250vh;
+  left: 33vw;
+  position: absolute;
+}
+
 #impression{
-  top:  340vh;
-  left: 28vw;
+  top:  270vh;
+  left: 55vw;
   position: absolute;
 }
 
 #travail_facon{
-  top:  330vh;
-  left: 50vw;
+  top:  310vh;
+  left: 35vw;
   position: absolute;
 }
 
 #donneur_ordre{
-  top:  320vh;
-  left: 75vw;
+  top:  260vh;
+  left: 78vw;
   position: absolute;
 }
 
 #contremaitresse{
-  top:  390vh;
+  top:  320vh;
   left: 62vw;
   position: absolute;
 }
 
 #fabrication_outils{
-  top:  400vh;
+  top:  370vh;
   left: 30vw;
   position: absolute;
 }
 
 #main_oeuvre{
-  top:  380vh;
-  left: 2vw;
+  top:  300vh;
+  left: 8vw;
   position: absolute;
 }
 
 #patron{
-  top:  450vh;
-  left: 15vw;
+  top:  340vh;
+  left: 4vw;
   position: absolute;
 }
 
 #annexe{
-  top:  440vh;
+  top:  360vh;
   left: 60vw;
   position: absolute;
 }
