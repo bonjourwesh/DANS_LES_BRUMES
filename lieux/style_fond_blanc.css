@@ -570,7 +570,7 @@ position: relative;
   font-size: 0.75em;
   width: 290px;
   right: 30px;
-  overflow-y: scroll;
+  overflow: scroll;
   height: 80%;
       direction:rtl; 
       padding-bottom: 30px;
